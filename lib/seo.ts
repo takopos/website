@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
 import { brand } from "@/data/brand";
 import { siteConfig } from "@/data/site";
+import { locales, type AppLocale, routing } from "@/i18n/routing";
 
-const defaultTitle = `${siteConfig.brand}｜${siteConfig.company}${siteConfig.tagline}`;
+const ogLocaleMap: Record<AppLocale, string> = {
+  "zh-Hant": "zh_TW",
+  en: "en_US",
+  vi: "vi_VN",
+  th: "th_TH",
+};
 
 export function absoluteUrl(path = "/"): string {
   if (path.startsWith("http")) return path;
@@ -11,33 +18,62 @@ export function absoluteUrl(path = "/"): string {
   return `${siteConfig.url}${normalized === "/" ? "" : normalized}`;
 }
 
-export function createPageMetadata({
+export function localizedPath(locale: AppLocale, path = "/"): string {
+  const normalized = path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
+  if (locale === routing.defaultLocale) {
+    return normalized || "/";
+  }
+  return `/${locale}${normalized}`;
+}
+
+export function absoluteLocalizedUrl(locale: AppLocale, path = "/"): string {
+  return absoluteUrl(localizedPath(locale, path));
+}
+
+export function languageAlternates(path = "/") {
+  const languages: Record<string, string> = {};
+  for (const locale of locales) {
+    languages[locale] = absoluteLocalizedUrl(locale, path);
+  }
+  languages["x-default"] = absoluteLocalizedUrl(routing.defaultLocale, path);
+  return languages;
+}
+
+export async function createPageMetadata({
   title,
   description,
   path = "/",
   keywords,
+  locale,
 }: {
   title?: string;
   description?: string;
   path?: string;
   keywords?: string[];
-}): Metadata {
-  const pageTitle = title ? `${title}｜${siteConfig.brand}` : defaultTitle;
-  const pageDescription = description ?? siteConfig.supportingLine;
-  const url = absoluteUrl(path);
+  locale: AppLocale;
+}): Promise<Metadata> {
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const tCommon = await getTranslations({ locale, namespace: "common" });
+
+  const defaultTitle = t("defaultTitle");
+  const pageDescription = description ?? t("description");
+  const pageTitle = title
+    ? t("titleTemplate", { title })
+    : defaultTitle;
+  const url = absoluteLocalizedUrl(locale, path);
   const ogImage = absoluteUrl(siteConfig.ogImage);
 
   return {
-    // Short segment uses root `title.template`; home uses absolute default.
     title: title ?? { absolute: defaultTitle },
     description: pageDescription,
     keywords: keywords ?? [...siteConfig.keywords],
     alternates: {
       canonical: url,
+      languages: languageAlternates(path),
     },
     openGraph: {
       type: "website",
-      locale: siteConfig.locale,
+      locale: ogLocaleMap[locale],
       url,
       siteName: siteConfig.brand,
       title: pageTitle,
@@ -45,7 +81,7 @@ export function createPageMetadata({
       images: [
         {
           url: ogImage,
-          alt: `${siteConfig.brand}｜${siteConfig.tagline}`,
+          alt: `${siteConfig.brand}｜${tCommon("tagline")}`,
         },
       ],
     },
@@ -58,11 +94,12 @@ export function createPageMetadata({
   };
 }
 
-export function getOrganizationJsonLd() {
+export async function getOrganizationJsonLd(locale: AppLocale) {
+  const t = await getTranslations({ locale, namespace: "common" });
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: siteConfig.company,
+    name: t("company"),
     alternateName: siteConfig.companyEn,
     url: siteConfig.url,
     logo: absoluteUrl(brand.logo.full.src),
@@ -80,46 +117,49 @@ export function getOrganizationJsonLd() {
       telephone: siteConfig.contact.phoneE164,
       contactType: "customer service",
       areaServed: "TW",
-      availableLanguage: ["zh-TW"],
+      availableLanguage: ["zh-TW", "en", "vi", "th"],
     },
   };
 }
 
-export function getSoftwareApplicationJsonLd() {
+export async function getSoftwareApplicationJsonLd(locale: AppLocale) {
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const tCommon = await getTranslations({ locale, namespace: "common" });
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: siteConfig.brand,
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web, iOS, Android",
-    description: siteConfig.supportingLine,
+    description: t("description"),
     url: siteConfig.url,
     image: absoluteUrl(siteConfig.ogImage),
     offers: {
       "@type": "Offer",
-      url: absoluteUrl("/pricing"),
+      url: absoluteLocalizedUrl(locale, "/pricing"),
       priceCurrency: "TWD",
       availability: "https://schema.org/InStock",
     },
     provider: {
       "@type": "Organization",
-      name: siteConfig.company,
+      name: tCommon("company"),
       url: siteConfig.url,
     },
   };
 }
 
-export function getWebSiteJsonLd() {
+export async function getWebSiteJsonLd(locale: AppLocale) {
+  const t = await getTranslations({ locale, namespace: "common" });
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: siteConfig.brand,
-    alternateName: `${siteConfig.company}${siteConfig.tagline}`,
+    alternateName: `${t("company")}${t("tagline")}`,
     url: siteConfig.url,
-    inLanguage: "zh-Hant-TW",
+    inLanguage: locale,
     publisher: {
       "@type": "Organization",
-      name: siteConfig.company,
+      name: t("company"),
     },
   };
 }

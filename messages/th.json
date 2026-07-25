@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "titleTemplate": "{title}｜TAKOPOS",
+    "defaultTitle": "TAKOPOS｜ระบบร้านอาหารอัจฉริยะ Nordi Tech",
+    "description": "เราเข้าใจหน้างานร้านอาหาร: ช่วงพีคคนไม่พอ สั่งผิด ครัววุ่น รู้ยอดขาดทุนช้า TAKOPOS เชื่อมการสั่ง ครัว สต็อก และสำนักงานใหญ่",
+    "featuresTitle": "ฟีเจอร์",
+    "featuresDescription": "POS อัจฉริยะ สั่งผ่านมือถือ KDS ต้นทุนสต็อก สมาชิก และข้อมูลการดำเนินงาน",
+    "pricingTitle": "ราคา",
+    "pricingDescription": "จากร้านเดี่ยวถึงเชน TAKOPOS ขยายไปกับคุณ"
+  },
+  "common": {
+    "company": "Nordi Tech",
+    "brand": "TAKOPOS",
+    "tagline": "ระบบร้านอาหารอัจฉริยะ",
+    "language": "ภาษา",
+    "contactUs": "ติดต่อเรา",
+    "copyright": "Nordi Tech. สงวนลิขสิทธิ์."
+  },
+  "cta": {
+    "primary": "จองเดโมฟรี",
+    "secondary": "ดูการทำงาน",
+    "bookDemo": "จองเดโม",
+    "contactSales": "ติดต่อฝ่ายขาย"
+  },
+  "nav": {
+    "features": "ฟีเจอร์",
+    "operations": "การดำเนินงาน",
+    "chainStore": "จัดการเชน",
+    "pricing": "ราคา",
+    "support": "ซัพพอร์ต"
+  },
+  "hero": {
+    "headline": "ช่วงพีคไม่ปั่นป่วน ปิดร้านไม่เหนื่อยเกิน ช่วยทุกร้านทำกำไรได้ดีขึ้น",
+    "supporting": "เราเข้าใจหน้างานร้านอาหาร: ช่วงพีคคนไม่พอ สั่งผิด ครัววุ่น รู้ยอดขาดทุนช้า TAKOPOS เชื่อมการสั่ง ครัว สต็อก และสำนักงานใหญ่"
+  },
+  "features": {
+    "eyebrow": "ฟีเจอร์",
+    "title": "เราคิดจุดที่คุณติดขัดทุกวันไว้ก่อนแล้ว",
+    "description": "ไม่ใช่กองฟีเจอร์—แต่เป็นทางออกที่ใช้ได้จริงกับสั่งอาหาร ครัว สต็อก สมาชิก และบัญชี",
+    "items": {
+      "pos": {
+        "pain": "ช่วงพีคคนไม่พอ สั่งหลุด/ผิด",
+        "title": "POS อัจฉริยะและสั่งผ่านมือถือ",
+        "description": "แท็บเล็ต มือถือ และhandheld สั่งได้—รักษาจังหวะช่วงเร่ง"
+      },
+      "kitchen": {
+        "pain": "ใบออเดอร์ปลิว ตะโกนส่งครัว",
+        "title": "จอครัว KDS",
+        "description": "ส่งออเดอร์ตามสถานีแบบเรียลไทม์ สถานะชัด—เร็วขึ้น ร้องเรียนน้อยลง"
+      },
+      "inventory": {
+        "pain": "ต้นทุนอาหารรู้ช้าตอนสิ้นเดือน",
+        "title": "สต็อกและต้นทุนอาหาร",
+        "description": "เชื่อมซื้อ-ขาย พร้อมแจ้งเตือนของใกล้หมด"
+      },
+      "member": {
+        "pain": "ลูกค้ามาครั้งเดียวแล้วหาย",
+        "title": "สมาชิกและการซื้อซ้ำ",
+        "description": "แต้ม คูปอง เตือนกลับมา เปลี่ยนเป็นรายได้ที่คาดได้"
+      },
+      "analytics": {
+        "pain": "สั่งซื้อตามความรู้สึก",
+        "title": "ข้อมูลเชิงลึกการดำเนินงาน",
+        "description": "รายงานรายวัน ช่วงเวลาขายดี อันดับเมนู"
+      },
+      "payment": {
+        "pain": "คิวชำระเงินยาว กระทบยอดยาก",
+        "title": "ชำระเงินและส่งมอบกะ",
+        "description": "รวมช่องทางยอดนิยม ส่งมอบกะชัดเจน"
+      }
+    },
+    "painPrefix": "ปัญหา · "
+  },
+  "operations": {
+    "eyebrow": "แผนผังการดำเนินงาน",
+    "title": "ตั้งแต่ลูกค้าเข้าร้านถึงออกจาน เราเข้าใจทั้งฟลอร์",
+    "description": "คนไม่พอช่วงพีค ครัววุ่น ยอดไม่ตรง—คือเรื่องจริงทุกวัน หน้าจอด้านล่างมาจาก TPOS Ai จริง",
+    "highlights": {
+      "ops-map": {
+        "title": "เห็นทั้งร้านในแผนภาพเดียว",
+        "description": "สั่งอาหาร บริการโต๊ะ ครัว เดลิเวอรี และรายงานหลังบ้านในระบบเดียว"
+      },
+      "pos-ui": {
+        "title": "หน้าจอ POS ของ TPOS Ai จริง",
+        "description": "สั่งเร็ว พร้อมโต๊ะ จำนวนคน และสมาชิก—นิ่งแม้ช่วงพีค"
+      }
+    },
+    "appUiEyebrow": "หน้าจอ TPOS Ai จริง",
+    "appUiTitle": "ฟลอร์ยิ่งยุ่ง UI ยิ่งช่วยแบกภาระ",
+    "appUiNote": "สกรีนช็อตจาก TPOSAI: POS / สั่งด้วย QR / KDS / แอปสต็อก / Cloud admin",
+    "appUi": {
+      "pos-ordering": {
+        "pain": "สั่งหลุด ใบช้า เทรนนาน",
+        "title": "TPOS Ai POS สั่งเร็ว",
+        "description": "หมวดชัด ตะกร้าและส่งครัวจอเดียว รักษาจังหวะพีค"
+      },
+      "mobile-order": {
+        "pain": "ลูกค้ารอขณะพนักงานล้นมือ",
+        "title": "แอปสั่งเองด้วย QR",
+        "description": "ลูกค้าสแกนพร้อมโน้ตและภาษา ใบออเดอร์ตรงเข้าครัว"
+      },
+      "checkout": {
+        "pain": "คิวยาว กระทบยอดยุ่ง",
+        "title": "คิดเงิน POS",
+        "description": "เงินสด บัตร LINE Pay ฯลฯ ส่วนลดและสมาชิกอยู่บนเส้นทางคิดเงิน"
+      },
+      "kds": {
+        "pain": "ใบกระดาษทั่วครัว ตะโกนส่งของ",
+        "title": "KDS ครัว",
+        "description": "แยกตามสถานี รวมตามออเดอร์หรือเมนู—รู้ขั้นถัดไปทันที"
+      },
+      "inventory": {
+        "pain": "นับสต็อกช้า บาร์โค้ดไม่ตรง",
+        "title": "แอปนับสต็อก TPOS",
+        "description": "สแกนเนอร์ กล้อง หรือนับมือ พร้อมรายละเอียดสด"
+      },
+      "web-admin": {
+        "pain": "แต่ละสาขาแก้เมนูคนละแบบ",
+        "title": "มาสเตอร์สินค้า Cloud",
+        "description": "บันทึกและซิงก์จาก HQ ให้สาขาใช้หลังบ้านเดียวกัน"
+      }
+    },
+    "scenesEyebrow": "ช่วงเวลาจริงของร้านอาหาร",
+    "scenesTitle": "ไม่ใช่โชว์เทค—คือวันของคุณที่ถูกคืนกลับ",
+    "scenes": {
+      "qr-dining": {
+        "pain": "ค่าแรงขึ้น บริการห้ามตก",
+        "title": "QR ข้างโต๊ะพาบริการกลับมา",
+        "description": "ให้ระบบจัดการสั่งซ้ำ เพื่อให้พนักงานโฟกัสการดูแล"
+      },
+      "tableside": {
+        "pain": "เต็มร้าน สายการสั่งตัน",
+        "title": "สั่งข้างโต๊ะนิ่งในช่วงพีค",
+        "description": "handheld รับออเดอร์โดยไม่ต้องแย่งคิวเคาน์เตอร์"
+      },
+      "kitchen": {
+        "pain": "กระดาษวุ่นและแย่งคิวทำ",
+        "title": "KDS—เลิกตะโกน",
+        "description": "ใบสด สถานะชัด ลดหลุดและทำซ้ำ"
+      },
+      "checkout": {
+        "pain": "คิวยาวทำให้บรรยากาศเสีย",
+        "title": "คิดเงินเร็วและแม่น",
+        "description": "เช็กสองจอ ปิดบริการเร่งด่วนได้อย่างเรียบร้อย"
+      },
+      "delivery": {
+        "pain": "ทานที่นี่ ซื้อกลับ เดลิเวอรีพุ่งพร้อมกัน",
+        "title": "ส่งต่อเดลิเวอรีมีจังหวะ",
+        "description": "ออเดอร์เดลิเวอรีกับในร้านสายเดียวกัน—ผิดถุงน้อย รอน้อย"
+      },
+      "remote": {
+        "pain": "เจ้าของไม่อยู่ ร้านเป็นกล่องดำ",
+        "title": "บริหารจากภายนอก",
+        "description": "แล็ปท็อปกับมือถือซิงก์สำหรับตรวจสาขาและวันหยุด"
+      }
+    }
+  },
+  "chain": {
+    "eyebrow": "จัดการเชนสโตร์",
+    "title": "ปัญหาจริงเริ่มที่สาขาที่ 2",
+    "description": "แก้เมนูทีต้องโทรเป็นสิบสาย สต็อกแยก HQ มองไม่เห็น—TAKOPOS ลดแรงเสียดทานเชนด้วย UI แอดมินจริง",
+    "blocks": {
+      "hq-control": {
+        "eyebrow": "ควบคุมศูนย์กลาง HQ",
+        "title": "แก้เมนูครั้งเดียว ซิงก์ทุกที่",
+        "description": "ราคาผิดและแอดออนหลุดคือความล้มเหลวของกระบวนการ กดจาก HQ ครั้งเดียวลดผิดพลาดและร้องเรียน",
+        "points": [
+          "บันทึกและซิงก์ไปสาขาที่เลือก",
+          "เลือกกลุ่มสินค้า/ค้าปลีกได้ยืดหยุ่น",
+          "ล็อกการเปลี่ยนแปลงและความรับผิดชอบชัด"
+        ]
+      },
+      "multi-store-dashboard": {
+        "eyebrow": "แดชบอร์ดหลายสาขา",
+        "title": "เห็นสาขาไหนช้าลงได้ทันที",
+        "description": "ไม่ต้องรอ Excel ดึก แดชบอร์ดกลุ่มรวมรายได้ บิล และอันดับเพื่อซัพพอร์ตทันเวลา",
+        "points": [
+          "สลับภาพรวม / F&B / รายละเอียดค้าปลีก",
+          "อันดับและสัดส่วนสาขาในพริบตา",
+          "วันฐานและวันเทียบยืดหยุ่น"
+        ]
+      },
+      "inventory-transfer": {
+        "eyebrow": "โอนสต็อกข้ามสาขา",
+        "title": "สาขา A ใกล้หมด ขณะ B ยังกอง—อย่าพึ่งกลุ่ม LINE",
+        "description": "ช่วยเร็วต้องสต็อกแม่น มุมมองเมทริกซ์พร้อมเวิร์กโฟลว์โอน ทำให้การช่วยเป็น SOP",
+        "points": [
+          "เทียบสต็อก SKU ข้ามสาขา",
+          "แจ้งเตือน/ส่งออกรายงานโดยไม่บล็อก POS",
+          "สต็อกสองฝั่งอัปเดตหลังอนุมัติ"
+        ]
+      }
+    },
+    "flow": {
+      "1": {
+        "title": "สาขา A สต็อกต่ำ",
+        "description": "แจ้งเตือนต่ำกว่าเซฟตี้และแนะนำแหล่งโอน"
+      },
+      "2": {
+        "title": "โอนออนไลน์",
+        "description": "ซูเปอร์ไวเซอร์/HQ อนุมัติและสร้างใบโอนในขั้นเดียว"
+      },
+      "3": {
+        "title": "สาขา B ส่งของ",
+        "description": "หลังยืนยันส่ง สต็อกสองฝั่งซิงก์"
+      }
+    },
+    "rolesTitle": "สิทธิ์ตามบทบาท",
+    "rolesDescription": "เมทริกซ์ชัดสำหรับ HQ ซูเปอร์ไวเซอร์ ผู้จัดการ และพนักงาน",
+    "roles": {
+      "hq": "HQ",
+      "supervisor": "ซูเปอร์ไวเซอร์",
+      "manager": "ผู้จัดการ",
+      "staff": "พนักงาน"
+    },
+    "columns": {
+      "menu": "เมนู",
+      "pricing": "ราคา",
+      "transfer": "โอน",
+      "reports": "รายงาน",
+      "staff": "บุคลากร"
+    }
+  },
+  "pricing": {
+    "eyebrow": "ราคา",
+    "title": "แก้ปัญหาวันนี้ แล้วโตไปกับคุณ",
+    "description": "ราคาโปร่งใสจากร้านเล็กถึงเชน อย่าจ่ายของที่ไม่ได้ใช้",
+    "popular": "ยอดนิยม",
+    "currency": "NT$",
+    "month": "เดือน",
+    "consult": "สอบถาม",
+    "plans": {
+      "micro": {
+        "name": "แพ็กเกจร้านเล็ก",
+        "description": "ทีมน้อย จังหวะเร็ว: ตั้งหลักการสั่งและครัวก่อน",
+        "features": [
+          "Single-store POS + kitchen display",
+          "Basic inventory & daily reports",
+          "Mobile ordering (1 device)",
+          "Online support"
+        ]
+      },
+      "mid": {
+        "name": "แพ็กเกจร้านกลาง-ใหญ่",
+        "description": "หลายโซน หลายสถานี: รักษารอบโต๊ะและลูกค้าประจำ",
+        "features": [
+          "Multi-device sync ordering",
+          "Loyalty & coupons",
+          "Advanced reports & daypart analytics",
+          "Payments & e-invoice",
+          "On-site onboarding"
+        ]
+      },
+      "chain": {
+        "name": "แพ็กเกจเชนแบบกำหนดเอง",
+        "description": "ซิงก์หลายสาขา HQ คุมได้—โตโดยไม่พึ่งแรงงานทะเลคน",
+        "features": [
+          "Unlimited store architecture",
+          "One-click product push",
+          "Inter-store transfers",
+          "Roles & audit",
+          "Dedicated success advisor"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "เสียงจากลูกค้า",
+    "title": "ถูกเลือกเพราะเข้าใจหน้างาน",
+    "description": "จากร้านเดี่ยวถึงเชน TAKOPOS ช่วยให้ช่วงพีคนิ่งและโตได้โดยไม่สะดุด",
+    "items": {
+      "1": {
+        "quote": "ก่อนหน้านี้ใบครัวช่วงพีคปลิวทั่ว ตอนนี้บอร์ดชัด เวลาออกจานสั้นลง และผู้จัดการไม่ต้องกระทบยอดถึงเช้า",
+        "name": "ผู้จัดการ Lin",
+        "role": "หม้อไฟเถาหยวน｜ร้านเดียว"
+      },
+      "2": {
+        "quote": "แก้ราคาและเมนูไม่ต้องโทรเป็นสิบสาขาอีกแล้ว HQ กดครั้งเดียว ซิงก์ทั่วไต้หวัน ออเดอร์ผิดและร้องเรียนน้อยลง",
+        "name": "COO Chen",
+        "role": "บิสโทร｜11 สาขา"
+      },
+      "3": {
+        "quote": "ฉันดูรายงานก่อนตรวจสาขา—จุดที่ช้าเห็นชัด TAKOPOS เข้าใจจริงว่าซูเปอร์ไวเซอร์กังวลอะไร",
+        "name": "ซูเปอร์ไวเซอร์ Huang",
+        "role": "ไก่กระเพาะหมูจีน｜12 สาขา"
+      }
+    }
+  },
+  "footer": {
+    "blurb": "ระบบ F&B อัจฉริยะที่เปลี่ยนความเจ็บปวดช่วงพีค ครัว ส่งมอบกะ และเชน ให้เป็นเวิร์กโฟลว์ที่ใช้ได้จริง",
+    "quickLinks": "ลิงก์ด่วน",
+    "privacy": "นโยบายความเป็นส่วนตัว",
+    "terms": "ข้อกำหนดการใช้งาน"
+  },
+  "booking": {
+    "title": "จองเดโมฟรี",
+    "description": "ฝากข้อมูลร้าน ทีมงานจะติดต่อเพื่อนัดเดโม",
+    "storeName": "ชื่อร้าน / แบรนด์",
+    "contactName": "ผู้ติดต่อ",
+    "phone": "โทรศัพท์",
+    "city": "จังหวัด / เมือง",
+    "isFnb": "ธุรกิจอาหารหรือไม่?",
+    "fnbType": "ประเภทอาหาร",
+    "needEinvoice": "ต้องการใบกำกับอิเล็กทรอนิกส์?",
+    "note": "หมายเหตุ",
+    "yes": "ใช่",
+    "no": "ไม่",
+    "select": "กรุณาเลือก",
+    "submit": "ส่ง",
+    "submitting": "กำลังส่ง…",
+    "close": "ปิด",
+    "success": "ได้รับแล้ว—ทีมงานจะติดต่อเร็วๆ นี้",
+    "leadNo": "รหัสอ้างอิง: {leadNo}",
+    "placeholders": {
+      "storeName": "e.g. Taoyuan Hotpot",
+      "contactName": "e.g. Manager Lin",
+      "phone": "09xxxxxxxx",
+      "note": "Preferred demo time, store count (optional)"
+    },
+    "cities": {
+      "基隆市": "Keelung",
+      "台北市": "Taipei City",
+      "新北市": "New Taipei",
+      "桃園市": "Taoyuan",
+      "新竹市": "Hsinchu City",
+      "新竹縣": "Hsinchu County",
+      "苗栗縣": "Miaoli",
+      "台中市": "Taichung",
+      "彰化縣": "Changhua",
+      "南投縣": "Nantou",
+      "雲林縣": "Yunlin",
+      "嘉義市": "Chiayi City",
+      "嘉義縣": "Chiayi County",
+      "台南市": "Tainan",
+      "高雄市": "Kaohsiung",
+      "屏東縣": "Pingtung",
+      "宜蘭縣": "Yilan",
+      "花蓮縣": "Hualien",
+      "台東縣": "Taitung",
+      "澎湖縣": "Penghu",
+      "金門縣": "Kinmen",
+      "連江縣": "Lienchiang",
+      "其他": "Other"
+    },
+    "fnbTypes": {
+      "火鍋": "Hotpot",
+      "餐酒館": "Bistro / gastropub",
+      "中式料理": "Chinese cuisine",
+      "台式簡餐": "Taiwanese casual",
+      "手搖飲": "Bubble tea",
+      "咖啡": "Cafe",
+      "便當": "Bento",
+      "燒烤": "BBQ",
+      "日式料理": "Japanese",
+      "西式料理": "Western",
+      "連鎖餐飲": "Chain F&B",
+      "其他": "Other"
+    }
+  },
+  "aiCs": {
+    "brand": "TAKO Ai CS",
+    "title": "ซัพพอร์ตอัจฉริยะ TAKO",
+    "subtitle": "ถามเราก่อน—ภายหลังโอนคนจริงได้",
+    "placeholder": "พิมพ์คำถาม…",
+    "greeting": "สวัสดี! ฉันคือ TAKO Ai CS ช่วงพีค ครัว ส่งมอบกะ หรือเชน—บอกปัญหาแล้วฉันจะชี้ทางแก้",
+    "open": "เปิด TAKO Ai CS",
+    "close": "ปิดแชท",
+    "send": "ส่ง",
+    "quickReplies": {
+      "peak": "How do we stop peak missed orders?",
+      "demo": "How do I book a free demo?",
+      "menu": "How do we sync chain menus once?"
+    },
+    "replies": {
+      "default": "Thanks! This is a demo assistant. For a live walkthrough, tap Book a free demo.",
+      "pricing": "Micro plan from NT$988/mo; mid/large NT$1,888; chains are custom. See Pricing.",
+      "demo": "Great—tap Book a free demo with store name and phone. Leads go to our CRM for follow-up.",
+      "transfer": "Transfer flow: Store A low → create transfer → Store B ships & inventories sync. See Chain management.",
+      "peak": "Peak misses often come from order/kitchen disconnect. Use QR/handheld ordering into KDS with notes. See Operations.",
+      "menuSync": "HQ edits then one-click push to selected stores with audit trail. See Chain management."
+    }
+  }
+}

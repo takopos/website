@@ -1,10 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { Menu } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { BookingTrigger } from "@/components/booking/booking-trigger";
 import { BrandLogo } from "@/components/brand/logo";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -15,8 +16,12 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { siteConfig } from "@/data/site";
+import { Link } from "@/i18n/navigation";
 
 export function Header() {
+  const tNav = useTranslations("nav");
+  const tCta = useTranslations("cta");
+
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
@@ -29,14 +34,15 @@ export function Header() {
               href={item.href}
               className="rounded-lg px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
             >
-              {item.label}
+              {tNav(item.key)}
             </Link>
           ))}
         </nav>
 
         <div className="flex items-center gap-2">
+          <LanguageSwitcher className="hidden sm:inline-flex" />
           <BookingTrigger
-            label={siteConfig.cta.primary}
+            label={tCta("primary")}
             className="hidden sm:inline-flex"
             size="lg"
           />
@@ -48,7 +54,7 @@ export function Header() {
                   variant="outline"
                   size="icon"
                   className="md:hidden"
-                  aria-label="開啟選單"
+                  aria-label="Menu"
                 />
               }
             >
@@ -56,7 +62,7 @@ export function Header() {
             </SheetTrigger>
             <SheetContent side="right" className="px-4">
               <SheetHeader>
-                <SheetTitle className="sr-only">導覽選單</SheetTitle>
+                <SheetTitle className="sr-only">Menu</SheetTitle>
                 <BrandLogo />
               </SheetHeader>
               <nav className="mt-6 flex flex-col gap-1">
@@ -71,13 +77,14 @@ export function Header() {
                       />
                     }
                   >
-                    {item.label}
+                    {tNav(item.key)}
                   </SheetClose>
                 ))}
               </nav>
-              <div className="mt-6">
+              <div className="mt-6 space-y-3">
+                <LanguageSwitcher />
                 <BookingTrigger
-                  label={siteConfig.cta.primary}
+                  label={tCta("primary")}
                   fullWidth
                   size="lg"
                 />

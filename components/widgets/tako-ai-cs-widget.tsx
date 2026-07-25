@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Bot, MessageCircle, Send, X } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui/button";
-import { aiCsConfig } from "@/data/ai-cs";
+import { aiCsReplyMatchers } from "@/data/ai-cs";
 import { cn } from "@/lib/utils";
 
 type Message = {
@@ -13,31 +14,30 @@ type Message = {
   text: string;
 };
 
-function resolveReply(input: string) {
-  if (input.includes("方案") || input.includes("收費") || input.includes("價格")) {
-    return aiCsConfig.replies.pricing;
-  }
-  if (input.includes("預約") || input.includes("體驗") || input.includes("演示")) {
-    return aiCsConfig.replies.demo;
-  }
-  if (input.includes("漏點") || input.includes("尖峰") || input.includes("點餐")) {
-    return aiCsConfig.replies.peak;
-  }
-  if (input.includes("菜單") || input.includes("同步") || input.includes("下發")) {
-    return aiCsConfig.replies.menuSync;
-  }
-  if (input.includes("調撥") || input.includes("庫存") || input.includes("連鎖")) {
-    return aiCsConfig.replies.transfer;
-  }
-  return aiCsConfig.replies.default;
-}
+const quickReplyKeys = ["peak", "demo", "menu"] as const;
 
 export function TakoAiCsWidget() {
+  const t = useTranslations("aiCs");
+  const locale = useLocale();
   const [open, setOpen] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState<Message[]>([
-    { id: "greet", role: "bot", text: aiCsConfig.greeting },
+    { id: "greet", role: "bot", text: t("greeting") },
   ]);
+
+  useEffect(() => {
+    setMessages([{ id: "greet", role: "bot", text: t("greeting") }]);
+  }, [locale, t]);
+
+  function resolveReply(inputText: string) {
+    const lower = inputText.toLowerCase();
+    for (const matcher of aiCsReplyMatchers) {
+      if (matcher.keywords.some((kw) => lower.includes(kw.toLowerCase()))) {
+        return t(`replies.${matcher.replyKey}`);
+      }
+    }
+    return t("replies.default");
+  }
 
   function send(text: string) {
     const trimmed = text.trim();
@@ -75,8 +75,8 @@ export function TakoAiCsWidget() {
               <Bot className="size-5" />
             </span>
             <div>
-              <p className="text-sm font-semibold">{aiCsConfig.title}</p>
-              <p className="text-xs text-white/75">{aiCsConfig.subtitle}</p>
+              <p className="text-sm font-semibold">{t("title")}</p>
+              <p className="text-xs text-white/75">{t("subtitle")}</p>
             </div>
           </div>
           <Button
@@ -84,7 +84,7 @@ export function TakoAiCsWidget() {
             size="icon-sm"
             className="text-white hover:bg-white/15 hover:text-white"
             onClick={() => setOpen(false)}
-            aria-label="關閉客服視窗"
+            aria-label={t("close")}
           >
             <X />
           </Button>
@@ -105,16 +105,19 @@ export function TakoAiCsWidget() {
             </div>
           ))}
           <div className="flex flex-wrap gap-2">
-            {aiCsConfig.quickReplies.map((reply) => (
-              <button
-                key={reply}
-                type="button"
-                onClick={() => send(reply)}
-                className="rounded-full border border-border bg-white px-2.5 py-1 text-xs text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
-              >
-                {reply}
-              </button>
-            ))}
+            {quickReplyKeys.map((key) => {
+              const reply = t(`quickReplies.${key}`);
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  onClick={() => send(reply)}
+                  className="rounded-full border border-border bg-white px-2.5 py-1 text-xs text-muted-foreground transition-colors hover:border-primary/40 hover:text-foreground"
+                >
+                  {reply}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -128,11 +131,11 @@ export function TakoAiCsWidget() {
           <input
             value={input}
             onChange={(event) => setInput(event.target.value)}
-            placeholder={aiCsConfig.placeholder}
+            placeholder={t("placeholder")}
             className="h-10 flex-1 rounded-xl border border-transparent bg-muted px-3 text-sm outline-none focus:border-ring focus:ring-2 focus:ring-ring/30"
-            aria-label="客服訊息輸入"
+            aria-label={t("placeholder")}
           />
-          <Button type="submit" size="icon" aria-label="送出訊息">
+          <Button type="submit" size="icon" aria-label={t("send")}>
             <Send />
           </Button>
         </form>
@@ -143,12 +146,10 @@ export function TakoAiCsWidget() {
         onClick={() => setOpen((value) => !value)}
         className="pointer-events-auto h-14 gap-2 rounded-full px-5 shadow-[0_16px_40px_-16px_rgba(208,104,44,0.7)]"
         aria-expanded={open}
-        aria-label={open ? "關閉 TAKO Ai CS" : "開啟 TAKO Ai CS"}
+        aria-label={open ? t("close") : t("open")}
       >
         {open ? <X className="size-5" /> : <MessageCircle className="size-5" />}
-        <span className="font-heading text-sm font-semibold">
-          {aiCsConfig.brand}
-        </span>
+        <span className="font-heading text-sm font-semibold">{t("brand")}</span>
       </Button>
     </div>
   );

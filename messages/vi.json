@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "titleTemplate": "{title}｜TAKOPOS",
+    "defaultTitle": "TAKOPOS｜Hệ thống F&B thông minh Nordi Tech",
+    "description": "Chúng tôi hiểu vận hành nhà hàng: thiếu nhân sự giờ cao điểm, gọi món sai, bếp hỗn loạn, cuối tháng mới biết lỗ. TAKOPOS kết nối gọi món, bếp, tồn kho và HQ.",
+    "featuresTitle": "Tính năng",
+    "featuresDescription": "POS thông minh, gọi món di động, KDS, chi phí tồn kho, thành viên và phân tích vận hành.",
+    "pricingTitle": "Bảng giá",
+    "pricingDescription": "Từ quán nhỏ đến chuỗi, TAKOPOS mở rộng cùng bạn."
+  },
+  "common": {
+    "company": "Nordi Tech",
+    "brand": "TAKOPOS",
+    "tagline": "Hệ thống F&B thông minh",
+    "language": "Ngôn ngữ",
+    "contactUs": "Liên hệ",
+    "copyright": "Nordi Tech. Bảo lưu mọi quyền."
+  },
+  "cta": {
+    "primary": "Đặt demo miễn phí",
+    "secondary": "Xem cách hoạt động",
+    "bookDemo": "Đặt demo",
+    "contactSales": "Liên hệ sales"
+  },
+  "nav": {
+    "features": "Tính năng",
+    "operations": "Vận hành",
+    "chainStore": "Chuỗi cửa hàng",
+    "pricing": "Bảng giá",
+    "support": "Hỗ trợ"
+  },
+  "hero": {
+    "headline": "Giờ cao điểm không loạn, đóng cửa không kiệt sức, giúp mỗi quán kiếm nhiều hơn.",
+    "supporting": "Chúng tôi hiểu vận hành nhà hàng: thiếu nhân sự giờ cao điểm, gọi món sai, bếp hỗn loạn, cuối tháng mới biết lỗ. TAKOPOS kết nối gọi món, bếp, tồn kho và HQ."
+  },
+  "features": {
+    "eyebrow": "Tính năng",
+    "title": "Chúng tôi đã nghĩ trước những chỗ bạn kẹt mỗi ngày",
+    "description": "Không chất đống tính năng—giải pháp thực tế cho gọi món, bếp, tồn kho, thành viên và sổ sách.",
+    "items": {
+      "pos": {
+        "pain": "Thiếu người giờ cao điểm, gọi món sai",
+        "title": "POS thông minh & gọi món di động",
+        "description": "Máy tính bảng, điện thoại, handheld đều gọi món được—giữ nhịp giờ cao điểm."
+      },
+      "kitchen": {
+        "pain": "Phiếu bếp bay loạn, hô nhau ra món",
+        "title": "Màn hình bếp KDS",
+        "description": "Đơn chia trạm theo thời gian thực, trạng thái rõ—nhanh hơn, ít khiếu nại."
+      },
+      "inventory": {
+        "pain": "Chi phí nguyên liệu cuối tháng mới rõ",
+        "title": "Tồn kho & giá vốn",
+        "description": "Xuất nhập liên kết bán hàng, cảnh báo thiếu hàng."
+      },
+      "member": {
+        "pain": "Khách đến một lần rồi biến mất",
+        "title": "Thành viên & tái mua",
+        "description": "Điểm, coupon, nhắc quay lại thành doanh thu dự đoán được."
+      },
+      "analytics": {
+        "pain": "Nhập hàng theo cảm tính",
+        "title": "Phân tích vận hành",
+        "description": "Báo cáo ngày, khung giờ nóng, ranking món."
+      },
+      "payment": {
+        "pain": "Hàng chờ thanh toán, đối soát đau đầu",
+        "title": "Thanh toán & giao ca",
+        "description": "Gộp phương thức phổ biến, giao ca rõ ràng."
+      }
+    },
+    "painPrefix": "Nỗi đau · "
+  },
+  "operations": {
+    "eyebrow": "Sơ đồ vận hành",
+    "title": "Từ khách vào quán đến món lên bàn, chúng tôi hiểu cả sàn",
+    "description": "Thiếu người giờ cao điểm, bếp loạn, thanh toán lệch—đó là thực tế mỗi ngày. Giao diện dưới đây đến từ TPOS Ai thật.",
+    "highlights": {
+      "ops-map": {
+        "title": "Nhìn cả cửa hàng trên một sơ đồ",
+        "description": "Gọi món, phục vụ bàn, bếp, giao hàng và báo cáo hậu kỳ trong cùng một hệ thống."
+      },
+      "pos-ui": {
+        "title": "Giao diện POS TPOS Ai thật",
+        "description": "Gọi món nhanh với bàn, số khách và thành viên—ổn định cả giờ cao điểm."
+      }
+    },
+    "appUiEyebrow": "Giao diện TPOS Ai thật",
+    "appUiTitle": "Sàn càng bận, giao diện càng gánh giúp bạn",
+    "appUiNote": "Ảnh chụp từ dự án TPOSAI: POS / quét mã gọi món / KDS / app tồn kho / Cloud admin.",
+    "appUi": {
+      "pos-ordering": {
+        "pain": "Gọi sót, phiếu chậm, đào tạo lâu",
+        "title": "TPOS Ai POS gọi món nhanh",
+        "description": "Danh mục rõ, giỏ hàng và gửi bếp cùng màn hình giữ nhịp giờ cao điểm."
+      },
+      "mobile-order": {
+        "pain": "Khách chờ trong khi nhân viên quá tải",
+        "title": "App tự gọi món bằng QR",
+        "description": "Khách quét mã, ghi chú và ngôn ngữ; phiếu thẳng vào bếp."
+      },
+      "checkout": {
+        "pain": "Hàng chờ thanh toán, đối soát rối",
+        "title": "Thu ngân POS",
+        "description": "Tiền mặt, thẻ, LINE Pay… giảm giá và thành viên nằm trên luồng thanh toán."
+      },
+      "kds": {
+        "pain": "Phiếu giấy khắp nơi, hô nhau ra món",
+        "title": "KDS bếp",
+        "description": "Chia theo trạm, gom theo đơn hoặc món—bước tiếp theo luôn rõ."
+      },
+      "inventory": {
+        "pain": "Kiểm kê chậm, mã vạch lệch",
+        "title": "App kiểm kê TPOS",
+        "description": "Máy quét, camera hoặc đếm tay với chi tiết trực tiếp."
+      },
+      "web-admin": {
+        "pain": "Mỗi quán sửa menu khác nhau",
+        "title": "Master hàng Cloud",
+        "description": "Lưu và đồng bộ từ HQ để các quán dùng chung hậu kỳ thật."
+      }
+    },
+    "scenesEyebrow": "Khoảnh khắc F&B thật",
+    "scenesTitle": "Không phải demo công nghệ—là một ngày của bạn",
+    "scenes": {
+      "qr-dining": {
+        "pain": "Chi phí nhân công tăng, dịch vụ không được giảm",
+        "title": "QR cạnh bàn trả lại sự nhiệt tình",
+        "description": "Hệ thống lo gọi món lặp lại để nhân viên tập trung chăm sóc khách."
+      },
+      "tableside": {
+        "pain": "Đông khách, dòng gọi món tắc",
+        "title": "Gọi món cạnh bàn vẫn ổn ở giờ cao điểm",
+        "description": "Handheld nhận đơn không cần xếp hàng quầy."
+      },
+      "kitchen": {
+        "pain": "Giấy loạn và tranh thứ tự nấu",
+        "title": "KDS—không còn hô nhau",
+        "description": "Phiếu sống và trạng thái rõ giảm sót và làm lại."
+      },
+      "checkout": {
+        "pain": "Hàng dài làm khách khó chịu",
+        "title": "Thu ngân nhanh và chính xác",
+        "description": "Đối chiếu hai màn hình, đóng ca bận rộn gọn gàng."
+      },
+      "delivery": {
+        "pain": "Tại chỗ, mang đi, giao hàng cùng nổ",
+        "title": "Bàn giao giao hàng có nhịp",
+        "description": "Đơn giao và trong quán chung một luồng—ít sai túi, ít chờ."
+      },
+      "remote": {
+        "pain": "Chủ vắng, quán là hộp đen",
+        "title": "Điều hành từ bên ngoài",
+        "description": "Laptop và điện thoại đồng bộ để tuần tra và ngày nghỉ."
+      }
+    }
+  },
+  "chain": {
+    "eyebrow": "Quản lý chuỗi cửa hàng",
+    "title": "Rắc rối thật sự bắt đầu từ cửa hàng thứ hai",
+    "description": "Đổi menu một lần phải gọi hàng chục cuộc, tồn kho tách biệt, HQ mù thông tin—TAKOPOS gỡ ma sát chuỗi bằng giao diện admin thật.",
+    "blocks": {
+      "hq-control": {
+        "eyebrow": "Kiểm soát trung tâm HQ",
+        "title": "Đổi menu một lần, đồng bộ mọi nơi",
+        "description": "Giá sai và add-on sót là lỗi quy trình. Một lần đẩy từ HQ giảm sai sót và khiếu nại.",
+        "points": [
+          "Lưu và đồng bộ tới cửa hàng đã chọn",
+          "Nhắm nhóm hàng/bán lẻ linh hoạt",
+          "Nhật ký thay đổi và trách nhiệm rõ"
+        ]
+      },
+      "multi-store-dashboard": {
+        "eyebrow": "Bảng điều khiển đa cửa hàng",
+        "title": "Thấy cửa hàng nào đang chậm ngay lập tức",
+        "description": "Không còn Excel nửa đêm. Dashboard tập đoàn gộp doanh thu, hóa đơn và xếp hạng để hỗ trợ kịp thời.",
+        "points": [
+          "Chuyển tổng quan / F&B / chi tiết bán lẻ",
+          "Xếp hạng và tỷ trọng cửa hàng trong một nhìn",
+          "Ngày gốc và ngày so sánh linh hoạt"
+        ]
+      },
+      "inventory-transfer": {
+        "eyebrow": "Điều chuyển liên cửa hàng",
+        "title": "Quán A hết hàng trong khi B còn—đừng dựa vào nhóm LINE",
+        "description": "Hỗ trợ nhanh cần tồn kho chính xác. Ma trận tồn kho kèm quy trình điều chuyển biến hỗ trợ thành SOP.",
+        "points": [
+          "So sánh SKU giữa các quán",
+          "Cảnh báo/xuất báo cáo không chặn POS",
+          "Hai bên cập nhật tồn kho sau duyệt"
+        ]
+      }
+    },
+    "flow": {
+      "1": {
+        "title": "Quán A thiếu hàng",
+        "description": "Cảnh báo dưới mức an toàn và gợi ý nguồn điều chuyển."
+      },
+      "2": {
+        "title": "Điều chuyển online",
+        "description": "Giám sát/HQ duyệt và tạo phiếu trong một bước."
+      },
+      "3": {
+        "title": "Quán B xuất hàng",
+        "description": "Sau xác nhận xuất, tồn kho hai bên đồng bộ."
+      }
+    },
+    "rolesTitle": "Phân quyền vai trò",
+    "rolesDescription": "Ma trận rõ cho HQ, giám sát, quản lý và nhân viên",
+    "roles": {
+      "hq": "HQ",
+      "supervisor": "Giám sát",
+      "manager": "Quản lý",
+      "staff": "Nhân viên"
+    },
+    "columns": {
+      "menu": "Menu",
+      "pricing": "Giá",
+      "transfer": "Điều chuyển",
+      "reports": "Báo cáo",
+      "staff": "Nhân sự"
+    }
+  },
+  "pricing": {
+    "eyebrow": "Bảng giá",
+    "title": "Giải quyết nỗi đau hôm nay, rồi lớn cùng bạn",
+    "description": "Giá minh bạch từ quán nhỏ đến chuỗi. Đừng trả tiền cho tính năng không dùng.",
+    "popular": "Phổ biến nhất",
+    "currency": "NT$",
+    "month": "tháng",
+    "consult": "Liên hệ",
+    "plans": {
+      "micro": {
+        "name": "Gói quán nhỏ",
+        "description": "Ít người, nhịp nhanh: ổn định gọi món và bếp trước.",
+        "features": [
+          "Single-store POS + kitchen display",
+          "Basic inventory & daily reports",
+          "Mobile ordering (1 device)",
+          "Online support"
+        ]
+      },
+      "mid": {
+        "name": "Gói nhà hàng vừa/lớn",
+        "description": "Nhiều khu, nhiều trạm: giữ tốc độ bàn và khách quay lại.",
+        "features": [
+          "Multi-device sync ordering",
+          "Loyalty & coupons",
+          "Advanced reports & daypart analytics",
+          "Payments & e-invoice",
+          "On-site onboarding"
+        ]
+      },
+      "chain": {
+        "name": "Gói chuỗi tùy chỉnh",
+        "description": "Đồng bộ nhiều cửa hàng, HQ nắm quyền—không dựa nhân lực biển người.",
+        "features": [
+          "Unlimited store architecture",
+          "One-click product push",
+          "Inter-store transfers",
+          "Roles & audit",
+          "Dedicated success advisor"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Khách hàng nói gì",
+    "title": "Được chọn vì hiểu hiện trường",
+    "description": "Từ quán đơn đến chuỗi, TAKOPOS giúp giờ cao điểm ổn định và tăng trưởng ít vấp.",
+    "items": {
+      "1": {
+        "quote": "Trước đây phiếu bếp bay khắp nơi lúc cao điểm. Giờ bảng rõ, thời gian ra món giảm, quản lý không còn đối soát đến sáng.",
+        "name": "Quản lý Lin",
+        "role": "Lẩu Đào Viên｜1 cửa hàng"
+      },
+      "2": {
+        "quote": "Đổi giá và menu không còn phải gọi hàng chục quán. HQ bấm một lần, đồng bộ toàn Đài, ít đơn sai và khiếu nại.",
+        "name": "COO Chen",
+        "role": "Bistro｜11 cửa hàng"
+      },
+      "3": {
+        "quote": "Tôi xem báo cáo trước khi tuần tra—chỗ chậm hiện rõ. TAKOPOS hiểu giám sát lo gì mỗi ngày.",
+        "name": "Giám sát Huang",
+        "role": "Gà bao tử kiểu Trung｜12 cửa hàng"
+      }
+    }
+  },
+  "footer": {
+    "blurb": "Hệ thống F&B thông minh biến nỗi đau giờ cao điểm, bếp, giao ca và chuỗi thành quy trình thực thi.",
+    "quickLinks": "Liên kết nhanh",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản"
+  },
+  "booking": {
+    "title": "Đặt demo miễn phí",
+    "description": "Để lại thông tin quán, đội ngũ sẽ liên hệ sắp xếp demo.",
+    "storeName": "Tên quán / thương hiệu",
+    "contactName": "Người liên hệ",
+    "phone": "Điện thoại",
+    "city": "Thành phố / huyện",
+    "isFnb": "Có phải F&B?",
+    "fnbType": "Loại hình",
+    "needEinvoice": "Cần hóa đơn điện tử?",
+    "note": "Ghi chú",
+    "yes": "Có",
+    "no": "Không",
+    "select": "Vui lòng chọn",
+    "submit": "Gửi",
+    "submitting": "Đang gửi…",
+    "close": "Đóng",
+    "success": "Đã nhận—đội ngũ sẽ liên hệ sớm.",
+    "leadNo": "Mã tham chiếu: {leadNo}",
+    "placeholders": {
+      "storeName": "e.g. Taoyuan Hotpot",
+      "contactName": "e.g. Manager Lin",
+      "phone": "09xxxxxxxx",
+      "note": "Preferred demo time, store count (optional)"
+    },
+    "cities": {
+      "基隆市": "Keelung",
+      "台北市": "Taipei City",
+      "新北市": "New Taipei",
+      "桃園市": "Taoyuan",
+      "新竹市": "Hsinchu City",
+      "新竹縣": "Hsinchu County",
+      "苗栗縣": "Miaoli",
+      "台中市": "Taichung",
+      "彰化縣": "Changhua",
+      "南投縣": "Nantou",
+      "雲林縣": "Yunlin",
+      "嘉義市": "Chiayi City",
+      "嘉義縣": "Chiayi County",
+      "台南市": "Tainan",
+      "高雄市": "Kaohsiung",
+      "屏東縣": "Pingtung",
+      "宜蘭縣": "Yilan",
+      "花蓮縣": "Hualien",
+      "台東縣": "Taitung",
+      "澎湖縣": "Penghu",
+      "金門縣": "Kinmen",
+      "連江縣": "Lienchiang",
+      "其他": "Other"
+    },
+    "fnbTypes": {
+      "火鍋": "Hotpot",
+      "餐酒館": "Bistro / gastropub",
+      "中式料理": "Chinese cuisine",
+      "台式簡餐": "Taiwanese casual",
+      "手搖飲": "Bubble tea",
+      "咖啡": "Cafe",
+      "便當": "Bento",
+      "燒烤": "BBQ",
+      "日式料理": "Japanese",
+      "西式料理": "Western",
+      "連鎖餐飲": "Chain F&B",
+      "其他": "Other"
+    }
+  },
+  "aiCs": {
+    "brand": "TAKO Ai CS",
+    "title": "CS thông minh TAKO",
+    "subtitle": "Hỏi tôi trước—sau có thể chuyển người thật",
+    "placeholder": "Nhập câu hỏi…",
+    "greeting": "Xin chào! Tôi là TAKO Ai CS. Giờ cao điểm, bếp, giao ca hay chuỗi—nói nỗi đau, tôi map giải pháp.",
+    "open": "Mở TAKO Ai CS",
+    "close": "Đóng chat",
+    "send": "Gửi",
+    "quickReplies": {
+      "peak": "How do we stop peak missed orders?",
+      "demo": "How do I book a free demo?",
+      "menu": "How do we sync chain menus once?"
+    },
+    "replies": {
+      "default": "Thanks! This is a demo assistant. For a live walkthrough, tap Book a free demo.",
+      "pricing": "Micro plan from NT$988/mo; mid/large NT$1,888; chains are custom. See Pricing.",
+      "demo": "Great—tap Book a free demo with store name and phone. Leads go to our CRM for follow-up.",
+      "transfer": "Transfer flow: Store A low → create transfer → Store B ships & inventories sync. See Chain management.",
+      "peak": "Peak misses often come from order/kitchen disconnect. Use QR/handheld ordering into KDS with notes. See Operations.",
+      "menuSync": "HQ edits then one-click push to selected stores with audit trail. See Chain management."
+    }
+  }
+}

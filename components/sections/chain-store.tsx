@@ -13,6 +13,7 @@ import {
   X,
   type LucideIcon,
 } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 import { ProductScreenshot } from "@/components/media/product-screenshot";
 import {
@@ -65,7 +66,9 @@ function AccentIcons({ icons }: { icons: readonly string[] }) {
   );
 }
 
-export function ChainStoreSection() {
+export async function ChainStoreSection() {
+  const t = await getTranslations("chain");
+
   return (
     <section
       id={chainStoreSection.id}
@@ -74,19 +77,20 @@ export function ChainStoreSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-            {chainStoreSection.eyebrow}
+            {t("eyebrow")}
           </p>
           <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            {chainStoreSection.title}
+            {t("title")}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            {chainStoreSection.description}
+            {t("description")}
           </p>
         </div>
 
         <div className="mt-16 space-y-20">
           {chainStoreBlocks.map((block) => {
             const imageFirst = block.imagePosition === "left";
+            const points = t.raw(`blocks.${block.id}.points`) as string[];
 
             return (
               <article
@@ -110,16 +114,16 @@ export function ChainStoreSection() {
                 >
                   <AccentIcons icons={block.accentIcons} />
                   <p className="text-sm font-semibold tracking-[0.16em] text-primary uppercase">
-                    {block.eyebrow}
+                    {t(`blocks.${block.id}.eyebrow`)}
                   </p>
                   <h3 className="mt-3 font-heading text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-                    {block.title}
+                    {t(`blocks.${block.id}.title`)}
                   </h3>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                    {block.description}
+                    {t(`blocks.${block.id}.description`)}
                   </p>
                   <ul className="mt-6 space-y-3">
-                    {block.points.map((point) => (
+                    {points.map((point) => (
                       <li
                         key={point}
                         className="flex gap-3 text-sm text-muted-foreground"
@@ -148,10 +152,10 @@ export function ChainStoreSection() {
                               )}
                             </div>
                             <p className="mt-3 text-sm font-semibold text-foreground">
-                              {step.step}. {step.title}
+                              {step.step}. {t(`flow.${step.step}.title`)}
                             </p>
                             <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                              {step.description}
+                              {t(`flow.${step.step}.description`)}
                             </p>
                           </div>
                         );
@@ -166,27 +170,29 @@ export function ChainStoreSection() {
 
         <div className="mt-20">
           <h3 className="font-heading text-2xl font-semibold text-foreground">
-            角色權限管理
+            {t("rolesTitle")}
           </h3>
           <p className="mt-2 text-sm text-muted-foreground">
-            總部、督導、店長、店員權限清楚對照
+            {t("rolesDescription")}
           </p>
           <div className="mt-6 overflow-hidden rounded-xl border border-border/70 bg-background shadow-sm">
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead className="w-24">角色</TableHead>
+                  <TableHead className="w-24"> </TableHead>
                   {permissionColumns.map((column) => (
                     <TableHead key={column.key} className="text-center">
-                      {column.label}
+                      {t(`columns.${column.key}`)}
                     </TableHead>
                   ))}
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {rolePermissions.map((row) => (
-                  <TableRow key={row.role}>
-                    <TableCell className="font-medium">{row.role}</TableCell>
+                  <TableRow key={row.roleKey}>
+                    <TableCell className="font-medium">
+                      {t(`roles.${row.roleKey}`)}
+                    </TableCell>
                     {permissionColumns.map((column) => {
                       const allowed = row[column.key];
                       return (
@@ -194,12 +200,12 @@ export function ChainStoreSection() {
                           {allowed ? (
                             <Check
                               className="mx-auto size-4 text-primary"
-                              aria-label="有權限"
+                              aria-hidden
                             />
                           ) : (
                             <X
                               className="mx-auto size-4 text-muted-foreground/50"
-                              aria-label="無權限"
+                              aria-hidden
                             />
                           )}
                         </TableCell>

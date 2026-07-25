@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { bookingForm } from "@/data/booking";
+import { bookingCities, bookingFnbTypes } from "@/data/booking";
 import { cn } from "@/lib/utils";
 
 type BookingTriggerProps = {
@@ -51,6 +52,7 @@ export function BookingTrigger({
   size = "lg",
   fullWidth = false,
 }: BookingTriggerProps) {
+  const t = useTranslations("booking");
   const [open, setOpen] = useState(false);
   const [form, setForm] = useState<FormState>(initialForm);
   const [submitting, setSubmitting] = useState(false);
@@ -80,7 +82,7 @@ export function BookingTrigger({
       };
 
       if (!res.ok || !data.success) {
-        setError(data.message || "送出失敗，請稍後再試");
+        setError(data.message || "Error");
         return;
       }
 
@@ -88,7 +90,7 @@ export function BookingTrigger({
       setDone(true);
       setForm(initialForm);
     } catch {
-      setError("網路異常，請稍後再試");
+      setError("Network error");
     } finally {
       setSubmitting(false);
     }
@@ -119,52 +121,54 @@ export function BookingTrigger({
       </SheetTrigger>
       <SheetContent side="right" className="w-full overflow-y-auto sm:max-w-md">
         <SheetHeader>
-          <SheetTitle>{bookingForm.title}</SheetTitle>
-          <SheetDescription>{bookingForm.description}</SheetDescription>
+          <SheetTitle>{t("title")}</SheetTitle>
+          <SheetDescription>{t("description")}</SheetDescription>
         </SheetHeader>
 
         {done ? (
           <div className="mt-8 space-y-4 px-1">
             <p className="text-base font-medium text-foreground">
-              已收到您的預約，業務將盡快與您聯繫。
+              {t("success")}
             </p>
             {leadNo ? (
-              <p className="text-sm text-muted-foreground">諮詢編號：{leadNo}</p>
+              <p className="text-sm text-muted-foreground">
+                {t("leadNo", { leadNo })}
+              </p>
             ) : null}
             <Button className="w-full" onClick={() => setOpen(false)}>
-              關閉
+              {t("close")}
             </Button>
           </div>
         ) : (
           <form onSubmit={onSubmit} className="mt-6 space-y-4 px-1 pb-6">
-            <Field label="店名 / 品牌" required>
+            <Field label={t("storeName")} required>
               <input
                 required
                 value={form.storeName}
                 onChange={(e) => update("storeName", e.target.value)}
                 className={fieldClass}
-                placeholder="例如：桃園火鍋店"
+                placeholder={t("placeholders.storeName")}
               />
             </Field>
-            <Field label="聯絡人">
+            <Field label={t("contactName")}>
               <input
                 value={form.contactName}
                 onChange={(e) => update("contactName", e.target.value)}
                 className={fieldClass}
-                placeholder="例如：林店長"
+                placeholder={t("placeholders.contactName")}
               />
             </Field>
-            <Field label="聯絡電話" required>
+            <Field label={t("phone")} required>
               <input
                 required
                 type="tel"
                 value={form.phone}
                 onChange={(e) => update("phone", e.target.value)}
                 className={fieldClass}
-                placeholder="09xxxxxxxx"
+                placeholder={t("placeholders.phone")}
               />
             </Field>
-            <Field label="營業縣市" required>
+            <Field label={t("city")} required>
               <select
                 required
                 value={form.city}
@@ -172,16 +176,16 @@ export function BookingTrigger({
                 className={fieldClass}
               >
                 <option value="" disabled>
-                  請選擇
+                  {t("select")}
                 </option>
-                {bookingForm.cities.map((city) => (
+                {bookingCities.map((city) => (
                   <option key={city} value={city}>
-                    {city}
+                    {t(`cities.${city}`)}
                   </option>
                 ))}
               </select>
             </Field>
-            <Field label="是否餐飲業" required>
+            <Field label={t("isFnb")} required>
               <select
                 value={form.isFnb}
                 onChange={(e) =>
@@ -189,27 +193,27 @@ export function BookingTrigger({
                 }
                 className={fieldClass}
               >
-                <option value="是">是</option>
-                <option value="否">否</option>
+                <option value="是">{t("yes")}</option>
+                <option value="否">{t("no")}</option>
               </select>
             </Field>
             {form.isFnb === "是" ? (
-              <Field label="餐飲類型" required>
+              <Field label={t("fnbType")} required>
                 <select
                   required
                   value={form.fnbType}
                   onChange={(e) => update("fnbType", e.target.value)}
                   className={fieldClass}
                 >
-                  {bookingForm.fnbTypes.map((type) => (
+                  {bookingFnbTypes.map((type) => (
                     <option key={type} value={type}>
-                      {type}
+                      {t(`fnbTypes.${type}`)}
                     </option>
                   ))}
                 </select>
               </Field>
             ) : null}
-            <Field label="是否需要電子發票" required>
+            <Field label={t("needEinvoice")} required>
               <select
                 value={form.needEinvoice}
                 onChange={(e) =>
@@ -217,16 +221,16 @@ export function BookingTrigger({
                 }
                 className={fieldClass}
               >
-                <option value="是">是</option>
-                <option value="否">否</option>
+                <option value="是">{t("yes")}</option>
+                <option value="否">{t("no")}</option>
               </select>
             </Field>
-            <Field label="備註">
+            <Field label={t("note")}>
               <textarea
                 value={form.note}
                 onChange={(e) => update("note", e.target.value)}
                 className={cn(fieldClass, "min-h-24 resize-y")}
-                placeholder="希望演示時段、分店數等（選填）"
+                placeholder={t("placeholders.note")}
               />
             </Field>
 
@@ -238,7 +242,7 @@ export function BookingTrigger({
               size="lg"
               disabled={submitting}
             >
-              {submitting ? "送出中…" : "送出預約"}
+              {submitting ? t("submitting") : t("submit")}
             </Button>
           </form>
         )}

@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "titleTemplate": "{title}｜TAKOPOS",
+    "defaultTitle": "TAKOPOS｜Nordi Tech Smart F&B System",
+    "description": "We understand restaurant operations: short-staffed peaks, missed orders, chaotic kitchens, and losses discovered too late. TAKOPOS connects ordering, kitchen, inventory, and HQ control so you can serve guests and protect margins.",
+    "featuresTitle": "Features",
+    "featuresDescription": "Smart POS, mobile ordering, kitchen display, inventory cost, loyalty, and ops analytics—TAKOPOS clears the daily bottlenecks in F&B.",
+    "pricingTitle": "Pricing",
+    "pricingDescription": "From single stores to chains, TAKOPOS scales with you. Solve today's pain first, then grow with your store count."
+  },
+  "common": {
+    "company": "Nordi Tech",
+    "brand": "TAKOPOS",
+    "tagline": "Smart F&B System",
+    "language": "Language",
+    "contactUs": "Contact us",
+    "copyright": "Nordi Tech. All rights reserved."
+  },
+  "cta": {
+    "primary": "Book a free demo",
+    "secondary": "See how it works",
+    "bookDemo": "Book a demo",
+    "contactSales": "Contact sales"
+  },
+  "nav": {
+    "features": "Features",
+    "operations": "Operations",
+    "chainStore": "Chain management",
+    "pricing": "Pricing",
+    "support": "Support"
+  },
+  "hero": {
+    "headline": "Stay calm at peak hours. Close without burnout. Help every store earn more.",
+    "supporting": "We understand restaurant operations: short-staffed peaks, missed orders, chaotic kitchens, and losses discovered too late. TAKOPOS connects ordering, kitchen, inventory, and HQ control so you can serve guests and protect margins."
+  },
+  "features": {
+    "eyebrow": "Features",
+    "title": "We've already thought through where you get stuck every day",
+    "description": "Not a feature dump—practical solutions for ordering, kitchen, inventory, loyalty, and accounting.",
+    "items": {
+      "pos": {
+        "pain": "Short-staffed peaks, missed or wrong orders",
+        "title": "Smart POS & mobile ordering",
+        "description": "Tablets, phones, and handhelds can all take orders—keep pace in rush hours and win more table turns."
+      },
+      "kitchen": {
+        "pain": "Paper tickets flying, kitchen by shouting",
+        "title": "Kitchen display system",
+        "description": "Orders route to stations in real time with clear status—faster service, fewer complaints."
+      },
+      "inventory": {
+        "pain": "Food cost unclear until month-end",
+        "title": "Inventory & food cost",
+        "description": "Purchasing linked to sales with shortage alerts—stop managing cost by gut feel."
+      },
+      "member": {
+        "pain": "Guests come once and disappear",
+        "title": "Loyalty & re-purchase marketing",
+        "description": "Points, coupons, and reminders turn repeat visits into predictable revenue."
+      },
+      "analytics": {
+        "pain": "Buying by gut, unsure which dishes profit",
+        "title": "Operations insights",
+        "description": "Daily reports, peak hours, and item rankings guide purchasing and staffing."
+      },
+      "payment": {
+        "pain": "Checkout queues and painful reconciliation",
+        "title": "Payments & shift handover",
+        "description": "Common payments in one flow with clear handover—no more closing at midnight."
+      }
+    },
+    "painPrefix": "Pain · "
+  },
+  "operations": {
+    "eyebrow": "Operations map",
+    "title": "From walk-in to plated dishes, we understand the whole floor",
+    "description": "Peak understaffing, kitchen chaos, mismatched checkout—these are daily realities. Screens below come from real TPOS Ai builds.",
+    "highlights": {
+      "ops-map": {
+        "title": "See whole-store ops in one diagram",
+        "description": "Front ordering, tableside service, kitchen output, delivery, and back-office reports in one system."
+      },
+      "pos-ui": {
+        "title": "Real TPOS Ai POS ordering UI",
+        "description": "Fast ordering with table, party size, and members in place—steady tickets even at peak."
+      }
+    },
+    "appUiEyebrow": "Real TPOS Ai interfaces",
+    "appUiTitle": "When the floor gets busy, the UI carries the load",
+    "appUiNote": "Screenshots from TPOSAI: POS / QR ordering / KDS / inventory app / Cloud admin.",
+    "appUi": {
+      "pos-ordering": {
+        "pain": "Missed items, slow tickets, slow training",
+        "title": "TPOS Ai POS fast ordering",
+        "description": "Clear categories and same-screen cart-to-kitchen flow keep rush rhythm."
+      },
+      "mobile-order": {
+        "pain": "Guests wait while staff are overloaded",
+        "title": "QR self-ordering app",
+        "description": "Guests scan and order with notes and languages; tickets go straight to kitchen."
+      },
+      "checkout": {
+        "pain": "Long checkout lines, messy reconciliation",
+        "title": "POS checkout",
+        "description": "Cash, cards, LINE Pay and more—discounts and members stay on the checkout path."
+      },
+      "kds": {
+        "pain": "Paper tickets everywhere, shouting to finish",
+        "title": "Kitchen KDS",
+        "description": "Route by station and aggregate by order or item so the next step is obvious."
+      },
+      "inventory": {
+        "pain": "Slow stocktake, barcode mismatches",
+        "title": "TPOS inventory app",
+        "description": "Scanner, camera, or manual count with live detail—inventory without guesswork."
+      },
+      "web-admin": {
+        "pain": "Every store edits menus differently",
+        "title": "Cloud product master",
+        "description": "Save and sync from HQ so stores share one real back office."
+      }
+    },
+    "scenesEyebrow": "Real F&B moments",
+    "scenesTitle": "Not tech demos—your day, restored",
+    "scenes": {
+      "qr-dining": {
+        "pain": "Labor costs rise, service must not fall",
+        "title": "Tableside QR brings hospitality back",
+        "description": "Let systems handle repeat ordering so staff focus on care and recommendations."
+      },
+      "tableside": {
+        "pain": "Full house, ordering gridlock",
+        "title": "Tableside ordering stays steady at peak",
+        "description": "Handhelds take orders without counter queues or fighting over one terminal."
+      },
+      "kitchen": {
+        "pain": "Paper chaos and fighting cook order",
+        "title": "KDS—no more shouting",
+        "description": "Live tickets and clear status cut misses and remakes."
+      },
+      "checkout": {
+        "pain": "Long lines sour the mood",
+        "title": "Fast, accurate counter checkout",
+        "description": "Dual-screen checks and intuitive flow close busy services cleanly."
+      },
+      "delivery": {
+        "pain": "Dine-in, takeout, delivery explode together",
+        "title": "Delivery handoff with rhythm",
+        "description": "Delivery and in-store share one ops flow—fewer wrong bags, less waiting."
+      },
+      "remote": {
+        "pain": "Owner away, store is a black box",
+        "title": "Run the business from outside",
+        "description": "Laptop and mobile stay in sync for patrols and days off."
+      }
+    }
+  },
+  "chain": {
+    "eyebrow": "Chain store management",
+    "title": "The real trouble starts with store #2",
+    "description": "One menu change means dozens of calls, inventory silos, HQ blind spots—TAKOPOS removes chain friction with real admin UIs.",
+    "blocks": {
+      "hq-control": {
+        "eyebrow": "HQ central control",
+        "title": "Change the menu once, sync everywhere",
+        "description": "Wrong prices and missed add-ons are process failures. One HQ push cuts store mistakes and complaints.",
+        "points": [
+          "Save and sync to selected stores",
+          "Flexible product/retail group targeting",
+          "Clear change logs and accountability"
+        ]
+      },
+      "multi-store-dashboard": {
+        "eyebrow": "Multi-store dashboard",
+        "title": "See which store is slowing down instantly",
+        "description": "No more midnight Excel. Group dashboards combine revenue, tickets, and rankings for timely support.",
+        "points": [
+          "Switch overview / F&B / retail detail",
+          "Store ranking and share at a glance",
+          "Flexible base vs compare dates"
+        ]
+      },
+      "inventory-transfer": {
+        "eyebrow": "Inter-store transfer",
+        "title": "Store A is out while B still has stock—don't rely on LINE groups",
+        "description": "Fast support needs accurate stock. Matrix views plus transfer workflow make help standard ops.",
+        "points": [
+          "Compare SKU stock across stores",
+          "Alerts/exports without blocking POS",
+          "Both inventories update after approval"
+        ]
+      }
+    },
+    "flow": {
+      "1": {
+        "title": "Store A low stock",
+        "description": "Alert below safety stock and suggest transfer sources."
+      },
+      "2": {
+        "title": "Online transfer",
+        "description": "Supervisor/HQ approves and creates the transfer in one step."
+      },
+      "3": {
+        "title": "Store B ships",
+        "description": "After ship confirm, both inventories sync."
+      }
+    },
+    "rolesTitle": "Role permissions",
+    "rolesDescription": "Clear matrix for HQ, supervisors, managers, and staff",
+    "roles": {
+      "hq": "HQ",
+      "supervisor": "Supervisor",
+      "manager": "Manager",
+      "staff": "Staff"
+    },
+    "columns": {
+      "menu": "Menu",
+      "pricing": "Pricing",
+      "transfer": "Transfer",
+      "reports": "Reports",
+      "staff": "Staff"
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Fix today's pain, then grow with you",
+    "description": "Transparent pricing from micro shops to chains. Don't pay for unused features—or rip out systems when you scale.",
+    "popular": "Most popular",
+    "currency": "NT$",
+    "month": "mo",
+    "consult": "Contact us",
+    "plans": {
+      "micro": {
+        "name": "Micro shop plan",
+        "description": "Small team, fast pace: stabilize ordering and kitchen first.",
+        "features": [
+          "Single-store POS + kitchen display",
+          "Basic inventory & daily reports",
+          "Mobile ordering (1 device)",
+          "Online support"
+        ]
+      },
+      "mid": {
+        "name": "Mid/large restaurant plan",
+        "description": "Multi-zone, multi-station: protect table turns and loyalty.",
+        "features": [
+          "Multi-device sync ordering",
+          "Loyalty & coupons",
+          "Advanced reports & daypart analytics",
+          "Payments & e-invoice",
+          "On-site onboarding"
+        ]
+      },
+      "chain": {
+        "name": "Chain custom plan",
+        "description": "Multi-store sync with HQ control—growth without human-wave ops.",
+        "features": [
+          "Unlimited store architecture",
+          "One-click product push",
+          "Inter-store transfers",
+          "Roles & audit",
+          "Dedicated success advisor"
+        ]
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Customer stories",
+    "title": "Chosen by operators because we understand the floor",
+    "description": "From single stores to chains, TAKOPOS helps stabilize peaks, clear accounts, and grow with fewer landmines.",
+    "items": {
+      "1": {
+        "quote": "Peak kitchen tickets used to fly everywhere. Now the board is clear, ticket times dropped, and managers don't reconcile until dawn.",
+        "name": "Manager Lin",
+        "role": "Taoyuan hotpot｜Single store"
+      },
+      "2": {
+        "quote": "Price and menu changes no longer mean calling a dozen stores. HQ clicks once, Taiwan syncs, fewer wrong orders and complaints.",
+        "name": "COO Chen",
+        "role": "Bistro｜11 stores"
+      },
+      "3": {
+        "quote": "I check reports before store visits—slowdowns are obvious. TAKOPOS really gets what supervisors worry about.",
+        "name": "Supervisor Huang",
+        "role": "Chinese pig-stomach chicken｜12 stores"
+      }
+    }
+  },
+  "footer": {
+    "blurb": "A smart F&B system that turns peak, kitchen, handover, and chain-sync pain into executable workflows.",
+    "quickLinks": "Quick links",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service"
+  },
+  "booking": {
+    "title": "Book a free demo",
+    "description": "Leave your store details and our team will contact you to arrange a demo.",
+    "storeName": "Store / brand",
+    "contactName": "Contact person",
+    "phone": "Phone",
+    "city": "City / county",
+    "isFnb": "Food & beverage business?",
+    "fnbType": "Cuisine type",
+    "needEinvoice": "Need e-invoice?",
+    "note": "Notes",
+    "yes": "Yes",
+    "no": "No",
+    "select": "Please select",
+    "submit": "Submit",
+    "submitting": "Submitting…",
+    "close": "Close",
+    "success": "Got it—our team will contact you soon.",
+    "leadNo": "Reference: {leadNo}",
+    "placeholders": {
+      "storeName": "e.g. Taoyuan Hotpot",
+      "contactName": "e.g. Manager Lin",
+      "phone": "09xxxxxxxx",
+      "note": "Preferred demo time, store count (optional)"
+    },
+    "cities": {
+      "基隆市": "Keelung",
+      "台北市": "Taipei City",
+      "新北市": "New Taipei",
+      "桃園市": "Taoyuan",
+      "新竹市": "Hsinchu City",
+      "新竹縣": "Hsinchu County",
+      "苗栗縣": "Miaoli",
+      "台中市": "Taichung",
+      "彰化縣": "Changhua",
+      "南投縣": "Nantou",
+      "雲林縣": "Yunlin",
+      "嘉義市": "Chiayi City",
+      "嘉義縣": "Chiayi County",
+      "台南市": "Tainan",
+      "高雄市": "Kaohsiung",
+      "屏東縣": "Pingtung",
+      "宜蘭縣": "Yilan",
+      "花蓮縣": "Hualien",
+      "台東縣": "Taitung",
+      "澎湖縣": "Penghu",
+      "金門縣": "Kinmen",
+      "連江縣": "Lienchiang",
+      "其他": "Other"
+    },
+    "fnbTypes": {
+      "火鍋": "Hotpot",
+      "餐酒館": "Bistro / gastropub",
+      "中式料理": "Chinese cuisine",
+      "台式簡餐": "Taiwanese casual",
+      "手搖飲": "Bubble tea",
+      "咖啡": "Cafe",
+      "便當": "Bento",
+      "燒烤": "BBQ",
+      "日式料理": "Japanese",
+      "西式料理": "Western",
+      "連鎖餐飲": "Chain F&B",
+      "其他": "Other"
+    }
+  },
+  "aiCs": {
+    "brand": "TAKO Ai CS",
+    "title": "TAKO smart support",
+    "subtitle": "Ask me first—human agents available later",
+    "placeholder": "Type your question…",
+    "greeting": "Hi! I'm TAKO Ai CS. Peak ordering, kitchen tickets, handover, or chain sync—tell me the pain and I'll map a fix.",
+    "open": "Open TAKO Ai CS",
+    "close": "Close chat",
+    "send": "Send",
+    "quickReplies": {
+      "peak": "How do we stop peak missed orders?",
+      "demo": "How do I book a free demo?",
+      "menu": "How do we sync chain menus once?"
+    },
+    "replies": {
+      "default": "Thanks! This is a demo assistant. For a live walkthrough, tap Book a free demo.",
+      "pricing": "Micro plan from NT$988/mo; mid/large NT$1,888; chains are custom. See Pricing.",
+      "demo": "Great—tap Book a free demo with store name and phone. Leads go to our CRM for follow-up.",
+      "transfer": "Transfer flow: Store A low → create transfer → Store B ships & inventories sync. See Chain management.",
+      "peak": "Peak misses often come from order/kitchen disconnect. Use QR/handheld ordering into KDS with notes. See Operations.",
+      "menuSync": "HQ edits then one-click push to selected stores with audit trail. See Chain management."
+    }
+  }
+}

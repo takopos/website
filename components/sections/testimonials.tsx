@@ -1,8 +1,11 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 import { testimonials, testimonialsSection } from "@/data/testimonials";
 
-export function TestimonialsSection() {
+export async function TestimonialsSection() {
+  const t = await getTranslations("testimonials");
+
   return (
     <section
       id={testimonialsSection.id}
@@ -11,13 +14,13 @@ export function TestimonialsSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-            {testimonialsSection.eyebrow}
+            {t("eyebrow")}
           </p>
           <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            {testimonialsSection.title}
+            {t("title")}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            {testimonialsSection.description}
+            {t("description")}
           </p>
         </div>
 
@@ -38,13 +41,15 @@ export function TestimonialsSection() {
                 “
               </p>
               <p className="mt-2 text-base leading-relaxed text-foreground">
-                {item.quote}
+                {t(`items.${item.id}.quote`)}
               </p>
               <footer className="mt-6">
                 <p className="text-sm font-semibold text-foreground">
-                  {item.name}
+                  {t(`items.${item.id}.name`)}
                 </p>
-                <p className="text-xs text-muted-foreground">{item.role}</p>
+                <p className="text-xs text-muted-foreground">
+                  {t(`items.${item.id}.role`)}
+                </p>
               </footer>
             </blockquote>
           ))}

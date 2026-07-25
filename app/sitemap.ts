@@ -1,28 +1,35 @@
 import type { MetadataRoute } from "next";
 
-import { siteConfig } from "@/data/site";
+import { locales, type AppLocale } from "@/i18n/routing";
+import { absoluteLocalizedUrl, languageAlternates } from "@/lib/seo";
+
+const paths = ["/", "/features", "/pricing"] as const;
+
+function entry(
+  locale: AppLocale,
+  path: (typeof paths)[number],
+  priority: number
+) {
+  return {
+    url: absoluteLocalizedUrl(locale, path),
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority,
+    alternates: {
+      languages: languageAlternates(path),
+    },
+  };
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
+  const items: MetadataRoute.Sitemap = [];
 
-  return [
-    {
-      url: siteConfig.url,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${siteConfig.url}/features`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${siteConfig.url}/pricing`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-  ];
+  for (const path of paths) {
+    const priority = path === "/" ? 1 : 0.8;
+    for (const locale of locales) {
+      items.push(entry(locale, path, priority));
+    }
+  }
+
+  return items;
 }

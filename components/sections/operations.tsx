@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 
 import { ProductScreenshot } from "@/components/media/product-screenshot";
 import {
@@ -9,7 +10,10 @@ import {
 } from "@/data/operations";
 import { cn } from "@/lib/utils";
 
-export function OperationsSection() {
+export async function OperationsSection() {
+  const t = await getTranslations("operations");
+  const tFeatures = await getTranslations("features");
+
   return (
     <section
       id={operationsSection.id}
@@ -18,13 +22,13 @@ export function OperationsSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-            {operationsSection.eyebrow}
+            {t("eyebrow")}
           </p>
           <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
-            {operationsSection.title}
+            {t("title")}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-white/70">
-            {operationsSection.description}
+            {t("description")}
           </p>
         </div>
 
@@ -33,10 +37,10 @@ export function OperationsSection() {
             <article key={item.id}>
               <div className="mb-4 max-w-2xl">
                 <h3 className="font-heading text-xl font-semibold sm:text-2xl">
-                  {item.title}
+                  {t(`highlights.${item.id}.title`)}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/65">
-                  {item.description}
+                  {t(`highlights.${item.id}.description`)}
                 </p>
               </div>
               <ProductScreenshot
@@ -50,14 +54,12 @@ export function OperationsSection() {
         <div className="mt-20">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold tracking-[0.16em] text-primary uppercase">
-              TPOS Ai 真實操作介面
+              {t("appUiEyebrow")}
             </p>
             <h3 className="mt-3 font-heading text-2xl font-semibold sm:text-3xl">
-              現場怎麼忙，介面就怎麼幫你扛
+              {t("appUiTitle")}
             </h3>
-            <p className="mt-2 text-sm text-white/55">
-              截圖來源：TPOSAI 專案實際開發之 POS／掃碼點餐／KDS／盤點 APP／Cloud 後台。
-            </p>
+            <p className="mt-2 text-sm text-white/55">{t("appUiNote")}</p>
           </div>
 
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
@@ -84,19 +86,22 @@ export function OperationsSection() {
                       sizes="(max-width: 768px) 100vw, 50vw"
                       className={cn(
                         "h-auto w-full object-contain",
-                        portrait ? "max-h-[28rem]" : "max-h-[18rem] sm:max-h-[20rem]"
+                        portrait
+                          ? "max-h-[28rem]"
+                          : "max-h-[18rem] sm:max-h-[20rem]"
                       )}
                     />
                   </div>
                   <div className="p-5 sm:p-6">
                     <p className="text-xs font-medium tracking-wide text-primary">
-                      痛點 · {block.pain}
+                      {tFeatures("painPrefix")}
+                      {t(`appUi.${block.id}.pain`)}
                     </p>
                     <h4 className="mt-2 font-heading text-lg font-semibold">
-                      {block.title}
+                      {t(`appUi.${block.id}.title`)}
                     </h4>
                     <p className="mt-2 text-sm leading-relaxed text-white/65">
-                      {block.description}
+                      {t(`appUi.${block.id}.description`)}
                     </p>
                   </div>
                 </article>
@@ -108,10 +113,10 @@ export function OperationsSection() {
         <div className="mt-20">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold tracking-[0.16em] text-primary uppercase">
-              餐飲現場情境
+              {t("scenesEyebrow")}
             </p>
             <h3 className="mt-3 font-heading text-2xl font-semibold sm:text-3xl">
-              不是展示科技，是還原你的一天
+              {t("scenesTitle")}
             </h3>
           </div>
 
@@ -129,15 +134,15 @@ export function OperationsSection() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/15 to-transparent" />
                   <div className="absolute inset-x-0 bottom-0 p-4">
                     <p className="text-[11px] font-medium tracking-wide text-primary">
-                      {scene.pain}
+                      {t(`scenes.${scene.id}.pain`)}
                     </p>
                     <h4 className="mt-1 font-heading text-base font-semibold text-white">
-                      {scene.title}
+                      {t(`scenes.${scene.id}.title`)}
                     </h4>
                   </div>
                 </div>
                 <p className="mt-3 text-sm leading-relaxed text-white/60">
-                  {scene.description}
+                  {t(`scenes.${scene.id}.description`)}
                 </p>
               </article>
             ))}

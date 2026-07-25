@@ -1,12 +1,16 @@
-import Link from "next/link";
+import { getTranslations } from "next-intl/server";
 
 import { BookingTrigger } from "@/components/booking/booking-trigger";
 import { ProductScreenshot } from "@/components/media/product-screenshot";
 import { Button } from "@/components/ui/button";
 import { media } from "@/data/media";
-import { siteConfig } from "@/data/site";
+import { Link } from "@/i18n/navigation";
 
-export function HeroSection() {
+export async function HeroSection() {
+  const t = await getTranslations("hero");
+  const tCommon = await getTranslations("common");
+  const tCta = await getTranslations("cta");
+
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0 bg-[linear-gradient(165deg,#ffffff_0%,#fff7f0_48%,#f5f5f5_100%)]" />
@@ -16,17 +20,17 @@ export function HeroSection() {
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-4 pt-14 pb-20 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:gap-12 lg:px-8 lg:pt-20 lg:pb-28">
         <div className="animate-fade-up max-w-xl">
           <p className="font-heading text-sm font-semibold tracking-[0.22em] text-primary uppercase">
-            {siteConfig.company} · {siteConfig.brand}
+            {tCommon("company")} · {tCommon("brand")}
           </p>
           <h1 className="mt-4 font-heading text-4xl leading-[1.15] font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[3.15rem]">
-            {siteConfig.description}
+            {t("headline")}
           </h1>
           <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">
-            {siteConfig.supportingLine}
+            {t("supporting")}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <BookingTrigger
-              label={siteConfig.cta.bookDemo}
+              label={tCta("bookDemo")}
               size="lg"
               className="h-11 px-5 text-sm"
             />
@@ -37,7 +41,7 @@ export function HeroSection() {
               size="lg"
               className="h-11 px-5 text-sm"
             >
-              {siteConfig.cta.secondary}
+              {tCta("secondary")}
             </Button>
           </div>
         </div>

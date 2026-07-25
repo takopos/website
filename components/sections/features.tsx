@@ -7,6 +7,7 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 
 import { features, featuresSection } from "@/data/features";
 
@@ -19,7 +20,9 @@ const iconMap: Record<string, LucideIcon> = {
   CreditCard,
 };
 
-export function FeaturesSection() {
+export async function FeaturesSection() {
+  const t = await getTranslations("features");
+
   return (
     <section
       id={featuresSection.id}
@@ -28,13 +31,13 @@ export function FeaturesSection() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-            {featuresSection.eyebrow}
+            {t("eyebrow")}
           </p>
           <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            {featuresSection.title}
+            {t("title")}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-            {featuresSection.description}
+            {t("description")}
           </p>
         </div>
 
@@ -47,13 +50,14 @@ export function FeaturesSection() {
                   <Icon className="size-5" />
                 </div>
                 <p className="mt-4 text-xs font-medium tracking-wide text-primary">
-                  痛點 · {feature.pain}
+                  {t("painPrefix")}
+                  {t(`items.${feature.id}.pain`)}
                 </p>
                 <h3 className="mt-1.5 font-heading text-lg font-semibold text-foreground">
-                  {feature.title}
+                  {t(`items.${feature.id}.title`)}
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {feature.description}
+                  {t(`items.${feature.id}.description`)}
                 </p>
               </article>
             );

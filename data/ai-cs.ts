@@ -1,26 +1,69 @@
-export const aiCsConfig = {
-  brand: "TAKO Ai CS",
-  title: "TAKO 智慧客服",
-  subtitle: "有問題先問我，稍後也可轉真人專員",
-  placeholder: "輸入您的問題…",
-  greeting:
-    "你好！我是 TAKO Ai CS。尖峰點餐、廚房出餐、交班對帳或連鎖同步——說出你的痛點，我幫你對到解法。",
-  quickReplies: [
-    "尖峰常常漏點怎麼解？",
-    "如何預約免費體驗？",
-    "連鎖菜單怎麼一次同步？",
-  ],
-  replies: {
-    default:
-      "感謝您的提問！目前為靜態演示版，正式環境將串接知識庫與專人客服。您也可直接點擊「免費預約體驗」。",
-    pricing:
-      "微型店家方案月費 988 起；中大型餐廳 1,888；連鎖品牌可客製報價。詳情請見方案區塊。",
-    demo: "太好了！請點「免費預約體驗」留下店名與電話，資料會進 CRM 潛在顧客名單，業務會盡快聯繫您。",
-    transfer:
-      "跨店調撥流程：A 店缺料 → 線上建立調撥單 → B 店發貨並同步庫存。詳見連鎖管理區塊。",
-    peak:
-      "尖峰漏點最常見是「點餐口與出餐口脫節」。建議用掃碼／手持點餐直送廚房看板，備註一次到位，可大幅減少重做與客訴。詳見系統操作區塊。",
-    menuSync:
-      "連鎖菜單同步：總部改價或改品項後一鍵下發指定門店，變更有紀錄、權責清楚，不用再電話追。詳見連鎖管理區塊。",
+/** Keyword → reply key; matched case-insensitively against user input. */
+export const aiCsReplyMatchers: {
+  replyKey: "pricing" | "demo" | "peak" | "menuSync" | "transfer";
+  keywords: string[];
+}[] = [
+  {
+    replyKey: "pricing",
+    keywords: [
+      "方案",
+      "收費",
+      "價格",
+      "price",
+      "pricing",
+      "cost",
+      "giá",
+      "ราคา",
+    ],
   },
-} as const;
+  {
+    replyKey: "demo",
+    keywords: [
+      "預約",
+      "體驗",
+      "演示",
+      "demo",
+      "book",
+      "đặt",
+      "จอง",
+    ],
+  },
+  {
+    replyKey: "peak",
+    keywords: [
+      "漏點",
+      "尖峰",
+      "點餐",
+      "peak",
+      "missed",
+      "order",
+      "cao điểm",
+      "พีค",
+    ],
+  },
+  {
+    replyKey: "menuSync",
+    keywords: [
+      "菜單",
+      "同步",
+      "下發",
+      "menu",
+      "sync",
+      "thực đơn",
+      "เมนู",
+    ],
+  },
+  {
+    replyKey: "transfer",
+    keywords: [
+      "調撥",
+      "庫存",
+      "連鎖",
+      "transfer",
+      "inventory",
+      "chain",
+      "kho",
+      "สต็อก",
+    ],
+  },
+];

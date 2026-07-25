@@ -1,8 +1,10 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 import { brand } from "@/data/brand";
-import { siteConfig } from "@/data/site";
+import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 type BrandLogoProps = {
@@ -11,13 +13,14 @@ type BrandLogoProps = {
 };
 
 export function BrandLogo({ className, priority = false }: BrandLogoProps) {
+  const t = useTranslations("common");
   const asset = brand.logo.full;
 
   return (
     <Link
       href="/"
       className={cn("group inline-flex items-center", className)}
-      aria-label={`${brand.productName}｜${siteConfig.company}`}
+      aria-label={`${brand.productName}｜${t("company")}`}
     >
       <Image
         src={asset.src}
