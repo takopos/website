@@ -46,3 +46,23 @@ npm run deploy
 
 失敗常見原因：Build 只跑了 `next build`，沒產生 `.open-next`，Deploy 才會報  
 `Could not find compiled Open Next config`。
+
+也可繼續用 [Vercel](https://vercel.com) 部署同一套 Next.js 程式。
+
+## CRM 預約體驗整合
+
+「免費預約體驗」表單會經由 `POST /api/leads` 寫入 TAKOCRM 潛在顧客名單（來源：`官網預約體驗`）。
+
+本機請複製 `.env.example` 為 `.env.local`，填入與 Render CRM / LINE bot 相同的：
+
+```bash
+CRM_BASE_URL=https://takocrm.onrender.com
+CRM_PUSH_API_SECRET=...
+```
+
+Cloudflare 請在 **Workers & Pages → website → Settings → Variables and Secrets** 設定：
+
+| 名稱 | 類型 | 值 |
+|------|------|-----|
+| `CRM_BASE_URL` | Variable | `https://takocrm.onrender.com` |
+| `CRM_PUSH_API_SECRET` | Secret | 與 TAKOCRM 相同 |

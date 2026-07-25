@@ -14,6 +14,9 @@
       "service": "website"
     }
   ],
+  "vars": {
+    "CRM_BASE_URL": "https://takocrm.onrender.com"
+  },
   "images": {
     "binding": "IMAGES"
   }

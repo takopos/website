@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { BookingTrigger } from "@/components/booking/booking-trigger";
 import { ProductScreenshot } from "@/components/media/product-screenshot";
 import { Button } from "@/components/ui/button";
 import { media } from "@/data/media";
@@ -24,14 +25,11 @@ export function HeroSection() {
             {siteConfig.supportingLine}
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button
-              nativeButton={false}
-              render={<Link href="/#pricing" />}
+            <BookingTrigger
+              label={siteConfig.cta.bookDemo}
               size="lg"
               className="h-11 px-5 text-sm"
-            >
-              {siteConfig.cta.bookDemo}
-            </Button>
+            />
             <Button
               nativeButton={false}
               render={<Link href="/#operations" />}

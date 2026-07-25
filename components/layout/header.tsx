@@ -3,8 +3,9 @@
 import Link from "next/link";
 import { Menu } from "lucide-react";
 
+import { BookingTrigger } from "@/components/booking/booking-trigger";
 import { BrandLogo } from "@/components/brand/logo";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetClose,
@@ -14,7 +15,6 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { siteConfig } from "@/data/site";
-import { cn } from "@/lib/utils";
 
 export function Header() {
   return (
@@ -35,14 +35,11 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Button
-            nativeButton={false}
-            render={<Link href="/#pricing" />}
+          <BookingTrigger
+            label={siteConfig.cta.primary}
             className="hidden sm:inline-flex"
             size="lg"
-          >
-            {siteConfig.cta.primary}
-          </Button>
+          />
 
           <Sheet>
             <SheetTrigger
@@ -78,20 +75,13 @@ export function Header() {
                   </SheetClose>
                 ))}
               </nav>
-              <SheetClose
-                nativeButton={false}
-                render={
-                  <Link
-                    href="/#pricing"
-                    className={cn(
-                      buttonVariants({ size: "lg" }),
-                      "mt-6 w-full"
-                    )}
-                  />
-                }
-              >
-                {siteConfig.cta.primary}
-              </SheetClose>
+              <div className="mt-6">
+                <BookingTrigger
+                  label={siteConfig.cta.primary}
+                  fullWidth
+                  size="lg"
+                />
+              </div>
             </SheetContent>
           </Sheet>
         </div>

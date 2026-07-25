@@ -1,7 +1,6 @@
-import Link from "next/link";
 import { Check } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
+import { BookingTrigger } from "@/components/booking/booking-trigger";
 import { Badge } from "@/components/ui/badge";
 import { pricingPlans, pricingSection } from "@/data/pricing";
 import { cn } from "@/lib/utils";
@@ -73,15 +72,13 @@ export function PricingSection() {
                   </li>
                 ))}
               </ul>
-              <Button
-                nativeButton={false}
-                render={<Link href="/#support" />}
+              <BookingTrigger
+                label={plan.cta}
                 variant={plan.featured ? "default" : "outline"}
-                className="mt-8 w-full"
+                className="mt-8"
+                fullWidth
                 size="lg"
-              >
-                {plan.cta}
-              </Button>
+              />
             </article>
           ))}
         </div>
