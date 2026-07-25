@@ -33,9 +33,16 @@ npm run deploy
 
 ### Git 連線自動部署（Dashboard）
 
-1. Cloudflare Dashboard → **Workers & Pages** → 連 GitHub repo `takopos/website`
-2. Build command：`npx opennextjs-cloudflare build`
-3. Deploy command：`npx wrangler deploy`
-4. 根目錄保持專案根（含 `wrangler.jsonc`）
+1. Cloudflare Dashboard → **Workers & Pages** → 選專案 → **Settings** → **Build**
+2. 請改成以下（預設 `npm run build` 會失敗）：
 
-也可繼續用 [Vercel](https://vercel.com) 部署同一套 Next.js 程式。
+| 欄位 | 值 |
+|------|-----|
+| **Build command** | `npm run build:cf` |
+| **Deploy command** | `npx wrangler deploy` |
+| **Root directory** | （空白） |
+
+3. 存檔後到 **Deployments** → **Retry deployment**
+
+失敗常見原因：Build 只跑了 `next build`，沒產生 `.open-next`，Deploy 才會報  
+`Could not find compiled Open Next config`。
