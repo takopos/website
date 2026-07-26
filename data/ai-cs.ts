@@ -21,6 +21,8 @@ export const aiCsReplyMatchers: {
     keywords: [
       "預約",
       "體驗",
+      "現場介紹",
+      "介紹",
       "演示",
       "demo",
       "book",
