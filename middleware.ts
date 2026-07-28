@@ -1,4 +1,5 @@
 import createMiddleware from "next-intl/middleware";
+import { NextRequest, NextResponse } from "next/server";
 
 import { routing } from "./i18n/routing";
 
@@ -7,7 +8,21 @@ import { routing } from "./i18n/routing";
  * OpenNext Cloudflare rejects Node middleware until that runtime is supported.
  * @see https://github.com/cloudflare/workers-sdk/issues/13755
  */
-export default createMiddleware(routing);
+const handleI18n = createMiddleware(routing);
+
+export default function middleware(request: NextRequest) {
+  const host = request.headers.get("host")?.split(":")[0]?.toLowerCase() ?? "";
+
+  // Consolidate www → apex so Google indexes one host only.
+  if (host === "www.takopos.com.tw") {
+    const url = request.nextUrl.clone();
+    url.protocol = "https:";
+    url.host = "takopos.com.tw";
+    return NextResponse.redirect(url, 301);
+  }
+
+  return handleI18n(request);
+}
 
 export const config = {
   matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],

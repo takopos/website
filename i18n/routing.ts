@@ -14,5 +14,7 @@ export const routing = defineRouting({
   locales,
   defaultLocale: "zh-Hant",
   localePrefix: "as-needed",
-  localeDetection: true,
+  // Keep default locale stable for crawlers (Googlebot often sends en-US).
+  // Language switcher still works via explicit /en /vi /th links.
+  localeDetection: false,
 });
