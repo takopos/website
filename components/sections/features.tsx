@@ -65,15 +65,18 @@ export async function FeaturesSection() {
                 {feature.id === "payment" && (
                   <ul className="mt-4 flex items-center gap-2">
                     {paymentMethods.map((method) => (
-                      <li key={method.id}>
+                      <li
+                        key={method.id}
+                        className="flex size-9 items-center justify-center rounded-lg border border-border/70 bg-white p-1 shadow-sm transition-transform duration-300 group-hover:-translate-y-0.5"
+                        title={tPayments(`methods.${method.id}.name`)}
+                      >
                         <Image
                           src={method.icon}
                           alt={tPayments(`methods.${method.id}.name`)}
-                          title={tPayments(`methods.${method.id}.name`)}
                           width={32}
                           height={32}
                           unoptimized
-                          className="size-8 rounded-lg shadow-sm transition-transform duration-300 group-hover:-translate-y-0.5"
+                          className="size-full object-contain"
                         />
                       </li>
                     ))}

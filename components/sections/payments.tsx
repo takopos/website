@@ -37,14 +37,14 @@ export async function PaymentsSection() {
                 className="animate-fade-up group flex min-w-[7.5rem] flex-col items-center gap-2.5"
                 style={{ animationDelay: `${index * 90}ms` }}
               >
-                <span className="flex size-16 items-center justify-center transition-transform duration-300 group-hover:-translate-y-1 sm:size-[4.5rem]">
+                <span className="flex size-[4.5rem] items-center justify-center rounded-2xl border border-border/70 bg-white p-2.5 shadow-[0_10px_22px_-16px_rgba(47,44,42,0.45)] transition-transform duration-300 group-hover:-translate-y-1 sm:size-20 sm:p-3">
                   <Image
                     src={method.icon}
                     alt={t(`methods.${method.id}.name`)}
-                    width={72}
-                    height={72}
+                    width={80}
+                    height={80}
                     unoptimized
-                    className="size-full drop-shadow-[0_10px_18px_rgba(47,44,42,0.12)]"
+                    className="size-full object-contain"
                   />
                 </span>
                 <span className="font-heading text-sm font-semibold tracking-tight text-foreground">
