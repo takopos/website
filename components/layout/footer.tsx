@@ -20,6 +20,14 @@ export async function Footer() {
           <p className="max-w-md text-sm leading-relaxed text-white/70">
             {t("blurb")}
           </p>
+          <a
+            href={siteConfig.sisterBrand.url}
+            className="inline-flex text-sm font-medium text-[var(--brand-orange)] transition hover:text-white"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {t("sisterBrand")} → {siteConfig.sisterBrand.blurb}
+          </a>
         </div>
 
         <div className="grid gap-8 sm:grid-cols-2">
@@ -28,18 +36,34 @@ export async function Footer() {
               {t("quickLinks")}
             </p>
             <ul className="mt-4 space-y-2">
-              {siteConfig.footer.links.map((link) => (
-                <li key={link.key}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-white/75 transition-colors hover:text-[var(--brand-orange)]"
-                  >
-                    {link.key === "features" || link.key === "pricing"
-                      ? tNav(link.key)
-                      : t(link.key)}
-                  </Link>
-                </li>
-              ))}
+              {siteConfig.footer.links.map((link) => {
+                const external = link.href.startsWith("http");
+                const label =
+                  link.key === "features" || link.key === "pricing"
+                    ? tNav(link.key)
+                    : t(link.key);
+                return (
+                  <li key={link.key}>
+                    {external ? (
+                      <a
+                        href={link.href}
+                        className="text-sm text-white/75 transition-colors hover:text-[var(--brand-orange)]"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                      >
+                        {label}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-sm text-white/75 transition-colors hover:text-[var(--brand-orange)]"
+                      >
+                        {label}
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
           <div>

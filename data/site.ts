@@ -44,9 +44,18 @@ export const siteConfig = {
     links: [
       { key: "features" as const, href: "/features" },
       { key: "pricing" as const, href: "/pricing" },
+      {
+        key: "speedorder" as const,
+        href: "https://speedorder.com.tw",
+      },
       { key: "privacy" as const, href: "#" },
       { key: "terms" as const, href: "#" },
     ],
+  },
+  sisterBrand: {
+    name: "速訂 SpeedOrder",
+    url: "https://speedorder.com.tw",
+    blurb: "LINE 訂貨與供應鏈協作平台",
   },
 } as const;
 
