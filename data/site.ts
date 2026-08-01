@@ -5,7 +5,11 @@ export const siteConfig = {
   url: "https://takopos.com.tw",
   keywords: [
     "TAKOPOS",
+    "POS",
     "餐飲 POS",
+    "餐飲POS",
+    "連鎖餐飲",
+    "連鎖餐飲 POS",
     "智慧餐飲系統",
     "餐廳點餐系統",
     "廚房出餐看板",

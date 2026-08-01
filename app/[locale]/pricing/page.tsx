@@ -20,6 +20,8 @@ export async function generateMetadata({
     path: "/pricing",
     locale,
     keywords: [
+      "POS",
+      "連鎖餐飲",
       "餐飲 POS 價格",
       "餐廳系統方案",
       "連鎖餐飲系統費用",

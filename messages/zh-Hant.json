@@ -1,12 +1,12 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS｜諾迪科技智慧餐飲系統",
-    "description": "我們懂餐飲現場：人手不夠、漏點錯點、廚房單亂飛、月底才知賠錢。TAKOPOS 把點餐、出餐、庫存與總部控管串成一條路，讓你顧好客人，也顧好成本。",
-    "featuresTitle": "產品功能",
-    "featuresDescription": "智慧 POS、行動點餐、廚房出餐看板、庫存成本、會員行銷與營運數據——TAKOPOS 把餐飲現場每天卡住的環節一次打通。",
-    "pricingTitle": "方案價格",
-    "pricingDescription": "從單店到連鎖，TAKOPOS 提供可擴充的餐飲系統方案。先解決眼前的痛，再跟著你的店數一起長大。"
+    "defaultTitle": "TAKOPOS 餐飲 POS｜諾迪科技智慧餐飲系統",
+    "description": "TAKOPOS 餐飲 POS：專為餐廳與連鎖餐飲打造。把點餐、廚房出餐、庫存與總部控管串成一條路，尖峰不亂、關店不累，顧好客人與成本。",
+    "featuresTitle": "餐飲 POS 產品功能",
+    "featuresDescription": "餐飲 POS 核心功能一次看：智慧點餐、廚房出餐看板、庫存成本、會員行銷與營運數據——TAKOPOS 打通餐廳每天卡住的環節。",
+    "pricingTitle": "餐飲 POS 方案價格",
+    "pricingDescription": "從單店到連鎖餐飲，TAKOPOS 餐飲 POS 提供可擴充方案。先解決眼前的痛，再跟著你的店數一起長大。"
   },
   "common": {
     "company": "諾迪科技",
@@ -31,7 +31,7 @@
   },
   "hero": {
     "headline": "尖峰不亂、關店不累，讓每一間店都更會賺錢",
-    "supporting": "我們懂餐飲現場：人手不夠、漏點錯點、廚房單亂飛、月底才知賠錢。TAKOPOS 把點餐、出餐、庫存與總部控管串成一條路，讓你顧好客人，也顧好成本。"
+    "supporting": "TAKOPOS 餐飲 POS 懂現場：人手不夠、漏點錯點、廚房單亂飛、月底才知賠錢。把點餐、出餐、庫存與總部控管串成一條路，讓你顧好客人，也顧好成本。"
   },
   "features": {
     "eyebrow": "產品功能",

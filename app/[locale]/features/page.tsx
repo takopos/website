@@ -20,7 +20,9 @@ export async function generateMetadata({
     path: "/features",
     locale,
     keywords: [
+      "POS",
       "餐飲 POS 功能",
+      "連鎖餐飲",
       "廚房出餐看板",
       "掃碼點餐",
       "庫存管理",
