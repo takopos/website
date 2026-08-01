@@ -66,7 +66,7 @@
       "payment": {
         "pain": "結帳排隊、對帳頭痛",
         "title": "多元金流與交班",
-        "description": "常見支付一次整合，交班盤點清楚，關店不用再對到半夜。"
+        "description": "信用卡、LINE Pay、全支付等常見支付一次整合，交班盤點清楚，關店不用再對到半夜。"
       }
     },
     "painPrefix": "痛點 · "
@@ -102,7 +102,7 @@
       "checkout": {
         "pain": "結帳排隊、支付方式多、對帳容易亂",
         "title": "POS 收銀結帳",
-        "description": "現金、信用卡、LINE Pay 等常見支付一次整合，折扣與會員查詢就在結帳動線上。"
+        "description": "現金、信用卡、LINE Pay、全支付等常見支付一次整合，折扣與會員查詢就在結帳動線上。"
       },
       "kds": {
         "pain": "廚房紙本單亂飛、出餐靠吼",
@@ -152,6 +152,22 @@
         "pain": "老闆人在外面，店裡狀況完全黑箱",
         "title": "人在店外，營運仍在掌握",
         "description": "筆電後台與手機 APP 同步戰情，巡店、休假也能即時應變。"
+      }
+    }
+  },
+  "payments": {
+    "eyebrow": "多元支付",
+    "title": "客人怎麼付，櫃台都能收",
+    "description": "信用卡、LINE Pay、全支付一次整合進結帳動線，折扣、會員與交班都在同一套流程裡完成。",
+    "methods": {
+      "credit-card": {
+        "name": "信用卡"
+      },
+      "line-pay": {
+        "name": "LINE Pay"
+      },
+      "pxpay": {
+        "name": "全支付"
       }
     }
   },

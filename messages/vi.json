@@ -66,7 +66,7 @@
       "payment": {
         "pain": "Hàng chờ thanh toán, đối soát đau đầu",
         "title": "Thanh toán & giao ca",
-        "description": "Gộp phương thức phổ biến, giao ca rõ ràng."
+        "description": "Thẻ, LINE Pay, PX Pay… gộp một luồng, giao ca rõ ràng—không phải đóng cửa lúc nửa đêm."
       }
     },
     "painPrefix": "Nỗi đau · "
@@ -102,7 +102,7 @@
       "checkout": {
         "pain": "Hàng chờ thanh toán, đối soát rối",
         "title": "Thu ngân POS",
-        "description": "Tiền mặt, thẻ, LINE Pay… giảm giá và thành viên nằm trên luồng thanh toán."
+        "description": "Tiền mặt, thẻ, LINE Pay, PX Pay… giảm giá và thành viên nằm trên luồng thanh toán."
       },
       "kds": {
         "pain": "Phiếu giấy khắp nơi, hô nhau ra món",
@@ -152,6 +152,22 @@
         "pain": "Chủ vắng, quán là hộp đen",
         "title": "Điều hành từ bên ngoài",
         "description": "Laptop và điện thoại đồng bộ để tuần tra và ngày nghỉ."
+      }
+    }
+  },
+  "payments": {
+    "eyebrow": "Thanh toán",
+    "title": "Khách trả thế nào, quầy cũng nhận được",
+    "description": "Thẻ, LINE Pay và PX Pay nằm chung một luồng thanh toán—ưu đãi, thành viên và giao ca cùng một quy trình.",
+    "methods": {
+      "credit-card": {
+        "name": "Thẻ tín dụng"
+      },
+      "line-pay": {
+        "name": "LINE Pay"
+      },
+      "pxpay": {
+        "name": "PX Pay"
       }
     }
   },

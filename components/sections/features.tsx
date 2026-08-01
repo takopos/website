@@ -7,9 +7,11 @@ import {
   Users,
   type LucideIcon,
 } from "lucide-react";
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 import { features, featuresSection } from "@/data/features";
+import { paymentMethods } from "@/data/payments";
 
 const iconMap: Record<string, LucideIcon> = {
   MonitorSmartphone,
@@ -22,6 +24,7 @@ const iconMap: Record<string, LucideIcon> = {
 
 export async function FeaturesSection() {
   const t = await getTranslations("features");
+  const tPayments = await getTranslations("payments");
 
   return (
     <section
@@ -59,6 +62,29 @@ export async function FeaturesSection() {
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {t(`items.${feature.id}.description`)}
                 </p>
+                {feature.id === "payment" && (
+                  <ul className="mt-4 flex flex-wrap items-center gap-2.5">
+                    {paymentMethods.map((method) => (
+                      <li
+                        key={method.id}
+                        className="flex items-center gap-1.5"
+                        title={tPayments(`methods.${method.id}.name`)}
+                      >
+                        <Image
+                          src={method.icon}
+                          alt={tPayments(`methods.${method.id}.name`)}
+                          width={28}
+                          height={28}
+                          unoptimized
+                          className="size-7 rounded-md shadow-sm"
+                        />
+                        <span className="text-xs font-medium text-foreground/80">
+                          {tPayments(`methods.${method.id}.name`)}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </article>
             );
           })}
