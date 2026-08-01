@@ -63,24 +63,18 @@ export async function FeaturesSection() {
                   {t(`items.${feature.id}.description`)}
                 </p>
                 {feature.id === "payment" && (
-                  <ul className="mt-4 flex flex-wrap items-center gap-2.5">
+                  <ul className="mt-4 flex items-center gap-2">
                     {paymentMethods.map((method) => (
-                      <li
-                        key={method.id}
-                        className="flex items-center gap-1.5"
-                        title={tPayments(`methods.${method.id}.name`)}
-                      >
+                      <li key={method.id}>
                         <Image
                           src={method.icon}
                           alt={tPayments(`methods.${method.id}.name`)}
-                          width={28}
-                          height={28}
+                          title={tPayments(`methods.${method.id}.name`)}
+                          width={32}
+                          height={32}
                           unoptimized
-                          className="size-7 rounded-md shadow-sm"
+                          className="size-8 rounded-lg shadow-sm transition-transform duration-300 group-hover:-translate-y-0.5"
                         />
-                        <span className="text-xs font-medium text-foreground/80">
-                          {tPayments(`methods.${method.id}.name`)}
-                        </span>
                       </li>
                     ))}
                   </ul>
