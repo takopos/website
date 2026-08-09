@@ -27,7 +27,8 @@
     "operations": "Vận hành",
     "chainStore": "Chuỗi cửa hàng",
     "pricing": "Bảng giá",
-    "support": "Hỗ trợ"
+    "support": "Hỗ trợ",
+    "diningPos": "POS nhà hàng"
   },
   "hero": {
     "headline": "Giờ cao điểm không loạn, đóng cửa không kiệt sức, giúp mỗi quán kiếm nhiều hơn.",
@@ -290,7 +291,8 @@
     "blurb": "Hệ thống F&B thông minh biến nỗi đau giờ cao điểm, bếp, giao ca và chuỗi thành quy trình thực thi.",
     "quickLinks": "Liên kết nhanh",
     "privacy": "Chính sách bảo mật",
-    "terms": "Điều khoản"
+    "terms": "Điều khoản",
+    "diningPos": "Hướng dẫn POS nhà hàng"
   },
   "booking": {
     "title": "Đặt demo miễn phí",
@@ -379,5 +381,120 @@
       "peak": "Peak misses often come from order/kitchen disconnect. Use QR/handheld ordering into KDS with notes. See Operations.",
       "menuSync": "HQ edits then one-click push to selected stores with audit trail. See Chain management."
     }
+  },
+  "diningPos": {
+    "metaTitle": "Hướng dẫn POS nhà hàng",
+    "metaDescription": "POS nhà hàng là gì? Nhà hàng và chuỗi nên chọn hệ thống thế nào? TAKOPOS kết nối gọi món, bếp, tồn kho và HQ.",
+    "eyebrow": "TAKOPOS POS nhà hàng",
+    "h1": "POS nhà hàng giúp giờ cao điểm ổn định và chuỗi dễ kiểm soát",
+    "lead": "Khi tìm POS nhà hàng, đừng chỉ so giá phần cứng. Điểm khác biệt thật sự là nhịp giờ cao điểm, bếp rõ ràng, tồn kho chính xác và đồng bộ menu HQ.",
+    "seeFeatures": "Xem tính năng",
+    "seePricing": "Xem bảng giá",
+    "whatTitle": "POS nhà hàng là gì?",
+    "whatBody1": "POS nhà hàng không chỉ là máy thu ngân. Nó nối gọi món, phiếu bếp, thanh toán, thành viên, tồn kho và báo cáo.",
+    "whatBody2": "Hệ thống hiện đại còn cần quét mã, KDS, hóa đơn điện tử và điều khiển chuỗi. TAKOPOS tập trung vào vận hành thực tế.",
+    "forTitle": "Ai nên dùng POS nhà hàng?",
+    "audience": {
+      "single": {
+        "title": "Quán đơn cần giờ cao điểm ổn",
+        "body": "Ít người nhưng vừa phục vụ vừa giao hàng cần nhịp gọi món-bếp thống nhất."
+      },
+      "peak": {
+        "title": "Giờ cao điểm hay sót món",
+        "body": "Nếu vẫn dựa vào hét và giấy, KDS thường giảm khiếu nại rõ rệt."
+      },
+      "chain": {
+        "title": "Sắp mở quán 2, quán 3",
+        "body": "Menu và tồn kho phải đồng bộ; HQ cần thấy quán nào đang chậm."
+      },
+      "swap": {
+        "title": "Hệ cũ không chịu nổi tăng trưởng",
+        "body": "Tính năng vá víu và chốt ca kéo dài là tín hiệu nên đổi."
+      }
+    },
+    "modulesTitle": "TAKOPOS POS nhà hàng gồm gì",
+    "modulesLead": "Không chất tính năng—map đúng điểm kẹt hàng ngày.",
+    "modules": {
+      "ordering": {
+        "title": "Gọi món và thu ngân POS",
+        "body": "Bàn, quầy, QR, handheld đều nhận đơn."
+      },
+      "kitchen": {
+        "title": "Màn hình bếp KDS",
+        "body": "Chia trạm, trạng thái rõ, giảm sót và làm lại."
+      },
+      "inventory": {
+        "title": "Tồn kho và giá vốn",
+        "body": "Liên kết bán hàng với cảnh báo thiếu hàng."
+      },
+      "loyalty": {
+        "title": "Thành viên và mua lại",
+        "body": "Điểm, coupon, nhắc quay lại."
+      },
+      "analytics": {
+        "title": "Dữ liệu vận hành",
+        "body": "Báo cáo ngày, khung giờ nóng, ranking món."
+      },
+      "chain": {
+        "title": "HQ chuỗi",
+        "body": "Đồng bộ menu, báo cáo đa quán, điều chuyển tồn kho."
+      }
+    },
+    "checklistTitle": "6 câu hỏi trước khi mua",
+    "checklist": {
+      "c1": {
+        "title": "Giờ cao điểm chạy được không?",
+        "body": "Yêu cầu demo gọi món đến bếp, không chỉ xem admin."
+      },
+      "c2": {
+        "title": "Bếp nhận phiếu thế nào?",
+        "body": "Kiểm tra KDS, chia trạm và phản hồi trạng thái."
+      },
+      "c3": {
+        "title": "Tồn kho theo sát bán hàng?",
+        "body": "Cần cảnh báo và điều chuyển, không chỉ con số."
+      },
+      "c4": {
+        "title": "Mở quán 2 có phải làm lại?",
+        "body": "Menu, quyền, báo cáo nên cấu hình từ HQ."
+      },
+      "c5": {
+        "title": "Hóa đơn và thanh toán nối được?",
+        "body": "Xác nhận trước khi go-live."
+      },
+      "c6": {
+        "title": "Triển khai và đào tạo ra sao?",
+        "body": "Hỏi rõ thời gian và phạm vi hỗ trợ."
+      }
+    },
+    "faqTitle": "Câu hỏi thường gặp về POS nhà hàng",
+    "faqs": {
+      "q1": {
+        "q": "POS nhà hàng khác POS bán lẻ thế nào?",
+        "a": "Nhà hàng cần bàn, món thêm, chia bếp và nhịp cao điểm—phức tạp hơn thu ngân quét mã."
+      },
+      "q2": {
+        "q": "Quán nhỏ có cần không?",
+        "a": "Nếu đã đông giờ cao điểm, có giao hàng hoặc sắp mở rộng, chuẩn hóa sớm sẽ đỡ phải thay cả hệ sau này."
+      },
+      "q3": {
+        "q": "Triển khai mất bao lâu?",
+        "a": "Tùy menu và phần cứng. Quan trọng là luồng bếp sạch và nhân viên dùng được."
+      },
+      "q4": {
+        "q": "Vì sao chuỗi cần POS hơn?",
+        "a": "Đa quán dễ lệch menu, tồn kho tách và HQ mù. POS tốt đẩy quyết định xuống mọi quán."
+      },
+      "q5": {
+        "q": "TAKOPOS hợp loại hình nào?",
+        "a": "Lẩu, món Á, mô hình hỗn hợp, quán cần QR/gọi món tại bàn. Nên demo với menu thật."
+      },
+      "q6": {
+        "q": "Có trải nghiệm trước không?",
+        "a": "Có. Để lại thông tin quán, đội ngũ sẽ xếp lịch demo theo tình huống giờ cao điểm của bạn."
+      }
+    },
+    "ctaTitle": "Muốn xem TAKOPOS có hợp quán bạn?",
+    "ctaBody": "Đặt demo miễn phí với menu và quy trình giờ cao điểm của bạn."
   }
 }

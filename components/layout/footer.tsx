@@ -34,7 +34,9 @@ export async function Footer() {
                     href={link.href}
                     className="text-sm text-white/75 transition-colors hover:text-[var(--brand-orange)]"
                   >
-                    {link.key === "features" || link.key === "pricing"
+                    {link.key === "features" ||
+                    link.key === "pricing" ||
+                    link.key === "diningPos"
                       ? tNav(link.key)
                       : t(link.key)}
                   </Link>

@@ -27,7 +27,8 @@
     "operations": "Operations",
     "chainStore": "Chain management",
     "pricing": "Pricing",
-    "support": "Support"
+    "support": "Support",
+    "diningPos": "Restaurant POS"
   },
   "hero": {
     "headline": "Stay calm at peak hours. Close without burnout. Help every store earn more.",
@@ -290,7 +291,8 @@
     "blurb": "A smart F&B system that turns peak, kitchen, handover, and chain-sync pain into executable workflows.",
     "quickLinks": "Quick links",
     "privacy": "Privacy policy",
-    "terms": "Terms of service"
+    "terms": "Terms of service",
+    "diningPos": "Restaurant POS guide"
   },
   "booking": {
     "title": "Book a free demo",
@@ -379,5 +381,120 @@
       "peak": "Peak misses often come from order/kitchen disconnect. Use QR/handheld ordering into KDS with notes. See Operations.",
       "menuSync": "HQ edits then one-click push to selected stores with audit trail. See Chain management."
     }
+  },
+  "diningPos": {
+    "metaTitle": "Restaurant POS guide",
+    "metaDescription": "What is a restaurant POS? How should restaurants and chains choose? TAKOPOS connects ordering, kitchen, inventory, and HQ control so you can grow from one store to many.",
+    "eyebrow": "TAKOPOS restaurant POS",
+    "h1": "Restaurant POS that keeps peaks steady and chains in control",
+    "lead": "When you search for restaurant POS, don't only compare hardware prices. The real gap is peak stability, kitchen clarity, inventory accuracy, and HQ menu sync. TAKOPOS is built for F&B operations.",
+    "seeFeatures": "See features",
+    "seePricing": "See pricing",
+    "whatTitle": "What is a restaurant POS?",
+    "whatBody1": "A restaurant POS is more than a cash register. It connects ordering, kitchen tickets, checkout, loyalty, inventory, and reports. Done well, peaks are calmer and closing is cleaner.",
+    "whatBody2": "Modern systems also need QR ordering, KDS, e-invoicing, and chain HQ controls. TAKOPOS focuses on real floor workflows from store one to store N.",
+    "forTitle": "Who should adopt a restaurant POS?",
+    "audience": {
+      "single": {
+        "title": "Single stores that need calmer peaks",
+        "body": "Small teams juggling dine-in and delivery need ordering and kitchen in one rhythm."
+      },
+      "peak": {
+        "title": "Peak hours full of misses",
+        "body": "If peaks run on shouting and paper tickets, live kitchen status usually cuts complaints fast."
+      },
+      "chain": {
+        "title": "Opening store two and three",
+        "body": "Menus, prices, and stock must sync; HQ needs to see which store is slipping."
+      },
+      "swap": {
+        "title": "Old systems that don't scale",
+        "body": "If features feel patched together and closing takes forever, it is time to evaluate a growth-ready POS."
+      }
+    },
+    "modulesTitle": "What TAKOPOS restaurant POS covers",
+    "modulesLead": "Not a feature dump—coverage mapped to where F&B teams get stuck.",
+    "modules": {
+      "ordering": {
+        "title": "Ordering and POS checkout",
+        "body": "Tableside, counter, QR, and handheld ordering so peaks are not stuck on one terminal."
+      },
+      "kitchen": {
+        "title": "Kitchen display (KDS)",
+        "body": "Route by station with clear status to cut misses and remakes."
+      },
+      "inventory": {
+        "title": "Inventory and food cost",
+        "body": "Link purchasing to sales with low-stock alerts."
+      },
+      "loyalty": {
+        "title": "Loyalty and repeat visits",
+        "body": "Points, coupons, and reminders that turn repeats into revenue."
+      },
+      "analytics": {
+        "title": "Ops insights",
+        "body": "Daily reports, peak windows, and item rankings for staffing and buying."
+      },
+      "chain": {
+        "title": "Chain HQ control",
+        "body": "Menu sync, multi-store reports, and transfers without human-wave ops."
+      }
+    },
+    "checklistTitle": "Ask these 6 questions before buying",
+    "checklist": {
+      "c1": {
+        "title": "Can peak workflows actually run?",
+        "body": "Ask for a live ordering-to-kitchen demo, not just a pretty admin UI."
+      },
+      "c2": {
+        "title": "How do tickets reach the kitchen?",
+        "body": "Check KDS, station routing, and status feedback to the floor."
+      },
+      "c3": {
+        "title": "Does inventory follow sales?",
+        "body": "You need alerts and transfer support, not just stock numbers."
+      },
+      "c4": {
+        "title": "Will store two force a rebuild?",
+        "body": "Menus, roles, and reports should deploy from HQ."
+      },
+      "c5": {
+        "title": "Can invoicing and payments connect?",
+        "body": "Confirm compliance and handoff before go-live."
+      },
+      "c6": {
+        "title": "What does onboarding look like?",
+        "body": "Ask about timeline, training, and support coverage."
+      }
+    },
+    "faqTitle": "Restaurant POS FAQ",
+    "faqs": {
+      "q1": {
+        "q": "How is restaurant POS different from retail POS?",
+        "a": "Restaurants need tables, add-ons, kitchen routing, and peak tempo—far more than scan-and-pay retail checkout."
+      },
+      "q2": {
+        "q": "Do small shops need a restaurant POS?",
+        "a": "If you already have busy peaks, delivery, or expansion plans, systemizing earlier avoids a full rip-and-replace later."
+      },
+      "q3": {
+        "q": "How long does onboarding take?",
+        "a": "It depends on menu complexity and hardware. Success is measured by clean kitchen flow and staff readiness, not just a date."
+      },
+      "q4": {
+        "q": "Why do chains need restaurant POS more?",
+        "a": "Multi-store pain is menu drift, siloed inventory, and blind HQ. A good POS pushes decisions storewide."
+      },
+      "q5": {
+        "q": "Which F&B types fit TAKOPOS?",
+        "a": "Hotpot, Chinese dining, hybrids, and stores that need QR/tableside or kitchen routing. Book a demo with your menu to confirm."
+      },
+      "q6": {
+        "q": "Can we try before we buy?",
+        "a": "Yes. Leave your store details and our team will arrange a walkthrough around your peak scenarios."
+      }
+    },
+    "ctaTitle": "Want to see if TAKOPOS fits your restaurant?",
+    "ctaBody": "Book a free demo with your menu and peak flow. Decide after you see the floor rhythm."
   }
 }
