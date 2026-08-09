@@ -3,7 +3,13 @@ import type { MetadataRoute } from "next";
 import { locales, type AppLocale } from "@/i18n/routing";
 import { absoluteLocalizedUrl, languageAlternates } from "@/lib/seo";
 
-const paths = ["/", "/features", "/pricing", "/dining-pos"] as const;
+const paths = [
+  "/",
+  "/features",
+  "/pricing",
+  "/dining-pos",
+  "/choose-dining-pos",
+] as const;
 
 function entry(
   locale: AppLocale,
@@ -25,7 +31,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const items: MetadataRoute.Sitemap = [];
 
   for (const path of paths) {
-    const priority = path === "/" ? 1 : path === "/dining-pos" ? 0.9 : 0.8;
+    const priority =
+      path === "/"
+        ? 1
+        : path === "/dining-pos" || path === "/choose-dining-pos"
+          ? 0.9
+          : 0.8;
     for (const locale of locales) {
       items.push(entry(locale, path, priority));
     }

@@ -44,6 +44,7 @@ export const siteConfig = {
   footer: {
     links: [
       { key: "diningPos" as const, href: "/dining-pos" },
+      { key: "chooseDiningPos" as const, href: "/choose-dining-pos" },
       { key: "features" as const, href: "/features" },
       { key: "pricing" as const, href: "/pricing" },
       { key: "privacy" as const, href: "#" },

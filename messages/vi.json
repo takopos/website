@@ -28,7 +28,8 @@
     "chainStore": "Chuỗi cửa hàng",
     "pricing": "Bảng giá",
     "support": "Hỗ trợ",
-    "diningPos": "POS nhà hàng"
+    "diningPos": "POS nhà hàng",
+    "chooseDiningPos": "Cách chọn POS"
   },
   "hero": {
     "headline": "Giờ cao điểm không loạn, đóng cửa không kiệt sức, giúp mỗi quán kiếm nhiều hơn.",
@@ -292,7 +293,8 @@
     "quickLinks": "Liên kết nhanh",
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản",
-    "diningPos": "Hướng dẫn POS nhà hàng"
+    "diningPos": "Hướng dẫn POS nhà hàng",
+    "chooseDiningPos": "Cách chọn POS"
   },
   "booking": {
     "title": "Đặt demo miễn phí",
@@ -495,6 +497,166 @@
       }
     },
     "ctaTitle": "Muốn xem TAKOPOS có hợp quán bạn?",
-    "ctaBody": "Đặt demo miễn phí với menu và quy trình giờ cao điểm của bạn."
+    "ctaBody": "Đặt demo miễn phí với menu và quy trình giờ cao điểm của bạn.",
+    "seeChoose": "Cách chọn POS"
+  },
+  "chooseDiningPos": {
+    "metaTitle": "Cách chọn POS nhà hàng",
+    "metaDescription": "So sánh POS nhà hàng không chỉ nhìn giá máy. Đánh giá giờ cao điểm, KDS, tồn kho, đồng bộ chuỗi và chi phí ẩn—rồi xem khi nào TAKOPOS phù hợp.",
+    "eyebrow": "Hướng dẫn chọn POS nhà hàng",
+    "h1": "Cách chọn POS nhà hàng: so 8 mục này trước đã",
+    "lead": "Tìm POS nhà hàng ra rất nhiều lựa chọn. Hối tiếc thường đến từ giờ cao điểm và bếp loạn, không phải giá niêm yết.",
+    "seeGuide": "POS nhà hàng là gì",
+    "seePricing": "Xem bảng giá",
+    "mistakesTitle": "4 bẫy so sánh thường gặp",
+    "mistakesLead": "Tránh trước để khỏi bị bảng thông số dẫn.",
+    "mistakes": {
+      "m1": {
+        "title": "Chỉ so giá máy",
+        "body": "Máy rẻ nhưng mềm yếu vẫn loạn giờ cao điểm. Gom cả phí, triển khai, đào tạo, mở rộng."
+      },
+      "m2": {
+        "title": "Chỉ nhìn admin đẹp",
+        "body": "Chủ xem báo cáo; phục vụ và bếp quyết định. Yêu cầu demo bằng menu thật."
+      },
+      "m3": {
+        "title": "Càng nhiều tính năng càng tốt",
+        "body": "Module thừa thành gánh đào tạo. Kiểm tra gọi món–bếp–tồn–chuỗi có thật sự thông."
+      },
+      "m4": {
+        "title": "Bỏ qua quán thứ hai",
+        "body": "Quán đơn chạy được chưa chắc HQ đẩy menu và kho đa quán được."
+      }
+    },
+    "compareTitle": "Bảng so sánh POS nhà hàng",
+    "compareLead": "Đổi thông số thành câu hỏi hiện trường.",
+    "compareCol": {
+      "dim": "Tiêu chí",
+      "ask": "Hỏi nhà cung cấp",
+      "why": "Vì sao quan trọng"
+    },
+    "compare": {
+      "c1": {
+        "dim": "Gọi món giờ cao điểm",
+        "ask": "Ba người cùng order, thêm món, gộp bàn có đơ không?",
+        "why": "Ổn định cao điểm quan trọng hơn số chức năng."
+      },
+      "c2": {
+        "dim": "Luồng bếp",
+        "ask": "Có KDS, chia trạm và trả trạng thái không?",
+        "why": "Giảm sót, làm lại, khiếu nại."
+      },
+      "c3": {
+        "dim": "QR / tại bàn",
+        "ask": "Khách tự order và handheld nhân viên sống chung thế nào?",
+        "why": "Xung đột sẽ làm chậm bàn."
+      },
+      "c4": {
+        "dim": "Giá vốn tồn kho",
+        "ask": "Bán ra có trừ kho, cảnh báo và điều chuyển?",
+        "why": "Không thì cuối tháng mới biết lỗ."
+      },
+      "c5": {
+        "dim": "Thành viên",
+        "ask": "Điểm/coupon có nằm trên luồng thanh toán?",
+        "why": "Marketing tách POS thường chuyển đổi kém."
+      },
+      "c6": {
+        "dim": "Đồng bộ chuỗi",
+        "ask": "Sửa menu bao lâu toàn hệ? HQ có báo cáo tập trung?",
+        "why": "Đây là khác biệt khi mở rộng."
+      },
+      "c7": {
+        "dim": "Thanh toán & hóa đơn",
+        "ask": "Hóa đơn điện tử, thanh toán, giao ca xong một mạch?",
+        "why": "Ảnh hưởng tuân thủ và giờ đóng quán."
+      },
+      "c8": {
+        "dim": "Triển khai",
+        "ask": "Thời gian, đào tạo, ai hỗ trợ khi lỗi?",
+        "why": "Phần mềm chỉ hữu ích khi mặt bằng dùng được."
+      }
+    },
+    "typesTitle": "Chọn theo loại hình quán",
+    "typesLead": "Ưu tiên thay đổi theo model.",
+    "types": {
+      "hotpot": {
+        "title": "Lẩu / thêm món nhiều",
+        "body": "Thêm món liên tục, bếp nhiều trạm.",
+        "focus": "Ưu tiên: gọi món tại bàn, chia bếp, trạng thái"
+      },
+      "qr": {
+        "title": "Quán thiên QR",
+        "body": "Ít người, khách tự order cao.",
+        "focus": "Ưu tiên: luồng QR, ghi chú/ngôn ngữ, thẳng bếp"
+      },
+      "chain": {
+        "title": "Chuỗi / đa thương hiệu",
+        "body": "Đau ở đồng bộ và nhìn rõ, không phải khoe quán đơn.",
+        "focus": "Ưu tiên: HQ push, báo cáo đa quán, điều chuyển"
+      },
+      "takeout": {
+        "title": "Mang đi / giao hàng",
+        "body": "Nhịp lấy món và sai túi quan trọng.",
+        "focus": "Ưu tiên: trạng thái phiếu, luồng lấy, tích hợp giao"
+      }
+    },
+    "costTitle": "So tổng chi phí, đừng chỉ nhìn giá",
+    "costLead": "Chi phí ẩn thường vượt xa máy đầu tiên.",
+    "costs": {
+      "k1": {
+        "title": "Setup và dựng menu",
+        "body": "Combo phức tạp tốn giờ onboarding."
+      },
+      "k2": {
+        "title": "Đường cong đào tạo",
+        "body": "Nhân viên part-time nhiều thì UI khó = tốn hơn."
+      },
+      "k3": {
+        "title": "Thiệt hại giờ cao điểm",
+        "body": "Khiếu nại/làm lại vì hệ đơ đắt hơn mọi giảm giá."
+      },
+      "k4": {
+        "title": "Làm lại khi mở quán",
+        "body": "Mỗi quán dựng lại sẽ kẹp tốc độ tăng trưởng."
+      }
+    },
+    "takoposTitle": "Khi nào TAKOPOS khớp phép so sánh?",
+    "takoposBody": "Nếu bạn coi trọng nhịp mặt bằng hơn checklist dài—và muốn từ quán đơn lên chuỗi—TAKOPOS nhắm nối gọi món, bếp, tồn kho và HQ thành một luồng.",
+    "takoposPoints": {
+      "p1": "Demo giờ cao điểm bằng giao diện TPOS Ai thật.",
+      "p2": "Quầy, QR, tại bàn và KDS giảm nghẽn một máy.",
+      "p3": "Chuỗi tập trung đồng bộ menu, nhìn dữ liệu và điều kho.",
+      "p4": "Đặt demo với menu của bạn trước khi chọn gói."
+    },
+    "faqTitle": "FAQ chọn / so sánh POS nhà hàng",
+    "faqs": {
+      "q1": {
+        "q": "Không được thỏa hiệp gì?",
+        "a": "Luồng cao điểm và bắt tay với bếp. Báo cáo có thể chờ."
+      },
+      "q2": {
+        "q": "Rẻ hơn chắc chắn tệ hơn?",
+        "a": "Không luôn. Xem biên giới cho model, cao điểm và mở rộng của bạn."
+      },
+      "q3": {
+        "q": "Mua máy trước hay định quy trình trước?",
+        "a": "Định gọi món đến bếp trước, rồi mới map máy."
+      },
+      "q4": {
+        "q": "Hệ quán đơn lên chuỗi được không?",
+        "a": "Hỏi migration, module HQ và hợp đồng ngay từ vòng so sánh."
+      },
+      "q5": {
+        "q": "Demo nên mang gì?",
+        "a": "Menu thật, đường đi cao điểm và nỗi đau hiện tại."
+      },
+      "q6": {
+        "q": "Sau bài này làm gì?",
+        "a": "Chọn 1–2 hãng demo live, hỏi triển khai, hoặc đọc overview POS rồi đặt lịch TAKOPOS."
+      }
+    },
+    "ctaTitle": "Kiểm chứng so sánh bằng menu của bạn",
+    "ctaBody": "Đọc xong hãy chạy thử. Đặt demo TAKOPOS miễn phí cho nhu cầu cao điểm và mở rộng."
   }
 }

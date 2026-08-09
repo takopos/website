@@ -28,7 +28,8 @@
     "chainStore": "Chain management",
     "pricing": "Pricing",
     "support": "Support",
-    "diningPos": "Restaurant POS"
+    "diningPos": "Restaurant POS",
+    "chooseDiningPos": "How to choose"
   },
   "hero": {
     "headline": "Stay calm at peak hours. Close without burnout. Help every store earn more.",
@@ -292,7 +293,8 @@
     "quickLinks": "Quick links",
     "privacy": "Privacy policy",
     "terms": "Terms of service",
-    "diningPos": "Restaurant POS guide"
+    "diningPos": "Restaurant POS guide",
+    "chooseDiningPos": "How to choose POS"
   },
   "booking": {
     "title": "Book a free demo",
@@ -495,6 +497,166 @@
       }
     },
     "ctaTitle": "Want to see if TAKOPOS fits your restaurant?",
-    "ctaBody": "Book a free demo with your menu and peak flow. Decide after you see the floor rhythm."
+    "ctaBody": "Book a free demo with your menu and peak flow. Decide after you see the floor rhythm.",
+    "seeChoose": "How to choose a POS"
+  },
+  "chooseDiningPos": {
+    "metaTitle": "How to choose a restaurant POS",
+    "metaDescription": "Restaurant POS comparison beyond hardware price. Evaluate peak flow, kitchen display, inventory, chain sync, and hidden costs—then see when TAKOPOS fits.",
+    "eyebrow": "Restaurant POS buying guide",
+    "h1": "How to choose a restaurant POS: compare these 8 things first",
+    "lead": "Searching restaurant POS brings many vendors. Most regrets come from broken peaks and kitchens, not sticker price. Use this comparison lens before you buy.",
+    "seeGuide": "What is restaurant POS",
+    "seePricing": "See pricing",
+    "mistakesTitle": "4 comparison traps to avoid",
+    "mistakesLead": "Skip these so the spec sheet does not choose for you.",
+    "mistakes": {
+      "m1": {
+        "title": "Comparing only hardware price",
+        "body": "Cheap terminals with weak software still fail at rush. Include fees, onboarding, training, and expansion."
+      },
+      "m2": {
+        "title": "Judging by pretty admin screenshots",
+        "body": "Owners see reports; servers and kitchens decide outcomes. Ask for a demo with your menu."
+      },
+      "m3": {
+        "title": "Longer feature lists win",
+        "body": "Unused modules create training drag. Check if ordering, kitchen, inventory, and chain truly connect."
+      },
+      "m4": {
+        "title": "Ignoring store two",
+        "body": "Single-store success ≠ HQ menu push and multi-store stock. Compare expansion early."
+      }
+    },
+    "compareTitle": "Restaurant POS comparison checklist",
+    "compareLead": "Turn specs into floor questions.",
+    "compareCol": {
+      "dim": "Dimension",
+      "ask": "Ask the vendor",
+      "why": "Why it matters"
+    },
+    "compare": {
+      "c1": {
+        "dim": "Peak ordering",
+        "ask": "Can three people order, add-on, and merge tables without freezing?",
+        "why": "Peak stability beats feature count."
+      },
+      "c2": {
+        "dim": "Kitchen flow",
+        "ask": "Is there KDS with station routing and status back to the floor?",
+        "why": "Cuts misses, remakes, complaints."
+      },
+      "c3": {
+        "dim": "QR / tableside",
+        "ask": "How do guest self-order and staff handheld coexist?",
+        "why": "Conflicts slow table turns."
+      },
+      "c4": {
+        "dim": "Inventory cost",
+        "ask": "Do sales deplete stock with low-level alerts and transfers?",
+        "why": "Otherwise you discover losses too late."
+      },
+      "c5": {
+        "dim": "Loyalty",
+        "ask": "Are points/coupons on the checkout path?",
+        "why": "Disconnected marketing under-converts."
+      },
+      "c6": {
+        "dim": "Chain sync",
+        "ask": "How fast do menu changes hit all stores? Can HQ see live reports?",
+        "why": "Biggest expansion differentiator."
+      },
+      "c7": {
+        "dim": "Payments & invoice",
+        "ask": "Can e-invoice, payments, and shift close finish cleanly?",
+        "why": "Affects compliance and closing speed."
+      },
+      "c8": {
+        "dim": "Onboarding",
+        "ask": "Timeline, training, and who supports failures?",
+        "why": "Software only works if the floor can use it."
+      }
+    },
+    "typesTitle": "Choose by store type",
+    "typesLead": "Priorities change with the model.",
+    "types": {
+      "hotpot": {
+        "title": "Hotpot / add-on heavy dining",
+        "body": "Frequent add-ons and multi-station kitchens raise miss costs.",
+        "focus": "Prioritize: tableside, kitchen routing, status feedback"
+      },
+      "qr": {
+        "title": "QR-first shops",
+        "body": "Lean staff and high self-order need tight front/back handoff.",
+        "focus": "Prioritize: QR flow, notes/languages, direct-to-kitchen"
+      },
+      "chain": {
+        "title": "Chains / multi-brand",
+        "body": "Pain is sync and visibility, not single-store flash.",
+        "focus": "Prioritize: HQ push, multi-store reports, transfers"
+      },
+      "takeout": {
+        "title": "Takeout / delivery heavy",
+        "body": "Pickup tempo and wrong-bag risk dominate.",
+        "focus": "Prioritize: ticket status, pickup flow, delivery integration"
+      }
+    },
+    "costTitle": "Compare total cost, not sticker price",
+    "costLead": "These hidden costs often dwarf the first terminal.",
+    "costs": {
+      "k1": {
+        "title": "Setup and menu build",
+        "body": "Complex combos eat time in onboarding and rework."
+      },
+      "k2": {
+        "title": "Training curve",
+        "body": "High part-time turnover makes non-intuitive UI expensive."
+      },
+      "k3": {
+        "title": "Peak failure losses",
+        "body": "Complaints and remakes from instability beat any discount."
+      },
+      "k4": {
+        "title": "Expansion rebuild",
+        "body": "Rebuilding every new store locks growth speed."
+      }
+    },
+    "takoposTitle": "When TAKOPOS fits the comparison",
+    "takoposBody": "If you care more about floor rhythm than a mega checklist—and plan to grow beyond one store—TAKOPOS aims to connect ordering, kitchen, inventory, and HQ as one workflow.",
+    "takoposPoints": {
+      "p1": "Demo peak ordering with real TPOS Ai screens, not just marketing pages.",
+      "p2": "Counter, QR, tableside, and kitchen display reduce single-terminal bottlenecks.",
+      "p3": "Chain focus on menu sync, visibility, and stock moves.",
+      "p4": "Book a demo with your menu before choosing a plan."
+    },
+    "faqTitle": "How to choose / compare restaurant POS FAQ",
+    "faqs": {
+      "q1": {
+        "q": "What should never be compromised?",
+        "a": "Peak flow and kitchen handoff. Reports can wait; broken service costs now."
+      },
+      "q2": {
+        "q": "Is cheaper always worse?",
+        "a": "Not always. Check limits for your model, peaks, and expansion. Cheap but rebuilt every quarter costs more."
+      },
+      "q3": {
+        "q": "Hardware first or workflow first?",
+        "a": "Define ordering-to-kitchen first, then map terminals—so devices connect."
+      },
+      "q4": {
+        "q": "Can single-store systems become chain-ready?",
+        "a": "Ask about migration, HQ modules, and contracts during comparison. Many “scalable” claims mean start over."
+      },
+      "q5": {
+        "q": "What should I bring to a demo?",
+        "a": "Your real menu, peak paths (dine-in/takeout/add-ons), and current pain points."
+      },
+      "q6": {
+        "q": "What’s next after this guide?",
+        "a": "Shortlist 1–2 vendors for live demos, confirm onboarding, and optionally read the restaurant POS overview before booking TAKOPOS."
+      }
+    },
+    "ctaTitle": "Validate the comparison with your menu",
+    "ctaBody": "After reading, run a live pass. Book a free TAKOPOS demo for your peak and expansion needs."
   }
 }

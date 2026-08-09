@@ -36,7 +36,8 @@ export async function Footer() {
                   >
                     {link.key === "features" ||
                     link.key === "pricing" ||
-                    link.key === "diningPos"
+                    link.key === "diningPos" ||
+                    link.key === "chooseDiningPos"
                       ? tNav(link.key)
                       : t(link.key)}
                   </Link>
