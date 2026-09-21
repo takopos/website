@@ -9,6 +9,7 @@ const paths = [
   "/pricing",
   "/dining-pos",
   "/choose-dining-pos",
+  "/cases",
 ] as const;
 
 function entry(
@@ -34,7 +35,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const priority =
       path === "/"
         ? 1
-        : path === "/dining-pos" || path === "/choose-dining-pos"
+        : path === "/dining-pos" ||
+            path === "/choose-dining-pos" ||
+            path === "/cases"
           ? 0.9
           : 0.8;
     for (const locale of locales) {

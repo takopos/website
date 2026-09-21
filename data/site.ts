@@ -22,6 +22,7 @@ export const siteConfig = {
   ogImage: "/images/brand/takopos-banner-1min.png",
   nav: [
     { key: "diningPos" as const, href: "/dining-pos" },
+    { key: "cases" as const, href: "/cases" },
     { key: "features" as const, href: "/#features" },
     { key: "operations" as const, href: "/#operations" },
     { key: "chainStore" as const, href: "/#chain-store" },
@@ -43,6 +44,7 @@ export const siteConfig = {
   },
   footer: {
     links: [
+      { key: "cases" as const, href: "/cases" },
       { key: "diningPos" as const, href: "/dining-pos" },
       { key: "chooseDiningPos" as const, href: "/choose-dining-pos" },
       { key: "features" as const, href: "/features" },

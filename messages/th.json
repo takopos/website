@@ -29,7 +29,8 @@
     "pricing": "ราคา",
     "support": "ซัพพอร์ต",
     "diningPos": "POS ร้านอาหาร",
-    "chooseDiningPos": "เลือก POS"
+    "chooseDiningPos": "เลือก POS",
+    "cases": "เคส"
   },
   "hero": {
     "headline": "ช่วงพีคไม่ปั่นป่วน ปิดร้านไม่เหนื่อยเกิน ช่วยทุกร้านทำกำไรได้ดีขึ้น",
@@ -267,9 +268,9 @@
     }
   },
   "testimonials": {
-    "eyebrow": "เสียงจากลูกค้า",
-    "title": "ถูกเลือกเพราะเข้าใจหน้างาน",
-    "description": "จากร้านเดี่ยวถึงเชน TAKOPOS ช่วยให้ช่วงพีคนิ่งและโตได้โดยไม่สะดุด",
+    "eyebrow": "เคสลูกค้า",
+    "title": "ถูกเลือกโดยเชนและหลายแนวธุรกิจ",
+    "description": "จากคราฟต์เบียร์ ยากินิกุ ถึงเครื่องดื่มและบาร์—TAKOPOS รองรับ POS, QR และ HQ",
     "items": {
       "1": {
         "quote": "ก่อนหน้านี้ใบครัวช่วงพีคปลิวทั่ว ตอนนี้บอร์ดชัด เวลาออกจานสั้นลง และผู้จัดการไม่ต้องกระทบยอดถึงเช้า",
@@ -294,7 +295,8 @@
     "privacy": "นโยบายความเป็นส่วนตัว",
     "terms": "ข้อกำหนดการใช้งาน",
     "diningPos": "คู่มือ POS ร้านอาหาร",
-    "chooseDiningPos": "เลือก POS"
+    "chooseDiningPos": "เลือก POS",
+    "cases": "เคส POS"
   },
   "booking": {
     "title": "จองเดโมฟรี",
@@ -658,5 +660,74 @@
     },
     "ctaTitle": "พิสูจน์การเปรียบเทียบด้วยเมนูของคุณ",
     "ctaBody": "อ่านจบแล้วลองรันจริง จองเดโม TAKOPOS ฟรีสำหรับพีคและแผนขยาย"
+  },
+  "cases": {
+    "metaTitle": "เคส POS ร้านอาหาร",
+    "metaDescription": "เคส TAKOPOS: ABV, Yakiniku Shu, Eijiro, Meisen, Gaobei, Origin Bar—POS, QR และ HQ",
+    "eyebrow": "เคสลูกค้า",
+    "h1": "เคส POS ร้านอาหาร: จากร้านเดียวถึงเชน",
+    "lead": "บางแบรนด์ที่ใช้ TAKOPOS เราแสดงจำนวนสาขาและโมดูลจริง—ไม่แต่งตัวเลขผลลัพธ์",
+    "seeDiningPos": "POS ร้านอาหารคืออะไร",
+    "seeChoose": "เลือก POS อย่างไร",
+    "seeAll": "ดูเคสทั้งหมด",
+    "listTitle": "แบรนด์โดยรวม",
+    "listLead": "คราฟต์เบียร์ ยากินิกุ อาหารญี่ปุ่น มัทฉะ เครื่องดื่ม และบาร์",
+    "stores": "{count} สาขา",
+    "modules": {
+      "pos": "POS",
+      "qr": "สั่งด้วย QR",
+      "hq": "HQ",
+      "ocard": "เชื่อม OCARD",
+      "erp": "เชื่อม ERP"
+    },
+    "items": {
+      "abv": {
+        "name": "ABV Craft Beer Restaurant",
+        "category": "ร้านคราฟต์เบียร์",
+        "summary": "POS เป็นแกน เชื่อม OCARD และ ERP"
+      },
+      "yakiniku-shu": {
+        "name": "Yakiniku Shu",
+        "category": "เชนยากินิกุ",
+        "summary": "POS, QR และ HQ สำหรับหลายสาขา"
+      },
+      "eijiro": {
+        "name": "Eijiro",
+        "category": "อาหารญี่ปุ่น",
+        "summary": "POS, QR และ HQ ในโฟลว์เดียว"
+      },
+      "meisen": {
+        "name": "Meisen Uji Matcha",
+        "category": "มัทฉะ / เครื่องดื่ม",
+        "summary": "POS กับ HQ ให้หลายสาขาสอดคล้อง"
+      },
+      "gaobei": {
+        "name": "Gaobei Milk King",
+        "category": "เชนเครื่องดื่ม",
+        "summary": "POS ทำให้สั่งและคิดเงินมาตรฐาน"
+      },
+      "origin-bar": {
+        "name": "Origin Bar",
+        "category": "บาร์",
+        "summary": "POS สำหรับบาร์และที่นั่ง"
+      }
+    },
+    "whyTitle": "ทำไมเคสเหล่านี้สำคัญกับ POS ร้านอาหาร",
+    "why": {
+      "w1": {
+        "title": "สเกลเชนจริง",
+        "body": "หลายสาขาต้องรับพีคและซิงก์ได้"
+      },
+      "w2": {
+        "title": "โมดูลตรงความต้องการ",
+        "body": "บางร้านเริ่มที่ POS เพิ่ม QR เพิ่ม HQ"
+      },
+      "w3": {
+        "title": "หลากแนวธุรกิจ",
+        "body": "หลายแนวพิสูจน์ว่า POS ต้องยืดหยุ่น"
+      }
+    },
+    "ctaTitle": "อยากรู้ว่า TAKOPOS เหมาะฟอร์แมตคุณไหม?",
+    "ctaBody": "บอกแนวร้านและจำนวนสาขา เราจะจัดเดโมให้"
   }
 }

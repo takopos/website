@@ -29,7 +29,8 @@
     "pricing": "方案價格",
     "support": "客戶支援",
     "diningPos": "餐飲 POS",
-    "chooseDiningPos": "餐飲 POS 怎麼選"
+    "chooseDiningPos": "餐飲 POS 怎麼選",
+    "cases": "合作案例"
   },
   "hero": {
     "headline": "TAKOPOS 餐飲 POS：尖峰不亂、關店不累",
@@ -267,9 +268,9 @@
     }
   },
   "testimonials": {
-    "eyebrow": "客戶怎麼說",
-    "title": "因為懂現場，所以被現場選擇",
-    "description": "從單店到連鎖，TAKOPOS 陪餐飲業者把尖峰穩住、帳務理清、成長少踩雷。",
+    "eyebrow": "合作案例",
+    "title": "被連鎖與多業態現場選擇",
+    "description": "從精釀啤酒餐廳、燒肉到飲品與酒吧，TAKOPOS 以 POS、掃碼點餐與總部控管支援真實門市營運。",
     "items": {
       "1": {
         "quote": "以前尖峰廚房單飛來飛去，現在看板清楚，出餐時間明顯縮短；店長也不用再半夜對帳到凌晨。",
@@ -294,7 +295,8 @@
     "privacy": "隱私權政策",
     "terms": "服務條款",
     "diningPos": "餐飲 POS 指南",
-    "chooseDiningPos": "餐飲 POS 怎麼選"
+    "chooseDiningPos": "餐飲 POS 怎麼選",
+    "cases": "餐飲 POS 案例"
   },
   "booking": {
     "title": "免費預約體驗",
@@ -658,5 +660,74 @@
     },
     "ctaTitle": "用你的菜單，實測比較結果",
     "ctaBody": "文字比較後，下一步是現場跑一輪。免費預約 TAKOPOS 體驗，驗證尖峰與展店需求。"
+  },
+  "cases": {
+    "metaTitle": "餐飲 POS 導入案例",
+    "metaDescription": "TAKOPOS 餐飲 POS 合作案例：ABV、燒肉眾、榮次郎、明森宇治、高北牛乳大王、Origin Bar 等，涵蓋 POS、掃碼點餐與總部控管。",
+    "eyebrow": "合作案例",
+    "h1": "餐飲 POS 導入案例：從單店到連鎖的現場選擇",
+    "lead": "以下為目前使用 TAKOPOS 的部分品牌。我們用真實店數與使用模組說明，不編造成果數字——重點是：不同業態如何用 POS、掃碼點餐與總部把現場穩住。",
+    "seeDiningPos": "什麼是餐飲 POS",
+    "seeChoose": "餐飲 POS 怎麼選",
+    "seeAll": "看全部案例",
+    "listTitle": "合作品牌一覽",
+    "listLead": "業態涵蓋精釀啤酒餐廳、燒肉、日式餐飲、抹茶專賣、飲品與酒吧。",
+    "stores": "{count} 間門市",
+    "modules": {
+      "pos": "POS",
+      "qr": "掃碼點餐",
+      "hq": "總部控管",
+      "ocard": "整合 OCARD",
+      "erp": "整合 ERP"
+    },
+    "items": {
+      "abv": {
+        "name": "ABV 精釀啤酒餐廳",
+        "category": "精釀啤酒餐廳",
+        "summary": "多店以 POS 為核心，並串接會員（OCARD）與 ERP，讓前台交易與後台營運資料接得起來。"
+      },
+      "yakiniku-shu": {
+        "name": "燒肉眾",
+        "category": "燒肉連鎖",
+        "summary": "導入 POS、掃碼點餐與總部控管，支援多店點餐節奏與總部同步需求。"
+      },
+      "eijiro": {
+        "name": "榮次郎",
+        "category": "日式餐飲",
+        "summary": "使用 POS、掃碼點餐與總部模組，讓點餐與門市管理同一套流程。"
+      },
+      "meisen": {
+        "name": "明森宇治抹茶專賣店",
+        "category": "抹茶／飲品專賣",
+        "summary": "以 POS 搭配總部控管，支援多店商品與營運一致性。"
+      },
+      "gaobei": {
+        "name": "高北牛乳大王",
+        "category": "飲品連鎖",
+        "summary": "以 POS 支撐多店日常點餐與結帳，把現場交易流程標準化。"
+      },
+      "origin-bar": {
+        "name": "Origin Bar",
+        "category": "酒吧",
+        "summary": "酒吧場景以 POS 處理點餐結帳，讓吧台與座位區交易更清楚。"
+      }
+    },
+    "whyTitle": "這些案例對「餐飲 POS」搜尋代表什麼？",
+    "why": {
+      "w1": {
+        "title": "有真實連鎖規模",
+        "body": "多店品牌用得下去，代表系統要扛尖峰、同步與日常營運，而不只是單機收銀。"
+      },
+      "w2": {
+        "title": "模組對應現場需求",
+        "body": "有的只要 POS；需要翻桌效率的加上掃碼；多店再上總部。選購時可對號入座。"
+      },
+      "w3": {
+        "title": "業態夠多元",
+        "body": "燒肉、啤酒餐廳、抹茶、飲品、酒吧——說明餐飲 POS 要能適應不同出餐與點餐節奏。"
+      }
+    },
+    "ctaTitle": "想了解 TAKOPOS 是否適合你的店型？",
+    "ctaBody": "告訴我們業態與店數，業務會依 POS／掃碼／總部需求安排演示。"
   }
 }

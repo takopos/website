@@ -29,7 +29,8 @@
     "pricing": "Bảng giá",
     "support": "Hỗ trợ",
     "diningPos": "POS nhà hàng",
-    "chooseDiningPos": "Cách chọn POS"
+    "chooseDiningPos": "Cách chọn POS",
+    "cases": "Case"
   },
   "hero": {
     "headline": "Giờ cao điểm không loạn, đóng cửa không kiệt sức, giúp mỗi quán kiếm nhiều hơn.",
@@ -267,9 +268,9 @@
     }
   },
   "testimonials": {
-    "eyebrow": "Khách hàng nói gì",
-    "title": "Được chọn vì hiểu hiện trường",
-    "description": "Từ quán đơn đến chuỗi, TAKOPOS giúp giờ cao điểm ổn định và tăng trưởng ít vấp.",
+    "eyebrow": "Case khách hàng",
+    "title": "Được chuỗi và nhiều loại hình lựa chọn",
+    "description": "Từ nhà hàng bia, thịt nướng đến đồ uống và bar—TAKOPOS hỗ trợ POS, QR và HQ.",
     "items": {
       "1": {
         "quote": "Trước đây phiếu bếp bay khắp nơi lúc cao điểm. Giờ bảng rõ, thời gian ra món giảm, quản lý không còn đối soát đến sáng.",
@@ -294,7 +295,8 @@
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản",
     "diningPos": "Hướng dẫn POS nhà hàng",
-    "chooseDiningPos": "Cách chọn POS"
+    "chooseDiningPos": "Cách chọn POS",
+    "cases": "Case POS"
   },
   "booking": {
     "title": "Đặt demo miễn phí",
@@ -658,5 +660,74 @@
     },
     "ctaTitle": "Kiểm chứng so sánh bằng menu của bạn",
     "ctaBody": "Đọc xong hãy chạy thử. Đặt demo TAKOPOS miễn phí cho nhu cầu cao điểm và mở rộng."
+  },
+  "cases": {
+    "metaTitle": "Case POS nhà hàng",
+    "metaDescription": "Case TAKOPOS: ABV, Yakiniku Shu, Eijiro, Meisen, Gaobei, Origin Bar—POS, QR và HQ.",
+    "eyebrow": "Case khách hàng",
+    "h1": "Case POS nhà hàng: từ quán đơn đến chuỗi",
+    "lead": "Một số thương hiệu đang dùng TAKOPOS. Chúng tôi nêu số quán và module thật—không bịa số liệu.",
+    "seeDiningPos": "POS nhà hàng là gì",
+    "seeChoose": "Cách chọn POS",
+    "seeAll": "Xem tất cả case",
+    "listTitle": "Danh sách thương hiệu",
+    "listLead": "Nhà hàng bia thủ công, thịt nướng, Nhật, matcha, đồ uống và bar.",
+    "stores": "{count} cửa hàng",
+    "modules": {
+      "pos": "POS",
+      "qr": "Gọi món QR",
+      "hq": "HQ",
+      "ocard": "Tích hợp OCARD",
+      "erp": "Tích hợp ERP"
+    },
+    "items": {
+      "abv": {
+        "name": "ABV Craft Beer Restaurant",
+        "category": "Nhà hàng bia thủ công",
+        "summary": "POS lõi, nối OCARD và ERP."
+      },
+      "yakiniku-shu": {
+        "name": "Yakiniku Shu",
+        "category": "Chuỗi thịt nướng",
+        "summary": "POS, QR và HQ cho đa quán."
+      },
+      "eijiro": {
+        "name": "Eijiro",
+        "category": "Ẩm thực Nhật",
+        "summary": "POS, QR và HQ cùng một luồng."
+      },
+      "meisen": {
+        "name": "Meisen Uji Matcha",
+        "category": "Matcha / đồ uống",
+        "summary": "POS kèm HQ giữ đồng bộ đa quán."
+      },
+      "gaobei": {
+        "name": "Gaobei Milk King",
+        "category": "Chuỗi đồ uống",
+        "summary": "POS chuẩn hóa gọi món và thanh toán."
+      },
+      "origin-bar": {
+        "name": "Origin Bar",
+        "category": "Bar",
+        "summary": "POS cho bar và khu ngồi."
+      }
+    },
+    "whyTitle": "Vì sao các case này quan trọng với POS nhà hàng",
+    "why": {
+      "w1": {
+        "title": "Quy mô chuỗi thật",
+        "body": "Đa quán đòi hỏi hệ chịu cao điểm và đồng bộ."
+      },
+      "w2": {
+        "title": "Module đúng nhu cầu",
+        "body": "Có quán chỉ cần POS; thêm QR; thêm HQ khi đa quán."
+      },
+      "w3": {
+        "title": "Đủ loại hình",
+        "body": "Nhiều vertical chứng minh POS phải linh hoạt."
+      }
+    },
+    "ctaTitle": "Muốn xem TAKOPOS có hợp model bạn?",
+    "ctaBody": "Cho chúng tôi biết loại hình và số quán để xếp demo."
   }
 }

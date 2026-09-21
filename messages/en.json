@@ -29,7 +29,8 @@
     "pricing": "Pricing",
     "support": "Support",
     "diningPos": "Restaurant POS",
-    "chooseDiningPos": "How to choose"
+    "chooseDiningPos": "How to choose",
+    "cases": "Cases"
   },
   "hero": {
     "headline": "Stay calm at peak hours. Close without burnout. Help every store earn more.",
@@ -267,9 +268,9 @@
     }
   },
   "testimonials": {
-    "eyebrow": "Customer stories",
-    "title": "Chosen by operators because we understand the floor",
-    "description": "From single stores to chains, TAKOPOS helps stabilize peaks, clear accounts, and grow with fewer landmines.",
+    "eyebrow": "Customer cases",
+    "title": "Chosen by chains and diverse F&B formats",
+    "description": "From craft beer dining and yakiniku to drinks and bars, TAKOPOS supports real stores with POS, QR ordering, and HQ control.",
     "items": {
       "1": {
         "quote": "Peak kitchen tickets used to fly everywhere. Now the board is clear, ticket times dropped, and managers don't reconcile until dawn.",
@@ -294,7 +295,8 @@
     "privacy": "Privacy policy",
     "terms": "Terms of service",
     "diningPos": "Restaurant POS guide",
-    "chooseDiningPos": "How to choose POS"
+    "chooseDiningPos": "How to choose POS",
+    "cases": "POS cases"
   },
   "booking": {
     "title": "Book a free demo",
@@ -658,5 +660,74 @@
     },
     "ctaTitle": "Validate the comparison with your menu",
     "ctaBody": "After reading, run a live pass. Book a free TAKOPOS demo for your peak and expansion needs."
+  },
+  "cases": {
+    "metaTitle": "Restaurant POS case studies",
+    "metaDescription": "TAKOPOS restaurant POS customers including ABV, Yakiniku Shu, Eijiro, Meisen Uji, Gaobei, and Origin Bar—covering POS, QR ordering, and HQ control.",
+    "eyebrow": "Customer cases",
+    "h1": "Restaurant POS cases: from single stores to chains",
+    "lead": "Selected brands currently using TAKOPOS. We list real store counts and modules—no invented metrics—so you can see how POS, QR ordering, and HQ fit different F&B models.",
+    "seeDiningPos": "What is restaurant POS",
+    "seeChoose": "How to choose a POS",
+    "seeAll": "View all cases",
+    "listTitle": "Brand overview",
+    "listLead": "Craft beer dining, yakiniku, Japanese dining, matcha, beverages, and bars.",
+    "stores": "{count} locations",
+    "modules": {
+      "pos": "POS",
+      "qr": "QR ordering",
+      "hq": "HQ control",
+      "ocard": "OCARD integration",
+      "erp": "ERP integration"
+    },
+    "items": {
+      "abv": {
+        "name": "ABV Craft Beer Restaurant",
+        "category": "Craft beer restaurant",
+        "summary": "POS at the core, connected with OCARD membership and ERP so front-of-house sales meet back-office operations."
+      },
+      "yakiniku-shu": {
+        "name": "Yakiniku Shu",
+        "category": "Yakiniku chain",
+        "summary": "POS, QR ordering, and HQ control for multi-store ordering tempo and HQ sync."
+      },
+      "eijiro": {
+        "name": "Eijiro",
+        "category": "Japanese dining",
+        "summary": "POS, QR ordering, and HQ modules in one ordering and store-ops flow."
+      },
+      "meisen": {
+        "name": "Meisen Uji Matcha",
+        "category": "Matcha / specialty drinks",
+        "summary": "POS with HQ control to keep products and operations consistent across stores."
+      },
+      "gaobei": {
+        "name": "Gaobei Milk King",
+        "category": "Beverage chain",
+        "summary": "POS standardizes day-to-day ordering and checkout across locations."
+      },
+      "origin-bar": {
+        "name": "Origin Bar",
+        "category": "Bar",
+        "summary": "Bar POS for clearer ordering and checkout across bar and seating areas."
+      }
+    },
+    "whyTitle": "Why these cases matter for restaurant POS search",
+    "why": {
+      "w1": {
+        "title": "Real chain scale",
+        "body": "Multi-store use means the system must handle peaks, sync, and daily ops—not just a single register."
+      },
+      "w2": {
+        "title": "Modules match floor needs",
+        "body": "Some start with POS; add QR for table speed; add HQ for multi-store. Map your needs the same way."
+      },
+      "w3": {
+        "title": "Diverse verticals",
+        "body": "Yakiniku, beer dining, matcha, drinks, bars—restaurant POS must fit different ordering rhythms."
+      }
+    },
+    "ctaTitle": "Want to see if TAKOPOS fits your format?",
+    "ctaBody": "Tell us your concept and store count—we’ll demo POS / QR / HQ around your needs."
   }
 }
