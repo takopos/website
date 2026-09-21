@@ -6,6 +6,7 @@ import { ChainStoreSection } from "@/components/sections/chain-store";
 import { FeaturesSection } from "@/components/sections/features";
 import { HeroSection } from "@/components/sections/hero";
 import { OperationsSection } from "@/components/sections/operations";
+import { PaymentsSection } from "@/components/sections/payments";
 import { PricingSection } from "@/components/sections/pricing";
 import { TestimonialsSection } from "@/components/sections/testimonials";
 import { routing, type AppLocale } from "@/i18n/routing";
@@ -35,6 +36,7 @@ export default async function HomePage({
       <HeroSection />
       <FeaturesSection />
       <OperationsSection />
+      <PaymentsSection />
       <ChainStoreSection />
       <PricingSection />
       <TestimonialsSection />

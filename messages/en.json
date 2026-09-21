@@ -69,7 +69,7 @@
       "payment": {
         "pain": "Checkout queues and painful reconciliation",
         "title": "Payments & shift handover",
-        "description": "Common payments in one flow with clear handover—no more closing at midnight."
+        "description": "Cards, LINE Pay, PX Pay and more in one flow with clear handover—no more closing at midnight."
       }
     },
     "painPrefix": "Pain · "
@@ -105,7 +105,7 @@
       "checkout": {
         "pain": "Long checkout lines, messy reconciliation",
         "title": "POS checkout",
-        "description": "Cash, cards, LINE Pay and more—discounts and members stay on the checkout path."
+        "description": "Cash, cards, LINE Pay, PX Pay and more—discounts and members stay on the checkout path."
       },
       "kds": {
         "pain": "Paper tickets everywhere, shouting to finish",
@@ -155,6 +155,22 @@
         "pain": "Owner away, store is a black box",
         "title": "Run the business from outside",
         "description": "Laptop and mobile stay in sync for patrols and days off."
+      }
+    }
+  },
+  "payments": {
+    "eyebrow": "Payments",
+    "title": "Take the payments your guests already use",
+    "description": "Cards, LINE Pay, and PX Pay sit in one checkout flow—discounts, members, and shift handover stay together.",
+    "methods": {
+      "credit-card": {
+        "name": "Credit card"
+      },
+      "line-pay": {
+        "name": "LINE Pay"
+      },
+      "pxpay": {
+        "name": "PX Pay"
       }
     }
   },
