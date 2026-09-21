@@ -6,6 +6,7 @@ export const siteConfig = {
   keywords: [
     "TAKOPOS",
     "POS",
+    "餐飲",
     "餐飲 POS",
     "餐飲POS",
     "連鎖餐飲",

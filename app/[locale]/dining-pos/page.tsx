@@ -22,9 +22,10 @@ export async function generateMetadata({
     path: "/dining-pos",
     locale,
     keywords: [
+      "餐飲",
+      "POS",
       "餐飲 POS",
       "餐飲POS",
-      "POS",
       "餐廳 POS",
       "連鎖餐飲 POS",
       "餐飲系統",
