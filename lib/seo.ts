@@ -102,6 +102,7 @@ export async function getOrganizationJsonLd(locale: AppLocale) {
     name: t("company"),
     alternateName: siteConfig.companyEn,
     url: siteConfig.url,
+    sameAs: [siteConfig.social.facebook],
     logo: absoluteUrl(brand.logo.full.src),
     email: siteConfig.contact.email,
     telephone: siteConfig.contact.phoneE164,

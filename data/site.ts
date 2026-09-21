@@ -30,6 +30,9 @@ export const siteConfig = {
     { key: "pricing" as const, href: "/#pricing" },
     { key: "support" as const, href: "/#support" },
   ],
+  social: {
+    facebook: "https://www.facebook.com/takopos",
+  },
   contact: {
     email: "service@takopos.com.tw",
     phone: "02 2254 0858",

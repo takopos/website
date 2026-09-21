@@ -52,8 +52,25 @@ export async function Footer() {
             </p>
             <ul className="mt-4 space-y-2 text-sm text-white/75">
               <li>{siteConfig.contact.phone}</li>
-              <li>{siteConfig.contact.email}</li>
+              <li>
+                <a
+                  href={`mailto:${siteConfig.contact.email}`}
+                  className="transition-colors hover:text-[var(--brand-orange)]"
+                >
+                  {siteConfig.contact.email}
+                </a>
+              </li>
               <li>{siteConfig.contact.address}</li>
+              <li>
+                <a
+                  href={siteConfig.social.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-[var(--brand-orange)]"
+                >
+                  Facebook
+                </a>
+              </li>
             </ul>
           </div>
         </div>
