@@ -17,6 +17,7 @@ import { cn } from "@/lib/utils";
 
 type BookingTriggerProps = {
   label: string;
+  ariaLabel?: string;
   className?: string;
   variant?: "default" | "outline" | "secondary" | "ghost" | "destructive" | "link";
   size?: "default" | "xs" | "sm" | "lg" | "icon" | "icon-xs" | "icon-sm" | "icon-lg";
@@ -47,6 +48,7 @@ const initialForm: FormState = {
 
 export function BookingTrigger({
   label,
+  ariaLabel,
   className,
   variant = "default",
   size = "lg",
@@ -114,6 +116,7 @@ export function BookingTrigger({
             variant={variant}
             size={size}
             className={cn(fullWidth && "w-full", className)}
+            aria-label={ariaLabel ?? label}
           />
         }
       >

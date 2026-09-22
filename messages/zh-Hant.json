@@ -1,8 +1,9 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS 餐飲 POS｜諾迪科技智慧餐飲系統",
-    "description": "TAKOPOS 餐飲 POS：專為餐廳與連鎖餐飲打造。把點餐、廚房出餐、庫存與總部控管串成一條路，尖峰不亂、關店不累，顧好客人與成本。",
+    "defaultTitle": "TAKOPOS 智慧餐飲 POS 系統｜諾迪科技",
+    "description": "專為台灣餐飲現場打造。從單店尖峰點餐出單、廚房 KDS 分流，到跨門市庫存控管與總部營運數據，TAKOPOS（TPOS）提供一站式雲端 POS 解決方案，把點餐到營運決策串成一條路。",
+    "audience": "餐飲店家、連鎖餐飲品牌",
     "featuresTitle": "餐飲 POS 產品功能",
     "featuresDescription": "餐飲 POS 核心功能一次看：智慧點餐、廚房出餐看板、庫存成本、會員行銷與營運數據——TAKOPOS 打通餐廳每天卡住的環節。",
     "pricingTitle": "餐飲 POS 方案價格",
@@ -33,46 +34,51 @@
     "cases": "合作案例"
   },
   "hero": {
-    "headline": "TAKOPOS 餐飲 POS：尖峰不亂、關店不累",
-    "supporting": "TAKOPOS 餐飲 POS 懂現場：人手不夠、漏點錯點、廚房單亂飛、月底才知賠錢。把點餐、出餐、庫存與總部控管串成一條路，讓你顧好客人，也顧好成本。"
+    "headline": "TAKOPOS 智慧餐飲 POS 系統：穩住尖峰出餐，伴您走向連鎖餐飲之路",
+    "supporting": "專為台灣餐飲現場打造。從單店尖峰點餐出單、廚房 KDS 分流，到跨門市庫存控管與總部營運數據，TAKOPOS 提供一站式雲端 POS 解決方案，把點餐到營運決策串成一條路。",
+    "ctaGroupLabel": "主要行動呼籲",
+    "bookDemoAria": "預約 TAKOPOS 餐飲 POS 免費體驗示範",
+    "secondaryAria": "查看 TAKOPOS 系統操作與現場動線說明"
   },
   "features": {
     "eyebrow": "產品功能",
     "title": "你每天卡住的地方，我們都先想過了",
     "description": "不是堆功能給你選，而是針對餐飲最痛的現場——點餐、廚房、庫存、會員與帳務——給可落地的解法。",
+    "painLabel": "現場痛點",
+    "solutionLabel": "系統解法",
+    "painPrefix": "痛點 · ",
     "items": {
       "pos": {
         "pain": "尖峰人手不夠、漏點錯點",
         "title": "智慧 POS 與行動點餐",
-        "description": "平板、手機、手持機都能出單；忙線也能穩，少一次重做，就多賺一輪翻桌。"
+        "description": "平板、手機、手持機快速出單；忙線也能穩，少一次重做，就多賺一輪翻桌。"
       },
       "kitchen": {
         "pain": "廚房單亂飛、出餐靠吼",
-        "title": "廚房出餐看板",
-        "description": "訂單即時分流到各站，狀態清楚可見，縮短等待、也降低客訴。"
+        "title": "廚房出餐看板 (KDS)",
+        "description": "即時分流到站、出餐狀態透明，縮短等待、也降低客訴。"
       },
       "inventory": {
         "pain": "食材耗損算不清、月底才知賠錢",
-        "title": "庫存與食材成本",
-        "description": "進銷存連動銷售，缺料先預警，成本不再靠感覺抓。"
+        "title": "庫存與食材成本管理",
+        "description": "進銷存連動、缺料自動預警，成本不再靠感覺抓。"
       },
       "member": {
         "pain": "客人來過一次就消失",
         "title": "會員與再購行銷",
-        "description": "集點、優惠券、再購提醒，把回頭客變成可預期的營收。"
+        "description": "集點、優惠券、精準再購提醒，把回頭客變成可預期的營收。"
       },
       "analytics": {
         "pain": "憑感覺進貨、不知道哪道菜在賺錢",
         "title": "營運數據洞察",
-        "description": "日報、時段熱區、商品排行一手掌握，進貨與排班有依據。"
+        "description": "營收日報、時段熱區、商品毛利排行一手掌握，進貨與排班有依據。"
       },
       "payment": {
         "pain": "結帳排隊、對帳頭痛",
-        "title": "多元金流與交班",
-        "description": "常見支付一次整合，交班盤點清楚，關店不用再對到半夜。"
+        "title": "多元金流與交班整合",
+        "description": "主流電子支付一次整合、交班盤點免手動算帳，關店不用再對到半夜。"
       }
-    },
-    "painPrefix": "痛點 · "
+    }
   },
   "operations": {
     "eyebrow": "系統操作圖",

@@ -27,13 +27,17 @@ export async function FeaturesSection() {
     <section
       id={featuresSection.id}
       className="scroll-mt-20 border-y border-border/60 bg-background py-20 sm:py-24"
+      aria-labelledby="features-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
           <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
             {t("eyebrow")}
           </p>
-          <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <h2
+            id="features-heading"
+            className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
+          >
             {t("title")}
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
@@ -41,28 +45,38 @@ export async function FeaturesSection() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+        <dl className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => {
             const Icon = iconMap[feature.icon] ?? MonitorSmartphone;
+            const painId = `feature-pain-${feature.id}`;
+            const solutionId = `feature-solution-${feature.id}`;
+
             return (
-              <article key={feature.id} className="group">
+              <div key={feature.id} className="group">
                 <div className="flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-transform duration-300 group-hover:-translate-y-0.5">
-                  <Icon className="size-5" />
+                  <Icon className="size-5" aria-hidden="true" />
                 </div>
-                <p className="mt-4 text-xs font-medium tracking-wide text-primary">
+                <dt id={painId} className="mt-4 text-xs font-medium tracking-wide text-primary">
+                  <span className="sr-only">{t("painLabel")}: </span>
                   {t("painPrefix")}
                   {t(`items.${feature.id}.pain`)}
-                </p>
-                <h3 className="mt-1.5 font-heading text-lg font-semibold text-foreground">
-                  {t(`items.${feature.id}.title`)}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {t(`items.${feature.id}.description`)}
-                </p>
-              </article>
+                </dt>
+                <dd className="mt-1.5" aria-labelledby={`${painId} ${solutionId}`}>
+                  <h3
+                    id={solutionId}
+                    className="font-heading text-lg font-semibold text-foreground"
+                  >
+                    <span className="sr-only">{t("solutionLabel")}: </span>
+                    {t(`items.${feature.id}.title`)}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {t(`items.${feature.id}.description`)}
+                  </p>
+                </dd>
+              </div>
             );
           })}
-        </div>
+        </dl>
       </div>
     </section>
   );

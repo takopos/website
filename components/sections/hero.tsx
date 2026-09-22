@@ -12,7 +12,7 @@ export async function HeroSection() {
   const tCta = await getTranslations("cta");
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden" aria-labelledby="hero-heading">
       <div className="absolute inset-0 bg-[linear-gradient(165deg,#ffffff_0%,#fff7f0_48%,#f5f5f5_100%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(208,104,44,0.14),transparent_48%),radial-gradient(ellipse_at_bottom_left,rgba(108,100,96,0.08),transparent_42%)]" />
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
@@ -22,15 +22,19 @@ export async function HeroSection() {
           <p className="font-heading text-sm font-semibold tracking-[0.22em] text-primary uppercase">
             {tCommon("company")} · {tCommon("brand")}
           </p>
-          <h1 className="mt-4 font-heading text-4xl leading-[1.15] font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[3.15rem]">
+          <h1
+            id="hero-heading"
+            className="mt-4 font-heading text-4xl leading-[1.15] font-semibold tracking-tight text-foreground sm:text-5xl lg:text-[3.15rem]"
+          >
             {t("headline")}
           </h1>
           <p className="mt-5 max-w-lg text-base leading-relaxed text-muted-foreground sm:text-lg">
             {t("supporting")}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap gap-3" role="group" aria-label={t("ctaGroupLabel")}>
             <BookingTrigger
               label={tCta("bookDemo")}
+              ariaLabel={t("bookDemoAria")}
               size="lg"
               className="h-11 px-5 text-sm"
             />
@@ -40,6 +44,7 @@ export async function HeroSection() {
               variant="outline"
               size="lg"
               className="h-11 px-5 text-sm"
+              aria-label={t("secondaryAria")}
             >
               {tCta("secondary")}
             </Button>

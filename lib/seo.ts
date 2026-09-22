@@ -94,13 +94,28 @@ export async function createPageMetadata({
   };
 }
 
+const SOFTWARE_FEATURE_IDS = [
+  "pos",
+  "kitchen",
+  "inventory",
+  "member",
+  "analytics",
+  "payment",
+] as const;
+
 export async function getOrganizationJsonLd(locale: AppLocale) {
   const t = await getTranslations({ locale, namespace: "common" });
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: t("company"),
-    alternateName: siteConfig.companyEn,
+    legalName: t("company"),
+    alternateName: [siteConfig.brand, "TPOS", siteConfig.companyEn],
+    brand: {
+      "@type": "Brand",
+      name: siteConfig.brand,
+      alternateName: ["TPOS", "TAKOPOS（TPOS）"],
+    },
     url: siteConfig.url,
     sameAs: [siteConfig.social.facebook],
     logo: absoluteUrl(brand.logo.full.src),
@@ -120,21 +135,39 @@ export async function getOrganizationJsonLd(locale: AppLocale) {
       areaServed: "TW",
       availableLanguage: ["zh-TW", "en", "vi", "th"],
     },
+    knowsAbout: [
+      "餐飲 POS",
+      "Restaurant POS",
+      "Kitchen Display System",
+      "連鎖餐飲管理",
+    ],
   };
 }
 
 export async function getSoftwareApplicationJsonLd(locale: AppLocale) {
   const t = await getTranslations({ locale, namespace: "meta" });
   const tCommon = await getTranslations({ locale, namespace: "common" });
+  const tFeatures = await getTranslations({ locale, namespace: "features" });
+  const featureList = SOFTWARE_FEATURE_IDS.map((id) =>
+    tFeatures(`items.${id}.title`)
+  );
+
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     name: siteConfig.brand,
+    alternateName: ["TPOS", "TAKOPOS（TPOS）", "TAKOPOS POS"],
     applicationCategory: "BusinessApplication",
+    applicationSubCategory: "Point of Sale (POS)",
     operatingSystem: "Web, iOS, Android",
     description: t("description"),
     url: siteConfig.url,
     image: absoluteUrl(siteConfig.ogImage),
+    featureList,
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: t("audience"),
+    },
     offers: {
       "@type": "Offer",
       url: absoluteLocalizedUrl(locale, "/pricing"),
@@ -144,7 +177,13 @@ export async function getSoftwareApplicationJsonLd(locale: AppLocale) {
     provider: {
       "@type": "Organization",
       name: tCommon("company"),
+      alternateName: [siteConfig.brand, "TPOS", siteConfig.companyEn],
       url: siteConfig.url,
+    },
+    brand: {
+      "@type": "Brand",
+      name: siteConfig.brand,
+      alternateName: ["TPOS"],
     },
   };
 }

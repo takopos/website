@@ -1,8 +1,9 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS｜Nordi Tech Smart F&B System",
-    "description": "We understand restaurant operations: short-staffed peaks, missed orders, chaotic kitchens, and losses discovered too late. TAKOPOS connects ordering, kitchen, inventory, and HQ control so you can serve guests and protect margins.",
+    "defaultTitle": "TAKOPOS Smart Restaurant POS｜Nordi Tech",
+    "description": "Built for Taiwan F&B floors. From single-store peak ordering and kitchen KDS routing to multi-store inventory and HQ analytics, TAKOPOS (TPOS) is an all-in-one cloud POS that connects ordering to operating decisions.",
+    "audience": "Restaurants and multi-unit F&B brands",
     "featuresTitle": "Features",
     "featuresDescription": "Smart POS, mobile ordering, kitchen display, inventory cost, loyalty, and ops analytics—TAKOPOS clears the daily bottlenecks in F&B.",
     "pricingTitle": "Pricing",
@@ -33,46 +34,51 @@
     "cases": "Cases"
   },
   "hero": {
-    "headline": "Stay calm at peak hours. Close without burnout. Help every store earn more.",
-    "supporting": "We understand restaurant operations: short-staffed peaks, missed orders, chaotic kitchens, and losses discovered too late. TAKOPOS connects ordering, kitchen, inventory, and HQ control so you can serve guests and protect margins."
+    "headline": "TAKOPOS Smart Restaurant POS: steady peak plating, ready for chain growth",
+    "supporting": "Built for Taiwan F&B floors. From single-store peak ordering and kitchen KDS routing to multi-store inventory control and HQ analytics, TAKOPOS delivers an all-in-one cloud POS that connects ordering to operating decisions.",
+    "ctaGroupLabel": "Primary calls to action",
+    "bookDemoAria": "Book a free TAKOPOS restaurant POS demo",
+    "secondaryAria": "See how TAKOPOS works on the restaurant floor"
   },
   "features": {
     "eyebrow": "Features",
     "title": "We've already thought through where you get stuck every day",
     "description": "Not a feature dump—practical solutions for ordering, kitchen, inventory, loyalty, and accounting.",
+    "painLabel": "Floor pain point",
+    "solutionLabel": "System solution",
+    "painPrefix": "Pain · ",
     "items": {
       "pos": {
         "pain": "Short-staffed peaks, missed or wrong orders",
         "title": "Smart POS & mobile ordering",
-        "description": "Tablets, phones, and handhelds can all take orders—keep pace in rush hours and win more table turns."
+        "description": "Tablets, phones, and handhelds take orders fast—keep pace in rush hours and win more table turns."
       },
       "kitchen": {
         "pain": "Paper tickets flying, kitchen by shouting",
-        "title": "Kitchen display system",
-        "description": "Orders route to stations in real time with clear status—faster service, fewer complaints."
+        "title": "Kitchen display system (KDS)",
+        "description": "Real-time station routing with transparent plating status—faster service, fewer complaints."
       },
       "inventory": {
         "pain": "Food cost unclear until month-end",
-        "title": "Inventory & food cost",
-        "description": "Purchasing linked to sales with shortage alerts—stop managing cost by gut feel."
+        "title": "Inventory & food cost management",
+        "description": "Purchasing linked to sales with automatic shortage alerts—stop managing cost by gut feel."
       },
       "member": {
         "pain": "Guests come once and disappear",
         "title": "Loyalty & re-purchase marketing",
-        "description": "Points, coupons, and reminders turn repeat visits into predictable revenue."
+        "description": "Points, coupons, and precise re-purchase reminders turn repeat visits into predictable revenue."
       },
       "analytics": {
         "pain": "Buying by gut, unsure which dishes profit",
         "title": "Operations insights",
-        "description": "Daily reports, peak hours, and item rankings guide purchasing and staffing."
+        "description": "Daily revenue reports, peak-hour heatmaps, and item margin rankings guide purchasing and staffing."
       },
       "payment": {
         "pain": "Checkout queues and painful reconciliation",
-        "title": "Payments & shift handover",
-        "description": "Common payments in one flow with clear handover—no more closing at midnight."
+        "title": "Payments & shift handover integration",
+        "description": "Mainstream e-payments in one flow with shift counts that skip manual math—no more midnight closings."
       }
-    },
-    "painPrefix": "Pain · "
+    }
   },
   "operations": {
     "eyebrow": "Operations map",

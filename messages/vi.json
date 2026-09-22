@@ -1,8 +1,9 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS｜Hệ thống F&B thông minh Nordi Tech",
-    "description": "Chúng tôi hiểu vận hành nhà hàng: thiếu nhân sự giờ cao điểm, gọi món sai, bếp hỗn loạn, cuối tháng mới biết lỗ. TAKOPOS kết nối gọi món, bếp, tồn kho và HQ.",
+    "defaultTitle": "TAKOPOS POS nhà hàng thông minh｜Nordi Tech",
+    "description": "Thiết kế cho mặt sàn F&B Đài Loan. Từ gọi món giờ cao điểm và chia đơn KDS đến tồn kho đa cửa hàng và dữ liệu HQ, TAKOPOS (TPOS) là POS đám mây một cửa kết nối gọi món đến quyết định vận hành.",
+    "audience": "Nhà hàng và thương hiệu chuỗi F&B",
     "featuresTitle": "Tính năng",
     "featuresDescription": "POS thông minh, gọi món di động, KDS, chi phí tồn kho, thành viên và phân tích vận hành.",
     "pricingTitle": "Bảng giá",
@@ -33,46 +34,51 @@
     "cases": "Case"
   },
   "hero": {
-    "headline": "Giờ cao điểm không loạn, đóng cửa không kiệt sức, giúp mỗi quán kiếm nhiều hơn.",
-    "supporting": "Chúng tôi hiểu vận hành nhà hàng: thiếu nhân sự giờ cao điểm, gọi món sai, bếp hỗn loạn, cuối tháng mới biết lỗ. TAKOPOS kết nối gọi món, bếp, tồn kho và HQ."
+    "headline": "TAKOPOS POS nhà hàng thông minh: giữ nhịp giờ cao điểm, đồng hành mở chuỗi",
+    "supporting": "Thiết kế cho mặt sàn F&B Đài Loan. Từ gọi món giờ cao điểm và chia đơn KDS đến tồn kho đa cửa hàng và dữ liệu HQ, TAKOPOS cung cấp POS đám mây một cửa, nối gọi món đến quyết định vận hành.",
+    "ctaGroupLabel": "Lời kêu gọi hành động chính",
+    "bookDemoAria": "Đặt demo miễn phí TAKOPOS POS nhà hàng",
+    "secondaryAria": "Xem cách TAKOPOS vận hành trên sàn nhà hàng"
   },
   "features": {
     "eyebrow": "Tính năng",
     "title": "Chúng tôi đã nghĩ trước những chỗ bạn kẹt mỗi ngày",
     "description": "Không chất đống tính năng—giải pháp thực tế cho gọi món, bếp, tồn kho, thành viên và sổ sách.",
+    "painLabel": "Nỗi đau mặt sàn",
+    "solutionLabel": "Giải pháp hệ thống",
+    "painPrefix": "Nỗi đau · ",
     "items": {
       "pos": {
         "pain": "Thiếu người giờ cao điểm, gọi món sai",
         "title": "POS thông minh & gọi món di động",
-        "description": "Máy tính bảng, điện thoại, handheld đều gọi món được—giữ nhịp giờ cao điểm."
+        "description": "Máy tính bảng, điện thoại, handheld gọi món nhanh—giữ nhịp giờ cao điểm."
       },
       "kitchen": {
         "pain": "Phiếu bếp bay loạn, hô nhau ra món",
         "title": "Màn hình bếp KDS",
-        "description": "Đơn chia trạm theo thời gian thực, trạng thái rõ—nhanh hơn, ít khiếu nại."
+        "description": "Chia trạm tức thì, trạng thái ra món minh bạch—nhanh hơn, ít khiếu nại."
       },
       "inventory": {
         "pain": "Chi phí nguyên liệu cuối tháng mới rõ",
-        "title": "Tồn kho & giá vốn",
-        "description": "Xuất nhập liên kết bán hàng, cảnh báo thiếu hàng."
+        "title": "Quản lý tồn kho & giá vốn",
+        "description": "Xuất nhập liên kết bán hàng, tự động cảnh báo thiếu hàng."
       },
       "member": {
         "pain": "Khách đến một lần rồi biến mất",
         "title": "Thành viên & tái mua",
-        "description": "Điểm, coupon, nhắc quay lại thành doanh thu dự đoán được."
+        "description": "Điểm, coupon, nhắc tái mua chính xác thành doanh thu dự đoán được."
       },
       "analytics": {
         "pain": "Nhập hàng theo cảm tính",
         "title": "Phân tích vận hành",
-        "description": "Báo cáo ngày, khung giờ nóng, ranking món."
+        "description": "Báo cáo doanh thu ngày, khung giờ nóng, xếp hạng biên lợi nhuận món."
       },
       "payment": {
         "pain": "Hàng chờ thanh toán, đối soát đau đầu",
-        "title": "Thanh toán & giao ca",
-        "description": "Gộp phương thức phổ biến, giao ca rõ ràng."
+        "title": "Tích hợp thanh toán & giao ca",
+        "description": "Gộp thanh toán điện tử phổ biến, giao ca không cần tính tay."
       }
-    },
-    "painPrefix": "Nỗi đau · "
+    }
   },
   "operations": {
     "eyebrow": "Sơ đồ vận hành",
