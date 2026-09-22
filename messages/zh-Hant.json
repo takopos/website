@@ -2,7 +2,7 @@
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
     "defaultTitle": "TAKOPOS 智慧餐飲 POS 系統｜諾迪科技",
-    "description": "專為台灣餐飲現場打造。從單店尖峰點餐出單、廚房 KDS 分流，到跨門市庫存控管與總部營運數據，TAKOPOS（TPOS）提供一站式雲端 POS 解決方案，把點餐到營運決策串成一條路。",
+    "description": "TAKOPOS 智慧雲端餐飲 POS，原生整合 TPOS AI 多模態技術：菜單與進貨單 Vision 辨識、酒吧液面視覺盤點、AI 商品圖生成與 Gemini 混合式營運顧問。",
     "audience": "餐飲店家、連鎖餐飲品牌",
     "featuresTitle": "餐飲 POS 產品功能",
     "featuresDescription": "餐飲 POS 核心功能一次看：智慧點餐、廚房出餐看板、庫存成本、會員行銷與營運數據——TAKOPOS 打通餐廳每天卡住的環節。",
@@ -25,6 +25,7 @@
   },
   "nav": {
     "features": "產品功能",
+    "tposAi": "TPOS AI",
     "operations": "系統操作",
     "chainStore": "連鎖管理",
     "pricing": "方案價格",
@@ -35,10 +36,33 @@
   },
   "hero": {
     "headline": "TAKOPOS 智慧餐飲 POS 系統：穩住尖峰出餐，伴您走向連鎖餐飲之路",
-    "supporting": "專為台灣餐飲現場打造。從單店尖峰點餐出單、廚房 KDS 分流，到跨門市庫存控管與總部營運數據，TAKOPOS 提供一站式雲端 POS 解決方案，把點餐到營運決策串成一條路。",
+    "supporting": "專為台灣餐飲現場打造。從單店尖峰出單、廚房看板分流，到結合 TPOS AI 視覺辨識、智慧盤點與總部營運決策，提供真正省時的一站式雲端 POS 解決方案。",
     "ctaGroupLabel": "主要行動呼籲",
     "bookDemoAria": "預約 TAKOPOS 餐飲 POS 免費體驗示範",
     "secondaryAria": "查看 TAKOPOS 系統操作與現場動線說明"
+  },
+  "tposAi": {
+    "eyebrow": "TPOS AI",
+    "title": "原生多模態 AI，直接落地餐飲現場",
+    "description": "不是外掛插件，而是與點餐、庫存、報表同一套 TAKOPOS 流程：Vision 辨識、Imagen 生成、Gemini 營運分析，把繁瑣建檔與盤點變成幾次拍照與確認。",
+    "items": {
+      "visionCatalog": {
+        "title": "AI 視覺建檔",
+        "description": "拍照即可匯入菜單與紙本進貨單，免去手動輸入繁瑣步驟。"
+      },
+      "barStocktake": {
+        "title": "AI 酒吧盤點",
+        "description": "鏡頭精準辨識瓶身剩餘液面，徹底告別傳統目測與秤重盤點。"
+      },
+      "imagenTranslate": {
+        "title": "AI 圖文生成與翻譯",
+        "description": "內建 Imagen 快速生成餐點情境圖，搭配英日韓多語翻譯，升級數位點餐體驗。"
+      },
+      "opsAdvisor": {
+        "title": "AI 營運顧問",
+        "description": "結合 Gemini 與真實營收數據，每日直接給出 3 條經營改善行動，不做無效數字推疊。"
+      }
+    }
   },
   "features": {
     "eyebrow": "產品功能",

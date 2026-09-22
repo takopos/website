@@ -2,7 +2,7 @@
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
     "defaultTitle": "TAKOPOS Smart Restaurant POS｜Nordi Tech",
-    "description": "Built for Taiwan F&B floors. From single-store peak ordering and kitchen KDS routing to multi-store inventory and HQ analytics, TAKOPOS (TPOS) is an all-in-one cloud POS that connects ordering to operating decisions.",
+    "description": "TAKOPOS cloud restaurant POS with native TPOS AI multimodality: Vision OCR for menus and purchase slips, bar liquid-level stocktake, AI product imagery, and Gemini hybrid ops advisory.",
     "audience": "Restaurants and multi-unit F&B brands",
     "featuresTitle": "Features",
     "featuresDescription": "Smart POS, mobile ordering, kitchen display, inventory cost, loyalty, and ops analytics—TAKOPOS clears the daily bottlenecks in F&B.",
@@ -25,6 +25,7 @@
   },
   "nav": {
     "features": "Features",
+    "tposAi": "TPOS AI",
     "operations": "Operations",
     "chainStore": "Chain management",
     "pricing": "Pricing",
@@ -35,10 +36,33 @@
   },
   "hero": {
     "headline": "TAKOPOS Smart Restaurant POS: steady peak plating, ready for chain growth",
-    "supporting": "Built for Taiwan F&B floors. From single-store peak ordering and kitchen KDS routing to multi-store inventory control and HQ analytics, TAKOPOS delivers an all-in-one cloud POS that connects ordering to operating decisions.",
+    "supporting": "Built for Taiwan F&B floors. From single-store peak ordering and kitchen display routing to TPOS AI vision recognition, smart stocktake, and HQ decisions—a truly time-saving all-in-one cloud POS.",
     "ctaGroupLabel": "Primary calls to action",
     "bookDemoAria": "Book a free TAKOPOS restaurant POS demo",
     "secondaryAria": "See how TAKOPOS works on the restaurant floor"
+  },
+  "tposAi": {
+    "eyebrow": "TPOS AI",
+    "title": "Native multimodal AI that ships on the floor",
+    "description": "Not a bolt-on plugin—Vision, Imagen, and Gemini sit inside the same TAKOPOS ordering, inventory, and reporting flow so cataloging and stocktake become a few photos and confirms.",
+    "items": {
+      "visionCatalog": {
+        "title": "AI vision cataloging",
+        "description": "Photograph menus and paper purchase slips to import items—skip tedious manual entry."
+      },
+      "barStocktake": {
+        "title": "AI bar stocktake",
+        "description": "Camera estimates remaining liquid level in bottles—no more eyeballing or weighing."
+      },
+      "imagenTranslate": {
+        "title": "AI imagery & translation",
+        "description": "Built-in Imagen creates dish lifestyle shots plus EN/JA/KO menu translation for digital ordering."
+      },
+      "opsAdvisor": {
+        "title": "AI ops advisor",
+        "description": "Gemini plus real sales data delivers 3 actionable improvements daily—not vanity dashboards."
+      }
+    }
   },
   "features": {
     "eyebrow": "Features",

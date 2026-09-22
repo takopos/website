@@ -2,7 +2,7 @@
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
     "defaultTitle": "TAKOPOS POS nhà hàng thông minh｜Nordi Tech",
-    "description": "Thiết kế cho mặt sàn F&B Đài Loan. Từ gọi món giờ cao điểm và chia đơn KDS đến tồn kho đa cửa hàng và dữ liệu HQ, TAKOPOS (TPOS) là POS đám mây một cửa kết nối gọi món đến quyết định vận hành.",
+    "description": "TAKOPOS POS đám mây nhà hàng với TPOS AI đa phương thức: Vision OCR thực đơn và phiếu nhập, đếm tồn rượu theo mực chất lỏng, tạo ảnh món AI và tư vấn vận hành Gemini.",
     "audience": "Nhà hàng và thương hiệu chuỗi F&B",
     "featuresTitle": "Tính năng",
     "featuresDescription": "POS thông minh, gọi món di động, KDS, chi phí tồn kho, thành viên và phân tích vận hành.",
@@ -25,6 +25,7 @@
   },
   "nav": {
     "features": "Tính năng",
+    "tposAi": "TPOS AI",
     "operations": "Vận hành",
     "chainStore": "Chuỗi cửa hàng",
     "pricing": "Bảng giá",
@@ -35,10 +36,33 @@
   },
   "hero": {
     "headline": "TAKOPOS POS nhà hàng thông minh: giữ nhịp giờ cao điểm, đồng hành mở chuỗi",
-    "supporting": "Thiết kế cho mặt sàn F&B Đài Loan. Từ gọi món giờ cao điểm và chia đơn KDS đến tồn kho đa cửa hàng và dữ liệu HQ, TAKOPOS cung cấp POS đám mây một cửa, nối gọi món đến quyết định vận hành.",
+    "supporting": "Thiết kế cho mặt sàn F&B Đài Loan. Từ gọi món giờ cao điểm và chia đơn bếp, đến TPOS AI nhận diện hình ảnh, kiểm kê thông minh và quyết định HQ—POS đám mây một cửa thật sự tiết kiệm thời gian.",
     "ctaGroupLabel": "Lời kêu gọi hành động chính",
     "bookDemoAria": "Đặt demo miễn phí TAKOPOS POS nhà hàng",
     "secondaryAria": "Xem cách TAKOPOS vận hành trên sàn nhà hàng"
+  },
+  "tposAi": {
+    "eyebrow": "TPOS AI",
+    "title": "AI đa phương thức gốc, chạy ngay trên sàn",
+    "description": "Không phải plugin gắn thêm—Vision, Imagen và Gemini nằm trong cùng luồng gọi món, tồn kho và báo cáo của TAKOPOS.",
+    "items": {
+      "visionCatalog": {
+        "title": "Lập hồ sơ bằng Vision AI",
+        "description": "Chụp thực đơn và phiếu nhập giấy để nhập hàng—bỏ nhập tay dài dòng."
+      },
+      "barStocktake": {
+        "title": "Kiểm kê bar bằng AI",
+        "description": "Camera ước lượng mực chất lỏng còn lại trong chai—không cần cân hay ước lượng mắt."
+      },
+      "imagenTranslate": {
+        "title": "Tạo ảnh & dịch AI",
+        "description": "Imagen tạo ảnh món theo ngữ cảnh kèm dịch EN/JA/KO cho gọi món số."
+      },
+      "opsAdvisor": {
+        "title": "Cố vấn vận hành AI",
+        "description": "Gemini cộng dữ liệu doanh thu thật đưa 3 hành động cải thiện mỗi ngày."
+      }
+    }
   },
   "features": {
     "eyebrow": "Tính năng",

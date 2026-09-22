@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import { brand } from "@/data/brand";
 import { siteConfig } from "@/data/site";
+import { softwareAiDescription, softwareAiFeatureList } from "@/data/tpos-ai";
 import { locales, type AppLocale, routing } from "@/i18n/routing";
 
 const ogLocaleMap: Record<AppLocale, string> = {
@@ -94,15 +95,6 @@ export async function createPageMetadata({
   };
 }
 
-const SOFTWARE_FEATURE_IDS = [
-  "pos",
-  "kitchen",
-  "inventory",
-  "member",
-  "analytics",
-  "payment",
-] as const;
-
 export async function getOrganizationJsonLd(locale: AppLocale) {
   const t = await getTranslations({ locale, namespace: "common" });
   return {
@@ -110,11 +102,11 @@ export async function getOrganizationJsonLd(locale: AppLocale) {
     "@type": "Organization",
     name: t("company"),
     legalName: t("company"),
-    alternateName: [siteConfig.brand, "TPOS", siteConfig.companyEn],
+    alternateName: [siteConfig.brand, "TPOS", "TPOS AI", siteConfig.companyEn],
     brand: {
       "@type": "Brand",
       name: siteConfig.brand,
-      alternateName: ["TPOS", "TAKOPOS（TPOS）"],
+      alternateName: ["TPOS", "TPOS AI", "TAKOPOS（TPOS）"],
     },
     url: siteConfig.url,
     sameAs: [siteConfig.social.facebook],
@@ -138,8 +130,11 @@ export async function getOrganizationJsonLd(locale: AppLocale) {
     knowsAbout: [
       "餐飲 POS",
       "Restaurant POS",
+      "TPOS AI",
+      "Vision OCR",
       "Kitchen Display System",
       "連鎖餐飲管理",
+      "Gemini 營運分析",
     ],
   };
 }
@@ -147,43 +142,39 @@ export async function getOrganizationJsonLd(locale: AppLocale) {
 export async function getSoftwareApplicationJsonLd(locale: AppLocale) {
   const t = await getTranslations({ locale, namespace: "meta" });
   const tCommon = await getTranslations({ locale, namespace: "common" });
-  const tFeatures = await getTranslations({ locale, namespace: "features" });
-  const featureList = SOFTWARE_FEATURE_IDS.map((id) =>
-    tFeatures(`items.${id}.title`)
-  );
 
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    name: siteConfig.brand,
-    alternateName: ["TPOS", "TAKOPOS（TPOS）", "TAKOPOS POS"],
+    name: "TAKOPOS (TPOS AI)",
+    operatingSystem: "Android, Web, Cloud",
     applicationCategory: "BusinessApplication",
-    applicationSubCategory: "Point of Sale (POS)",
-    operatingSystem: "Web, iOS, Android",
-    description: t("description"),
-    url: siteConfig.url,
-    image: absoluteUrl(siteConfig.ogImage),
-    featureList,
-    audience: {
-      "@type": "BusinessAudience",
-      audienceType: t("audience"),
-    },
     offers: {
       "@type": "Offer",
       url: absoluteLocalizedUrl(locale, "/pricing"),
       priceCurrency: "TWD",
       availability: "https://schema.org/InStock",
     },
+    description: softwareAiDescription,
+    featureList: [...softwareAiFeatureList],
+    url: siteConfig.url,
+    image: absoluteUrl(siteConfig.ogImage),
+    alternateName: [siteConfig.brand, "TPOS", "TPOS AI", "TAKOPOS POS"],
+    applicationSubCategory: "Point of Sale (POS)",
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: t("audience"),
+    },
     provider: {
       "@type": "Organization",
       name: tCommon("company"),
-      alternateName: [siteConfig.brand, "TPOS", siteConfig.companyEn],
+      alternateName: [siteConfig.brand, "TPOS", "TPOS AI", siteConfig.companyEn],
       url: siteConfig.url,
     },
     brand: {
       "@type": "Brand",
       name: siteConfig.brand,
-      alternateName: ["TPOS"],
+      alternateName: ["TPOS", "TPOS AI"],
     },
   };
 }
