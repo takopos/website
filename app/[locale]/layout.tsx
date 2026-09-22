@@ -57,8 +57,22 @@ export async function generateMetadata({
       template: `%s｜${siteConfig.brand}`,
     },
     icons: {
-      icon: brand.logo.favicon,
-      apple: brand.logo.favicon,
+      icon: [
+        { url: "/favicon.ico", sizes: "any" },
+        {
+          url: brand.logo.favicon,
+          type: "image/png",
+          sizes: "512x512",
+        },
+      ],
+      shortcut: "/favicon.ico",
+      apple: [
+        {
+          url: "/apple-icon.png",
+          type: "image/png",
+          sizes: "180x180",
+        },
+      ],
     },
     robots: {
       index: true,
