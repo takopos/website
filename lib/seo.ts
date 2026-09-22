@@ -95,103 +95,142 @@ export async function createPageMetadata({
   };
 }
 
-export async function getOrganizationJsonLd(locale: AppLocale) {
-  const t = await getTranslations({ locale, namespace: "common" });
+export async function getSiteGraphJsonLd(locale: AppLocale) {
+  const t = await getTranslations({ locale, namespace: "meta" });
+  const tCommon = await getTranslations({ locale, namespace: "common" });
+
+  const organizationId = `${siteConfig.url}/#organization`;
+  const softwareId = `${siteConfig.url}/#software`;
+  const websiteId = `${siteConfig.url}/#website`;
+  const logoUrl = absoluteUrl(brand.logo.mark.src);
+  const logoImageObject = {
+    "@type": "ImageObject" as const,
+    url: logoUrl,
+    contentUrl: logoUrl,
+    width: brand.logo.mark.width,
+    height: brand.logo.mark.height,
+    caption: brand.logo.mark.alt,
+  };
+
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    name: t("company"),
-    legalName: t("company"),
-    alternateName: [siteConfig.brand, "TPOS", "TPOS AI", siteConfig.companyEn],
-    brand: {
-      "@type": "Brand",
-      name: siteConfig.brand,
-      alternateName: ["TPOS", "TPOS AI", "TAKOPOS（TPOS）"],
-    },
-    url: siteConfig.url,
-    sameAs: [siteConfig.social.facebook],
-    logo: absoluteUrl(brand.logo.full.src),
-    email: siteConfig.contact.email,
-    telephone: siteConfig.contact.phoneE164,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: siteConfig.contact.addressParts.streetAddress,
-      addressLocality: siteConfig.contact.addressParts.addressLocality,
-      addressRegion: siteConfig.contact.addressParts.addressRegion,
-      addressCountry: siteConfig.contact.addressParts.addressCountry,
-    },
-    contactPoint: {
-      "@type": "ContactPoint",
-      telephone: siteConfig.contact.phoneE164,
-      contactType: "customer service",
-      areaServed: "TW",
-      availableLanguage: ["zh-TW", "en", "vi", "th"],
-    },
-    knowsAbout: [
-      "餐飲 POS",
-      "Restaurant POS",
-      "TPOS AI",
-      "Vision OCR",
-      "Kitchen Display System",
-      "連鎖餐飲管理",
-      "Gemini 營運分析",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": organizationId,
+        name: tCommon("company"),
+        legalName: tCommon("company"),
+        alternateName: [
+          siteConfig.brand,
+          "TPOS",
+          "TPOS AI",
+          siteConfig.companyEn,
+        ],
+        url: `${siteConfig.url}/`,
+        logo: logoImageObject,
+        image: logoUrl,
+        sameAs: [siteConfig.social.facebook],
+        email: siteConfig.contact.email,
+        telephone: siteConfig.contact.phoneE164,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: siteConfig.contact.addressParts.streetAddress,
+          addressLocality: siteConfig.contact.addressParts.addressLocality,
+          addressRegion: siteConfig.contact.addressParts.addressRegion,
+          addressCountry: siteConfig.contact.addressParts.addressCountry,
+        },
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: siteConfig.contact.phoneE164,
+          contactType: "customer service",
+          areaServed: "TW",
+          availableLanguage: ["zh-TW", "en", "vi", "th"],
+        },
+        brand: {
+          "@type": "Brand",
+          name: siteConfig.brand,
+          alternateName: ["TPOS", "TPOS AI", "TAKOPOS（TPOS）"],
+          logo: logoUrl,
+        },
+        knowsAbout: [
+          "餐飲 POS",
+          "Restaurant POS",
+          "TPOS AI",
+          "Vision OCR",
+          "Kitchen Display System",
+          "連鎖餐飲管理",
+          "Gemini 營運分析",
+        ],
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": softwareId,
+        name: "TAKOPOS (TPOS AI)",
+        alternateName: [siteConfig.brand, "TPOS", "TPOS AI", "TAKOPOS POS"],
+        applicationCategory: "BusinessApplication",
+        applicationSubCategory: "Point of Sale (POS)",
+        operatingSystem: "Android, Web, Cloud",
+        url: siteConfig.url,
+        image: logoUrl,
+        description: softwareAiDescription,
+        featureList: [...softwareAiFeatureList],
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: t("audience"),
+        },
+        offers: {
+          "@type": "Offer",
+          url: absoluteLocalizedUrl(locale, "/pricing"),
+          priceCurrency: "TWD",
+          availability: "https://schema.org/InStock",
+        },
+        publisher: { "@id": organizationId },
+        provider: { "@id": organizationId },
+        brand: {
+          "@type": "Brand",
+          name: siteConfig.brand,
+          alternateName: ["TPOS", "TPOS AI"],
+          logo: logoUrl,
+        },
+      },
+      {
+        "@type": "WebSite",
+        "@id": websiteId,
+        name: siteConfig.brand,
+        alternateName: `${tCommon("company")}${tCommon("tagline")}`,
+        url: siteConfig.url,
+        inLanguage: locale,
+        publisher: { "@id": organizationId },
+        about: { "@id": softwareId },
+      },
     ],
   };
 }
 
-export async function getSoftwareApplicationJsonLd(locale: AppLocale) {
-  const t = await getTranslations({ locale, namespace: "meta" });
-  const tCommon = await getTranslations({ locale, namespace: "common" });
-
+/** @deprecated Prefer getSiteGraphJsonLd — kept for incremental callers. */
+export async function getOrganizationJsonLd(locale: AppLocale) {
+  const graph = await getSiteGraphJsonLd(locale);
   return {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "TAKOPOS (TPOS AI)",
-    operatingSystem: "Android, Web, Cloud",
-    applicationCategory: "BusinessApplication",
-    offers: {
-      "@type": "Offer",
-      url: absoluteLocalizedUrl(locale, "/pricing"),
-      priceCurrency: "TWD",
-      availability: "https://schema.org/InStock",
-    },
-    description: softwareAiDescription,
-    featureList: [...softwareAiFeatureList],
-    url: siteConfig.url,
-    image: absoluteUrl(siteConfig.ogImage),
-    alternateName: [siteConfig.brand, "TPOS", "TPOS AI", "TAKOPOS POS"],
-    applicationSubCategory: "Point of Sale (POS)",
-    audience: {
-      "@type": "BusinessAudience",
-      audienceType: t("audience"),
-    },
-    provider: {
-      "@type": "Organization",
-      name: tCommon("company"),
-      alternateName: [siteConfig.brand, "TPOS", "TPOS AI", siteConfig.companyEn],
-      url: siteConfig.url,
-    },
-    brand: {
-      "@type": "Brand",
-      name: siteConfig.brand,
-      alternateName: ["TPOS", "TPOS AI"],
-    },
+    ...(graph["@graph"][0] as Record<string, unknown>),
   };
 }
 
-export async function getWebSiteJsonLd(locale: AppLocale) {
-  const t = await getTranslations({ locale, namespace: "common" });
+/** @deprecated Prefer getSiteGraphJsonLd — kept for incremental callers. */
+export async function getSoftwareApplicationJsonLd(locale: AppLocale) {
+  const graph = await getSiteGraphJsonLd(locale);
   return {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: siteConfig.brand,
-    alternateName: `${t("company")}${t("tagline")}`,
-    url: siteConfig.url,
-    inLanguage: locale,
-    publisher: {
-      "@type": "Organization",
-      name: t("company"),
-    },
+    ...(graph["@graph"][1] as Record<string, unknown>),
+  };
+}
+
+/** @deprecated Prefer getSiteGraphJsonLd — kept for incremental callers. */
+export async function getWebSiteJsonLd(locale: AppLocale) {
+  const graph = await getSiteGraphJsonLd(locale);
+  return {
+    "@context": "https://schema.org",
+    ...(graph["@graph"][2] as Record<string, unknown>),
   };
 }
 
