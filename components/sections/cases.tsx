@@ -117,7 +117,12 @@ export async function CasesLanding() {
                     {t(`items.${item.id}.category`)}
                   </p>
                   <h3 className="mt-2 font-heading text-xl font-semibold text-foreground sm:text-2xl">
-                    {t(`items.${item.id}.name`)}
+                    <Link
+                      href={`/cases/${item.id}`}
+                      className="underline-offset-4 transition-colors hover:text-primary hover:underline"
+                    >
+                      {t(`items.${item.id}.name`)}
+                    </Link>
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-foreground/90 sm:text-base">
                     {t(`items.${item.id}.intro`)}
@@ -129,6 +134,14 @@ export async function CasesLanding() {
                     modules={item.modules}
                     labelFor={(key) => t(`modules.${key}`)}
                   />
+                  <p className="mt-4">
+                    <Link
+                      href={`/cases/${item.id}`}
+                      className="text-sm font-medium text-primary underline-offset-4 hover:underline"
+                    >
+                      {t("readCase")}
+                    </Link>
+                  </p>
                 </div>
 
                 <p className="font-heading text-sm font-semibold text-foreground lg:pt-8 lg:text-right">

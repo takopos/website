@@ -58,14 +58,14 @@ export async function generateMetadata({
     },
     icons: {
       icon: [
-        { url: "/favicon.ico", sizes: "any" },
         {
           url: brand.logo.favicon,
           type: "image/png",
           sizes: "512x512",
         },
+        { url: "/favicon.ico", sizes: "48x48", type: "image/x-icon" },
       ],
-      shortcut: "/favicon.ico",
+      shortcut: brand.logo.favicon,
       apple: [
         {
           url: "/apple-icon.png",

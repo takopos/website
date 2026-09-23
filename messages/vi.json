@@ -32,7 +32,10 @@
     "support": "Hỗ trợ",
     "diningPos": "POS nhà hàng",
     "chooseDiningPos": "Cách chọn POS",
-    "cases": "Case"
+    "cases": "Case",
+    "qrOrdering": "Gọi món QR",
+    "kitchenDisplay": "Màn hình bếp",
+    "chainPos": "Quản lý chuỗi"
   },
   "hero": {
     "headline": "Giờ cao điểm nhẹ nhàng, đồng hành mở chuỗi",
@@ -299,7 +302,7 @@
   },
   "testimonials": {
     "eyebrow": "Case khách hàng",
-    "title": "Được chuỗi và nhiều loại hình lựa chọn",
+    "title": "Lựa chọn thông minh từ quán mới đến cũ, từ đơn đến chuỗi",
     "description": "Từ nhà hàng bia, thịt nướng đến đồ uống và bar—TAKOPOS hỗ trợ POS, QR và HQ.",
     "items": {
       "1": {
@@ -530,7 +533,10 @@
     },
     "ctaTitle": "Muốn xem TAKOPOS có hợp quán bạn?",
     "ctaBody": "Đặt demo miễn phí với menu và quy trình giờ cao điểm của bạn.",
-    "seeChoose": "Cách chọn POS"
+    "seeChoose": "Cách chọn POS",
+    "relatedQr": "Gọi món QR",
+    "relatedKitchen": "KDS bếp",
+    "relatedChain": "HQ chuỗi"
   },
   "chooseDiningPos": {
     "metaTitle": "Cách chọn POS nhà hàng",
@@ -715,43 +721,57 @@
         "name": "Luo Mama Mi Fen Tang",
         "category": "Đồ ăn truyền thống",
         "intro": "Quán gần 50 năm ở chợ Dongmen—nước xương heo với đồ cắt, luôn đông khách.",
-        "summary": "Quán truyền thống đông khách, lần đầu dùng TPOS đã quen tay—cao điểm vẫn ổn định."
+        "summary": "Quán truyền thống đông khách, lần đầu dùng TPOS đã quen tay—cao điểm vẫn ổn định.",
+        "detailLead": "Quán truyền thống cũng ổn định cao điểm bằng POS.",
+        "detailBody": "Luo Mama dùng POS quán đơn để hệ thống hóa gọi món và thanh toán."
       },
       "abv": {
         "name": "ABV Craft Beer Restaurant",
         "category": "Nhà hàng bia thủ công",
         "intro": "Bia thế giới kèm món đa quốc gia trên nhiều thương hiệu cửa hàng.",
-        "summary": "POS lõi, nối OCARD và ERP."
+        "summary": "POS lõi, nối OCARD và ERP.",
+        "detailLead": "Nhà hàng craft đa quán cần POS, hội viên và ERP một luồng.",
+        "detailBody": "ABV nối POS, OCARD và ERP giữa các cửa hàng."
       },
       "yakiniku-shu": {
         "name": "Yakiniku Shu",
         "category": "Chuỗi thịt nướng",
         "intro": "Chuỗi yakiniku than Đài Loan cho nhóm đông và buffet.",
-        "summary": "POS, QR và HQ cho đa quán."
+        "summary": "POS, QR và HQ cho đa quán.",
+        "detailLead": "Chuỗi nướng dựa QR và HQ để cao điểm và mở rộng.",
+        "detailBody": "Yakiniku Shu dùng POS, QR và HQ."
       },
       "eijiro": {
         "name": "Eijiro",
         "category": "Yakiniku cá nhân",
         "intro": "Yakiniku cho một người, nhịp nhanh, cần lật bàn cao.",
-        "summary": "POS, QR và HQ cùng một luồng."
+        "summary": "POS, QR và HQ cùng một luồng.",
+        "detailLead": "Quán nướng cá nhân ổn nhịp bàn bằng POS và QR.",
+        "detailBody": "Eijiro dùng POS, QR và module HQ."
       },
       "meisen": {
         "name": "Meisen Uji Matcha",
         "category": "Matcha / đồ uống",
         "intro": "Chuyên matcha Uji sớm tại Đài Loan, biến trà Kyoto thành đồ uống và bánh.",
-        "summary": "POS kèm HQ giữ đồng bộ đa quán."
+        "summary": "POS kèm HQ giữ đồng bộ đa quán.",
+        "detailLead": "F&B Nhật đa quán cần menu và dữ liệu nhất quán.",
+        "detailBody": "Meisen Uji dùng POS và HQ."
       },
       "gaobei": {
         "name": "Gaobei Milk King",
         "category": "Chuỗi đồ uống",
         "intro": "Từ 1992, thương hiệu địa phương nổi tiếng sữa trái cây và nước ép.",
-        "summary": "POS chuẩn hóa gọi món và thanh toán."
+        "summary": "POS chuẩn hóa gọi món và thanh toán.",
+        "detailLead": "Chuỗi đồ uống cần POS ổn và dễ mở rộng.",
+        "detailBody": "Gaobei hỗ trợ đa quán xuất đơn và thu ngân."
       },
       "origin-bar": {
         "name": "Origin Bar",
         "category": "Bar",
         "intro": "Bar gần Taipei Arena, cocktail trà rượu và ẩm thực đêm.",
-        "summary": "POS cho bar và khu ngồi."
+        "summary": "POS cho bar và khu ngồi.",
+        "detailLead": "Bar cần POS khớp dòng pha chế và bàn.",
+        "detailBody": "Origin Bar dùng POS cho cao điểm bar."
       }
     },
     "whyTitle": "Vì sao các case này quan trọng với POS nhà hàng",
@@ -770,6 +790,179 @@
       }
     },
     "ctaTitle": "Muốn xem TAKOPOS có hợp model bạn?",
-    "ctaBody": "Cho chúng tôi biết loại hình và số quán để xếp demo."
+    "ctaBody": "Cho chúng tôi biết loại hình và số quán để xếp demo.",
+    "detailMetaTitle": "{name}｜Case POS TAKOPOS",
+    "detailWhyTitle": "Vì sao chọn TAKOPOS",
+    "backToList": "Về danh sách case",
+    "seeChainPos": "Tìm hiểu kiểm soát chuỗi",
+    "readCase": "Đọc case đầy đủ"
+  },
+  "qrOrdering": {
+    "metaTitle": "Gọi món QR / gọi món tại bàn",
+    "metaDescription": "Gọi món QR giúp khách quét mã, đơn vào bếp, giảm sót món giờ cao điểm với TAKOPOS.",
+    "eyebrow": "Gọi món QR",
+    "h1": "Gọi món QR: ít sót món, dịch vụ ấm hơn",
+    "lead": "Giờ cao điểm không nên chép đơn tay. QR và gọi món tại bàn đưa đơn vào POS và bếp để nhân viên lo khách.",
+    "seeDiningPos": "Tìm hiểu POS nhà hàng",
+    "seeCases": "Xem case",
+    "seeChain": "Kiểm soát HQ chuỗi",
+    "whatTitle": "Gọi món QR là gì?",
+    "whatBody1": "Khách quét QR trên bàn để xem menu, gọi thêm và ghi chú—không thay dịch vụ, mà bỏ việc chép đơn lặp lại.",
+    "whatBody2": "TAKOPOS nối QR với POS và KDS để bếp thấy đơn ngay, sàn đồng bộ trạng thái.",
+    "pointsTitle": "QR cần giải quyết gì",
+    "points": {
+      "p1": {
+        "title": "Không tranh một máy",
+        "body": "Nhiều bàn gọi cùng lúc."
+      },
+      "p2": {
+        "title": "Thẳng vào bếp",
+        "body": "Ít giấy và truyền miệng."
+      },
+      "p3": {
+        "title": "Đa ngôn ngữ & ghi chú",
+        "body": "Giảm hỏi lại."
+      },
+      "p4": {
+        "title": "Dịch vụ về bàn",
+        "body": "Nhân viên dành thời gian chăm sóc."
+      }
+    },
+    "relatedTitle": "Chủ đề liên quan",
+    "relatedKitchen": "KDS bếp",
+    "relatedChain": "Quản lý chuỗi",
+    "faqTitle": "FAQ gọi món QR",
+    "faqs": {
+      "q1": {
+        "q": "QR có làm dịch vụ lạnh?",
+        "a": "Tự động hóa chép đơn, giữ người cho hospitality."
+      },
+      "q2": {
+        "q": "Bắt buộc tự gọi?",
+        "a": "Không—có thể kết hợp máy cầm tay."
+      },
+      "q3": {
+        "q": "Mua QR tách POS?",
+        "a": "Nên cùng hệ; TAKOPOS một luồng."
+      },
+      "q4": {
+        "q": "Hợp mô hình nào?",
+        "a": "Lẩu, nướng, bar, nhà hàng nhiều gọi thêm."
+      }
+    },
+    "ctaTitle": "Muốn thử QR tại quán?",
+    "ctaBody": "Cho biết mô hình và bàn—sales sẽ sắp xếp giới thiệu."
+  },
+  "kitchenDisplay": {
+    "metaTitle": "Màn hình bếp KDS",
+    "metaDescription": "KDS TAKOPOS chia theo trạm, trạng thái rõ, giảm sót món và hét trong bếp.",
+    "eyebrow": "Màn hình bếp",
+    "h1": "KDS: ít hét, ra món rõ ràng",
+    "lead": "Phiếu giấy và thôi thúc miệng gây khiếu nại. KDS đưa đơn lên màn theo trạm.",
+    "seeDiningPos": "Tìm hiểu POS nhà hàng",
+    "seeCases": "Xem case",
+    "seeChain": "Kiểm soát HQ chuỗi",
+    "whatTitle": "KDS là gì?",
+    "whatBody1": "Màn hình thay/phiếu giấy, hiện chờ–làm–xong, chia theo trạm.",
+    "whatBody2": "Nối POS/QR thì đơn vào bếp ngay, hoàn tất báo sàn.",
+    "pointsTitle": "KDS phải gánh gì",
+    "points": {
+      "p1": {
+        "title": "Chia trạm",
+        "body": "Mỗi trạm thấy việc của mình."
+      },
+      "p2": {
+        "title": "Trạng thái rõ",
+        "body": "Sàn biết khi nào ra món."
+      },
+      "p3": {
+        "title": "Gom món giờ cao điểm",
+        "body": "Chuẩn bị nhanh hơn."
+      },
+      "p4": {
+        "title": "Ít làm lại",
+        "body": "Ghi chú không nhờ miệng."
+      }
+    },
+    "relatedTitle": "Chủ đề liên quan",
+    "relatedQr": "Gọi món QR",
+    "relatedChain": "Quản lý chuỗi",
+    "faqTitle": "FAQ KDS",
+    "faqs": {
+      "q1": {
+        "q": "Bếp nhỏ cần KDS?",
+        "a": "Nếu đã sót/hét thì một màn cũng ích."
+      },
+      "q2": {
+        "q": "Phải cùng hãng POS?",
+        "a": "Cùng hệ ổn định nhất."
+      },
+      "q3": {
+        "q": "Đầu bếp có bận hơn?",
+        "a": "KDS tốt giảm tìm phiếu và làm lại."
+      },
+      "q4": {
+        "q": "Triển khai cùng QR?",
+        "a": "Nên—trước và sau một mạch."
+      }
+    },
+    "ctaTitle": "Muốn xem KDS TAKOPOS?",
+    "ctaBody": "Chạy kịch bản cao điểm theo trạm của bạn."
+  },
+  "chainPos": {
+    "metaTitle": "POS chuỗi & kiểm soát HQ",
+    "metaDescription": "Đẩy menu, xem đa cửa hàng, điều chuyển tồn kho với TAKOPOS.",
+    "eyebrow": "Quản lý chuỗi",
+    "h1": "HQ chuỗi: sửa một lần, đồng bộ mọi quán",
+    "lead": "Từ quán thứ hai: sửa menu bằng điện thoại, tồn kho tách, HQ mù—cần đẩy–nhìn–điều chuyển.",
+    "seeDiningPos": "Tìm hiểu POS nhà hàng",
+    "seeCases": "Xem case",
+    "seeChain": "Kiểm soát HQ chuỗi",
+    "whatTitle": "Quản lý chuỗi giải gì?",
+    "whatBody1": "Không chỉ mua thêm máy POS—quyết định HQ phải tới quán.",
+    "whatBody2": "TAKOPOS hỗ trợ đẩy hàng, dashboard đa quán, điều chuyển tồn.",
+    "pointsTitle": "Năng lực HQ cốt lõi",
+    "points": {
+      "p1": {
+        "title": "Đẩy menu/giá",
+        "body": "Chọn quán đồng bộ."
+      },
+      "p2": {
+        "title": "Dashboard đa quán",
+        "body": "Thấy quán tụt kịp thời."
+      },
+      "p3": {
+        "title": "Điều chuyển tồn",
+        "body": "Quy trình chuẩn, không chat."
+      },
+      "p4": {
+        "title": "Phân quyền",
+        "body": "HQ–giám sát–quản lý–nhân viên."
+      }
+    },
+    "relatedTitle": "Chủ đề liên quan",
+    "relatedQr": "Gọi món QR",
+    "relatedKitchen": "KDS bếp",
+    "faqTitle": "FAQ POS chuỗi",
+    "faqs": {
+      "q1": {
+        "q": "Hai quán đã cần HQ?",
+        "a": "Thường đau từ quán 2."
+      },
+      "q2": {
+        "q": "Menu khác nhau được?",
+        "a": "Được—master rồi đẩy theo quán."
+      },
+      "q3": {
+        "q": "Khác POS quán đơn?",
+        "a": "Chuỗi cần sync và visibility; TAKOPOS một dòng sản phẩm."
+      },
+      "q4": {
+        "q": "Ai đang dùng?",
+        "a": "Xem trang case."
+      }
+    },
+    "ctaTitle": "Sắp mở quán tiếp—hoặc HQ đang loạn?",
+    "ctaBody": "Cho biết số quán và nỗi đau đồng bộ."
   }
 }

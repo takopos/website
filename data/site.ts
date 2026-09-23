@@ -54,6 +54,9 @@ export const siteConfig = {
     links: [
       { key: "cases" as const, href: "/cases" },
       { key: "diningPos" as const, href: "/dining-pos" },
+      { key: "qrOrdering" as const, href: "/qr-ordering" },
+      { key: "kitchenDisplay" as const, href: "/kitchen-display" },
+      { key: "chainPos" as const, href: "/chain-pos" },
       { key: "chooseDiningPos" as const, href: "/choose-dining-pos" },
       { key: "features" as const, href: "/features" },
       { key: "pricing" as const, href: "/pricing" },

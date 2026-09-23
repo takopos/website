@@ -32,7 +32,10 @@
     "support": "Support",
     "diningPos": "Restaurant POS",
     "chooseDiningPos": "How to choose",
-    "cases": "Cases"
+    "cases": "Cases",
+    "qrOrdering": "QR ordering",
+    "kitchenDisplay": "Kitchen display",
+    "chainPos": "Chain management"
   },
   "hero": {
     "headline": "Handle peak service with ease—grow into a chain",
@@ -299,7 +302,7 @@
   },
   "testimonials": {
     "eyebrow": "Customer cases",
-    "title": "Chosen by chains and diverse F&B formats",
+    "title": "A smart choice from new to established, single store to chain",
     "description": "From craft beer dining and yakiniku to drinks and bars, TAKOPOS supports real stores with POS, QR ordering, and HQ control.",
     "items": {
       "1": {
@@ -530,7 +533,10 @@
     },
     "ctaTitle": "Want to see if TAKOPOS fits your restaurant?",
     "ctaBody": "Book a free demo with your menu and peak flow. Decide after you see the floor rhythm.",
-    "seeChoose": "How to choose a POS"
+    "seeChoose": "How to choose a POS",
+    "relatedQr": "QR ordering",
+    "relatedKitchen": "Kitchen display",
+    "relatedChain": "Chain HQ control"
   },
   "chooseDiningPos": {
     "metaTitle": "How to choose a restaurant POS",
@@ -715,43 +721,57 @@
         "name": "Luo Mama Rice Noodle Soup",
         "category": "Traditional snack",
         "intro": "A nearly 50-year Dongmen Market favorite—pork-bone broth with sliced sides, always packed.",
-        "summary": "A busy traditional stall that got productive on TPOS from day one—steady ordering and checkout at peak."
+        "summary": "A busy traditional stall that got productive on TPOS from day one—steady ordering and checkout at peak.",
+        "detailLead": "Even a traditional market stall can steady peak tickets and checkout with POS.",
+        "detailBody": "Luo Mama Rice Noodle Soup runs single-store POS to systematize ordering and payment for peak crowds and regulars."
       },
       "abv": {
         "name": "ABV Craft Beer Restaurant",
         "category": "Craft beer restaurant",
         "intro": "World beers paired with global kitchens across multiple brand outlets.",
-        "summary": "POS at the core, connected with OCARD membership and ERP so front-of-house sales meet back-office operations."
+        "summary": "POS at the core, connected with OCARD membership and ERP so front-of-house sales meet back-office operations.",
+        "detailLead": "Multi-site craft dining needs POS, loyalty, and ERP on one ops flow.",
+        "detailBody": "ABV connects POS, OCARD, and ERP across locations so front tickets and back-office ops stay less fragmented."
       },
       "yakiniku-shu": {
         "name": "Yakiniku Shu",
         "category": "Yakiniku chain",
         "intro": "A Taiwan-born charcoal yakiniku chain built for group dining and buffet value.",
-        "summary": "POS, QR ordering, and HQ control for multi-store ordering tempo and HQ sync."
+        "summary": "POS, QR ordering, and HQ control for multi-store ordering tempo and HQ sync.",
+        "detailLead": "Yakiniku chains lean on QR ordering and HQ control for peak and expansion.",
+        "detailBody": "Yakiniku Shu uses POS, QR ordering, and HQ tools so menu sync and peak ordering are not pure manpower."
       },
       "eijiro": {
         "name": "Eijiro",
         "category": "Solo yakiniku",
         "intro": "Solo-friendly yakiniku with a fast pace and high table-turn needs.",
-        "summary": "POS, QR ordering, and HQ modules in one ordering and store-ops flow."
+        "summary": "POS, QR ordering, and HQ modules in one ordering and store-ops flow.",
+        "detailLead": "Personal yakiniku stores steady tableside rhythm with POS and QR.",
+        "detailBody": "Eijiro uses POS, QR, and HQ-related modules to keep ticketing and tableside quality at peak."
       },
       "meisen": {
         "name": "Meisen Uji Matcha",
         "category": "Matcha / specialty drinks",
         "intro": "An early Taiwan Uji matcha specialist turning Kyoto tea into drinks and sweets.",
-        "summary": "POS with HQ control to keep products and operations consistent across stores."
+        "summary": "POS with HQ control to keep products and operations consistent across stores.",
+        "detailLead": "Japanese multi-site dining needs consistent menus and ops data.",
+        "detailBody": "Meisen Uji uses POS and HQ control so products and cadence align with brand strategy."
       },
       "gaobei": {
         "name": "Gaobei Milk King",
         "category": "Beverage chain",
         "intro": "Since 1992, a local brand known for fresh-fruit milk and pressed juices.",
-        "summary": "POS standardizes day-to-day ordering and checkout across locations."
+        "summary": "POS standardizes day-to-day ordering and checkout across locations.",
+        "detailLead": "Drink chains move fast—POS must be steady and scalable.",
+        "detailBody": "Gaobei supports multi-store ticketing and checkout so peak speed and clear books hold."
       },
       "origin-bar": {
         "name": "Origin Bar",
         "category": "Bar",
         "intro": "A Taipei bar near Taipei Arena focused on tea-spirits cocktails and night dining.",
-        "summary": "Bar POS for clearer ordering and checkout across bar and seating areas."
+        "summary": "Bar POS for clearer ordering and checkout across bar and seating areas.",
+        "detailLead": "Bars need POS that matches cocktail and seating flow.",
+        "detailBody": "Origin Bar uses POS tuned to bar peak ordering and settlement."
       }
     },
     "whyTitle": "Why these cases matter for restaurant POS search",
@@ -770,6 +790,179 @@
       }
     },
     "ctaTitle": "Want to see if TAKOPOS fits your format?",
-    "ctaBody": "Tell us your concept and store count—we’ll demo POS / QR / HQ around your needs."
+    "ctaBody": "Tell us your concept and store count—we’ll demo POS / QR / HQ around your needs.",
+    "detailMetaTitle": "{name}｜TAKOPOS restaurant POS case",
+    "detailWhyTitle": "Why TAKOPOS",
+    "backToList": "Back to cases",
+    "seeChainPos": "Explore chain control",
+    "readCase": "Read full case"
+  },
+  "qrOrdering": {
+    "metaTitle": "QR & tableside ordering",
+    "metaDescription": "How QR ordering works for restaurants. TAKOPOS sends guest orders to the kitchen, cuts missed tickets, and frees staff for real service.",
+    "eyebrow": "QR ordering",
+    "h1": "QR ordering: fewer missed tickets, more real service",
+    "lead": "At peak, staff should not copy every order by hand. QR and tableside ordering put repeat ordering into the system so tickets reach POS and kitchen while people focus on guests.",
+    "seeDiningPos": "Explore restaurant POS",
+    "seeCases": "See customer cases",
+    "seeChain": "Chain HQ control",
+    "whatTitle": "What is QR ordering?",
+    "whatBody1": "Guests scan a table QR code to browse the menu, add items, and leave notes. It does not replace hospitality—it removes the most repetitive peak-hour work.",
+    "whatBody2": "TAKOPOS connects QR ordering with POS and kitchen display so tickets appear in the kitchen immediately and floor staff stay in sync.",
+    "pointsTitle": "What QR ordering should fix",
+    "points": {
+      "p1": {
+        "title": "No fighting for one device",
+        "body": "Many tables order at once without queuing for a tablet."
+      },
+      "p2": {
+        "title": "Straight to the kitchen",
+        "body": "Less paper and verbal relay; status can return to the floor."
+      },
+      "p3": {
+        "title": "Language & notes built in",
+        "body": "Tourists and custom requests need fewer back-and-forth checks."
+      },
+      "p4": {
+        "title": "Service back at the table",
+        "body": "Staff spend time on care and recommendations, not transcription."
+      }
+    },
+    "relatedTitle": "Related topics",
+    "relatedKitchen": "Kitchen display (KDS)",
+    "relatedChain": "Chain restaurant management",
+    "faqTitle": "QR ordering FAQ",
+    "faqs": {
+      "q1": {
+        "q": "Will QR ordering make service colder?",
+        "a": "Automate copying tickets; keep people for hospitality. Most stores see fewer complaints and faster turns."
+      },
+      "q2": {
+        "q": "Must every guest order themselves?",
+        "a": "No. Mix handheld tableside ordering with QR by daypart and table type."
+      },
+      "q3": {
+        "q": "Buy QR and POS separately?",
+        "a": "Same stack is safer. Split vendors often fail at peak; TAKOPOS keeps one flow."
+      },
+      "q4": {
+        "q": "Which formats benefit most?",
+        "a": "Hotpot, yakiniku, multi-course, and bars with heavy add-ons feel it first."
+      }
+    },
+    "ctaTitle": "Want to trial QR ordering in your store?",
+    "ctaBody": "Tell us your format and table layout—sales will walk through a fit check."
+  },
+  "kitchenDisplay": {
+    "metaTitle": "Kitchen display system (KDS)",
+    "metaDescription": "What a kitchen display should do at peak. TAKOPOS KDS routes by station with clear status to cut missed tickets and shouting.",
+    "eyebrow": "Kitchen display",
+    "h1": "Kitchen display (KDS): less shouting, clearer plating",
+    "lead": "Flying paper tickets and verbal chases create peak complaints. KDS puts orders on screen by station so everyone knows the next step.",
+    "seeDiningPos": "Explore restaurant POS",
+    "seeCases": "See customer cases",
+    "seeChain": "Chain HQ control",
+    "whatTitle": "What is a kitchen display (KDS)?",
+    "whatBody1": "A KDS replaces or backs paper tickets with live screens for queued, in-progress, and done items—optionally split by grill, fry, drinks, and more.",
+    "whatBody2": "Tied to POS and QR ordering, front-of-house tickets hit the kitchen instantly and completion can signal the floor.",
+    "pointsTitle": "What KDS should carry for the kitchen",
+    "points": {
+      "p1": {
+        "title": "Route by station",
+        "body": "Each station sees its own work—fewer collisions and misses."
+      },
+      "p2": {
+        "title": "Transparent status",
+        "body": "In progress / ready / done gives the floor a real chase signal."
+      },
+      "p3": {
+        "title": "Peak item bundling",
+        "body": "Same items can aggregate for faster prep."
+      },
+      "p4": {
+        "title": "Fewer remakes",
+        "body": "Notes and add-ons stop relying on verbal relay."
+      }
+    },
+    "relatedTitle": "Related topics",
+    "relatedQr": "QR / tableside ordering",
+    "relatedChain": "Chain restaurant management",
+    "faqTitle": "KDS FAQ",
+    "faqs": {
+      "q1": {
+        "q": "Do small kitchens need KDS?",
+        "a": "If peak already means misses or shouting, even one screen on the main station helps."
+      },
+      "q2": {
+        "q": "Must KDS match the POS brand?",
+        "a": "Same system is most reliable. Cross-vendor links often break at peak—test live."
+      },
+      "q3": {
+        "q": "Will cooks get busier?",
+        "a": "Good KDS reduces hunting tickets and remakes. Tune routing and train the floor."
+      },
+      "q4": {
+        "q": "Roll out with QR ordering?",
+        "a": "Yes—QR fixes front transcription; KDS fixes back plating."
+      }
+    },
+    "ctaTitle": "Want to see TAKOPOS KDS on your menu?",
+    "ctaBody": "Run a peak scenario with your stations and confirm the plating rhythm."
+  },
+  "chainPos": {
+    "metaTitle": "Chain restaurant POS & HQ control",
+    "metaDescription": "How chains push menus, see multi-store performance, and transfer stock. TAKOPOS HQ tools remove growth blockers.",
+    "eyebrow": "Chain management",
+    "h1": "Chain POS HQ control: change once, sync every store",
+    "lead": "Store two is when pain starts—phone-tag menu edits, inventory silos, HQ blind spots. Chains need push, visibility, and transfer—not more standalone tills.",
+    "seeDiningPos": "Explore restaurant POS",
+    "seeCases": "See customer cases",
+    "seeChain": "Chain HQ control",
+    "whatTitle": "What chain management must solve",
+    "whatBody1": "Buying more POS units is not enough. HQ decisions must reach stores, and store issues must reach HQ—without LINE chaos and midnight spreadsheets.",
+    "whatBody2": "TAKOPOS supports product push, multi-store dashboards, and inter-store transfers with real admin UIs.",
+    "pointsTitle": "Core HQ capabilities",
+    "points": {
+      "p1": {
+        "title": "One-click menu & price push",
+        "body": "Sync selected stores; fewer missed updates and complaints."
+      },
+      "p2": {
+        "title": "Multi-store dashboards",
+        "body": "See which site is slipping before losses compound."
+      },
+      "p3": {
+        "title": "Inter-store stock transfer",
+        "body": "Move stock with an approved process, not group chats."
+      },
+      "p4": {
+        "title": "Clear roles",
+        "body": "HQ, area managers, store managers, and staff stay separated."
+      }
+    },
+    "relatedTitle": "Related topics",
+    "relatedQr": "QR / tableside ordering",
+    "relatedKitchen": "Kitchen display (KDS)",
+    "faqTitle": "Chain POS FAQ",
+    "faqs": {
+      "q1": {
+        "q": "Do two stores need HQ modules?",
+        "a": "Pain often starts at store two. Shared masters early beats a rip-and-replace later."
+      },
+      "q2": {
+        "q": "Can menus differ by store?",
+        "a": "Yes—maintain a master, then push by store with local items."
+      },
+      "q3": {
+        "q": "How is this different from single-store POS?",
+        "a": "Single-store cares about peak rhythm; chains care about sync, visibility, and transfer. TAKOPOS keeps one product line."
+      },
+      "q4": {
+        "q": "Who uses it?",
+        "a": "Craft dining, yakiniku, drinks, and bar multi-site brands—see customer cases."
+      }
+    },
+    "ctaTitle": "Opening the next store—or HQ already slipping?",
+    "ctaBody": "Tell us store count and your worst sync pain; sales will tailor an intro."
   }
 }

@@ -22,12 +22,12 @@ export const brand = {
       width: 1542,
       height: 355,
     },
-    /** Square mark for Schema.org Organization logo / image */
+    /** Square mark for Schema.org Organization logo / Google Search branding */
     mark: {
-      src: "/images/brand/takopos-mark.png",
+      src: "/images/brand/favicon.png",
       alt: "TAKOPOS",
-      width: 604,
-      height: 440,
+      width: 512,
+      height: 512,
     },
     favicon: "/images/brand/favicon.png",
   },

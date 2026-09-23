@@ -5,35 +5,40 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
 import { getFaqPageJsonLd, serializeJsonLd } from "@/lib/seo";
 
-const moduleKeys = [
-  "ordering",
-  "kitchen",
-  "inventory",
-  "loyalty",
-  "analytics",
-  "chain",
-] as const;
+const defaultPointKeys = ["p1", "p2", "p3", "p4"] as const;
+const defaultFaqKeys = ["q1", "q2", "q3", "q4"] as const;
 
-const audienceKeys = ["single", "peak", "chain", "swap"] as const;
-const checklistKeys = ["c1", "c2", "c3", "c4", "c5", "c6"] as const;
-const faqKeys = ["q1", "q2", "q3", "q4", "q5", "q6"] as const;
+type SeoIntentLandingProps = {
+  namespace: "qrOrdering" | "kitchenDisplay" | "chainPos";
+  secondaryHref: "/dining-pos" | "/choose-dining-pos" | "/cases" | "/chain-pos";
+  secondaryLabelKey: "seeDiningPos" | "seeChoose" | "seeCases" | "seeChain";
+  related?: {
+    href: "/qr-ordering" | "/kitchen-display" | "/chain-pos" | "/dining-pos" | "/cases";
+    labelKey: string;
+  }[];
+};
 
-export async function DiningPosLanding() {
-  const t = await getTranslations("diningPos");
+export async function SeoIntentLanding({
+  namespace,
+  secondaryHref,
+  secondaryLabelKey,
+  related = [],
+}: SeoIntentLandingProps) {
+  const t = await getTranslations(namespace);
   const tCta = await getTranslations("cta");
 
-  const faqs = faqKeys.map((key) => ({
+  const faqs = defaultFaqKeys.map((key) => ({
     question: t(`faqs.${key}.q`),
     answer: t(`faqs.${key}.a`),
   }));
-
-  const faqJsonLd = getFaqPageJsonLd(faqs);
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: serializeJsonLd(faqJsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: serializeJsonLd(getFaqPageJsonLd(faqs)),
+        }}
       />
 
       <section className="relative overflow-hidden border-b border-border/60">
@@ -43,7 +48,7 @@ export async function DiningPosLanding() {
           <p className="font-heading text-sm font-semibold tracking-[0.22em] text-primary uppercase">
             {t("eyebrow")}
           </p>
-          <h1 className="mt-4 max-w-3xl font-heading text-4xl leading-[1.15] font-semibold tracking-tight text-foreground sm:text-5xl">
+          <h1 className="mt-4 max-w-3xl font-heading text-4xl leading-[1.15] font-semibold tracking-tight text-balance text-foreground sm:text-5xl">
             {t("h1")}
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
@@ -57,12 +62,12 @@ export async function DiningPosLanding() {
             />
             <Button
               nativeButton={false}
-              render={<Link href="/choose-dining-pos" />}
+              render={<Link href={secondaryHref} />}
               variant="outline"
               size="lg"
               className="h-11 px-5 text-sm"
             >
-              {t("seeChoose")}
+              {t(secondaryLabelKey)}
             </Button>
           </div>
         </div>
@@ -85,16 +90,16 @@ export async function DiningPosLanding() {
       <section className="border-b border-border/60 bg-[var(--brand-charcoal)] py-16 text-white sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-heading text-2xl font-semibold tracking-tight sm:text-3xl">
-            {t("forTitle")}
+            {t("pointsTitle")}
           </h2>
           <ul className="mt-10 grid gap-8 sm:grid-cols-2">
-            {audienceKeys.map((key) => (
+            {defaultPointKeys.map((key) => (
               <li key={key} className="border-t border-white/15 pt-5">
                 <p className="font-heading text-lg font-semibold">
-                  {t(`audience.${key}.title`)}
+                  {t(`points.${key}.title`)}
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-white/70">
-                  {t(`audience.${key}.body`)}
+                  {t(`points.${key}.body`)}
                 </p>
               </li>
             ))}
@@ -102,85 +107,29 @@ export async function DiningPosLanding() {
         </div>
       </section>
 
-      <section className="border-b border-border/60 bg-background py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="max-w-2xl font-heading text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-            {t("modulesTitle")}
-          </h2>
-          <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-            {t("modulesLead")}
-          </p>
-          <ol className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {moduleKeys.map((key, index) => (
-              <li key={key}>
-                <p className="text-xs font-semibold tracking-[0.16em] text-primary uppercase">
-                  {String(index + 1).padStart(2, "0")}
-                </p>
-                <h3 className="mt-2 font-heading text-lg font-semibold text-foreground">
-                  {t(`modules.${key}.title`)}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {t(`modules.${key}.body`)}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </div>
-      </section>
-
-      <section className="border-b border-border/60 bg-[#fff7f0] py-16 sm:py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <h2 className="max-w-2xl font-heading text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-            {t("checklistTitle")}
-          </h2>
-          <ol className="mt-10 space-y-5">
-            {checklistKeys.map((key, index) => (
-              <li
-                key={key}
-                className="grid gap-2 border-b border-primary/15 pb-5 sm:grid-cols-[3rem_1fr]"
-              >
-                <span className="font-heading text-xl font-semibold text-primary">
-                  {String(index + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <p className="font-medium text-foreground">
-                    {t(`checklist.${key}.title`)}
-                  </p>
-                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    {t(`checklist.${key}.body`)}
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ol>
-          <div className="mt-10 flex flex-wrap gap-3">
-            <Button
-              nativeButton={false}
-              render={<Link href="/qr-ordering" />}
-              variant="outline"
-              className="h-10 px-4 text-sm"
-            >
-              {t("relatedQr")}
-            </Button>
-            <Button
-              nativeButton={false}
-              render={<Link href="/kitchen-display" />}
-              variant="outline"
-              className="h-10 px-4 text-sm"
-            >
-              {t("relatedKitchen")}
-            </Button>
-            <Button
-              nativeButton={false}
-              render={<Link href="/chain-pos" />}
-              variant="outline"
-              className="h-10 px-4 text-sm"
-            >
-              {t("relatedChain")}
-            </Button>
+      {related.length > 0 ? (
+        <section className="border-b border-border/60 bg-[#fff7f0] py-16 sm:py-20">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <h2 className="font-heading text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+              {t("relatedTitle")}
+            </h2>
+            <ul className="mt-8 flex flex-wrap gap-3">
+              {related.map((item) => (
+                <li key={item.href}>
+                  <Button
+                    nativeButton={false}
+                    render={<Link href={item.href} />}
+                    variant="outline"
+                    className="h-10 px-4 text-sm"
+                  >
+                    {t(item.labelKey)}
+                  </Button>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       <section className="border-b border-border/60 bg-background py-16 sm:py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
@@ -188,7 +137,7 @@ export async function DiningPosLanding() {
             {t("faqTitle")}
           </h2>
           <div className="mt-10 space-y-8">
-            {faqKeys.map((key) => (
+            {defaultFaqKeys.map((key) => (
               <div key={key} className="border-t border-border/70 pt-6">
                 <h3 className="font-heading text-lg font-semibold text-foreground">
                   {t(`faqs.${key}.q`)}
@@ -218,12 +167,12 @@ export async function DiningPosLanding() {
             />
             <Button
               nativeButton={false}
-              render={<Link href="/pricing" />}
+              render={<Link href="/dining-pos" />}
               variant="outline"
               size="lg"
               className="h-11 border-white/25 bg-transparent px-5 text-sm text-white hover:bg-white/10 hover:text-white"
             >
-              {t("seePricing")}
+              {t("seeDiningPos")}
             </Button>
           </div>
         </div>
