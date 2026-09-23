@@ -43,7 +43,7 @@
   },
   "tposAi": {
     "eyebrow": "TPOS AI",
-    "title": "AI đa phương thức gốc, chạy ngay trên sàn",
+    "title": "Dùng AI dễ dàng, tối ưu toàn diện kinh doanh F&B",
     "description": "Không phải plugin gắn thêm—Vision, Imagen và Gemini nằm trong cùng luồng gọi món, tồn kho và báo cáo của TAKOPOS.",
     "items": {
       "visionCatalog": {

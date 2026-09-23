@@ -43,7 +43,7 @@
   },
   "tposAi": {
     "eyebrow": "TPOS AI",
-    "title": "AI มัลติโมดอลแบบเนทีฟ ใช้ได้บนหน้างาน",
+    "title": "ใช้ AI ได้ง่าย ยกระดับธุรกิจร้านอาหารแบบครบวงจร",
     "description": "ไม่ใช่ปลั๊กอินแยก—Vision, Imagen และ Gemini อยู่ในโฟลว์สั่ง สต็อก และรายงานของ TAKOPOS เดียวกัน",
     "items": {
       "visionCatalog": {

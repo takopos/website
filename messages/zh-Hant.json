@@ -43,7 +43,7 @@
   },
   "tposAi": {
     "eyebrow": "TPOS AI",
-    "title": "原生多模態 AI，直接落地餐飲現場",
+    "title": "輕鬆用 AI，全方位優化您的餐飲事業",
     "description": "不是外掛插件，而是與點餐、庫存、報表同一套 TAKOPOS 流程：Vision 辨識、Imagen 生成、Gemini 營運分析，把繁瑣建檔與盤點變成幾次拍照與確認。",
     "items": {
       "visionCatalog": {

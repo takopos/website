@@ -43,7 +43,7 @@
   },
   "tposAi": {
     "eyebrow": "TPOS AI",
-    "title": "Native multimodal AI that ships on the floor",
+    "title": "Use AI easily to optimize your F&B business end to end",
     "description": "Not a bolt-on plugin—Vision, Imagen, and Gemini sit inside the same TAKOPOS ordering, inventory, and reporting flow so cataloging and stocktake become a few photos and confirms.",
     "items": {
       "visionCatalog": {
