@@ -35,8 +35,8 @@
     "cases": "Cases"
   },
   "hero": {
-    "headline": "Steady peaks. Ready to scale.",
-    "supporting": "Built for Taiwan F&B floors—peak ordering, kitchen routing, TPOS AI, and HQ control in one cloud POS.",
+    "headline": "Handle peak service with ease—grow into a chain",
+    "supporting": "Built for mid-to-upscale restaurants. Steady peak ordering, digital kitchen ops, and TPOS AI at your side—all-in-one cloud restaurant POS.",
     "ctaGroupLabel": "Primary calls to action",
     "bookDemoAria": "Book a free TAKOPOS restaurant POS demo",
     "secondaryAria": "See how TAKOPOS works on the restaurant floor"
@@ -66,7 +66,7 @@
   },
   "features": {
     "eyebrow": "Features",
-    "title": "We've already thought through where you get stuck every day",
+    "title": "Precisely solve your ops pain points",
     "description": "Not a feature dump—practical solutions for ordering, kitchen, inventory, loyalty, and accounting.",
     "painLabel": "Floor pain point",
     "solutionLabel": "System solution",

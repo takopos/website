@@ -35,8 +35,8 @@
     "cases": "合作案例"
   },
   "hero": {
-    "headline": "穩住尖峰出餐，陪你走向連鎖",
-    "supporting": "專為台灣餐飲現場打造。從尖峰出單、廚房分流，到 TPOS AI 與總部控管，一站式雲端 POS。",
+    "headline": "輕鬆面對尖峰出餐，伴您走向連鎖餐飲",
+    "supporting": "專為中高端餐飲業者設計。尖峰出單輕鬆穩住，廚房數位管理，TPOS AI 助你營運一臂之力——一站式雲端餐飲 POS。",
     "ctaGroupLabel": "主要行動呼籲",
     "bookDemoAria": "預約 TAKOPOS 餐飲 POS 免費體驗示範",
     "secondaryAria": "查看 TAKOPOS 系統操作與現場動線說明"
@@ -66,7 +66,7 @@
   },
   "features": {
     "eyebrow": "產品功能",
-    "title": "你每天卡住的地方，我們都先想過了",
+    "title": "精準解決您的營運痛點",
     "description": "不是堆功能給你選，而是針對餐飲最痛的現場——點餐、廚房、庫存、會員與帳務——給可落地的解法。",
     "painLabel": "現場痛點",
     "solutionLabel": "系統解法",
