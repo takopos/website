@@ -154,7 +154,7 @@
       }
     },
     "scenesEyebrow": "餐飲現場情境",
-    "scenesTitle": "不是展示科技，是還原你的一天",
+    "scenesTitle": "前場、後場，一套系統一氣呵成",
     "scenes": {
       "qr-dining": {
         "pain": "人力愈來愈貴，服務卻不能變差",
@@ -191,7 +191,7 @@
   "chain": {
     "eyebrow": "連鎖店鋪管理",
     "title": "開第二間開始，真正的麻煩才登場",
-    "description": "菜單改一次要打十幾通電話、各店庫存各做各的、總部看不見現場——TAKOPOS 用真實後台介面，把連鎖成長的摩擦先拿掉。",
+    "description": "菜單改一次要打十幾通電話、各店庫存各做各的、總部看不見現場——TAKOPOS 用真實後台介面，克服連鎖成長的阻礙。",
     "blocks": {
       "hq-control": {
         "eyebrow": "總部中央控管",

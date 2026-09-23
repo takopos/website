@@ -154,7 +154,7 @@
       }
     },
     "scenesEyebrow": "Real F&B moments",
-    "scenesTitle": "Not tech demos—your day, restored",
+    "scenesTitle": "Front and back of house—one seamless system",
     "scenes": {
       "qr-dining": {
         "pain": "Labor costs rise, service must not fall",
@@ -191,7 +191,7 @@
   "chain": {
     "eyebrow": "Chain store management",
     "title": "The real trouble starts with store #2",
-    "description": "One menu change means dozens of calls, inventory silos, HQ blind spots—TAKOPOS removes chain friction with real admin UIs.",
+    "description": "One menu change means dozens of calls, inventory silos, HQ blind spots—TAKOPOS overcomes chain-growth barriers with real admin UIs.",
     "blocks": {
       "hq-control": {
         "eyebrow": "HQ central control",

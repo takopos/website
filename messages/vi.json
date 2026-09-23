@@ -154,7 +154,7 @@
       }
     },
     "scenesEyebrow": "Khoảnh khắc F&B thật",
-    "scenesTitle": "Không phải demo công nghệ—là một ngày của bạn",
+    "scenesTitle": "Tiền sảnh và bếp—một hệ thống liền mạch",
     "scenes": {
       "qr-dining": {
         "pain": "Chi phí nhân công tăng, dịch vụ không được giảm",
@@ -191,7 +191,7 @@
   "chain": {
     "eyebrow": "Quản lý chuỗi cửa hàng",
     "title": "Rắc rối thật sự bắt đầu từ cửa hàng thứ hai",
-    "description": "Đổi menu một lần phải gọi hàng chục cuộc, tồn kho tách biệt, HQ mù thông tin—TAKOPOS gỡ ma sát chuỗi bằng giao diện admin thật.",
+    "description": "Đổi menu một lần phải gọi hàng chục cuộc, tồn kho tách biệt, HQ mù thông tin—TAKOPOS vượt rào cản tăng trưởng chuỗi bằng giao diện admin thật.",
     "blocks": {
       "hq-control": {
         "eyebrow": "Kiểm soát trung tâm HQ",
