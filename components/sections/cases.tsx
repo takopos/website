@@ -82,20 +82,26 @@ export async function CasesLanding() {
                     className="aspect-[4/3] h-auto w-full object-cover"
                     sizes="(max-width: 640px) 100vw, 288px"
                   />
-                  <figcaption className="px-3 py-2 text-[11px] leading-relaxed text-muted-foreground">
-                    <a
-                      href={item.image.credit.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="underline-offset-2 hover:text-foreground hover:underline"
-                    >
-                      {item.image.credit.credit}
-                    </a>
-                    <span className="text-muted-foreground/80">
-                      {" · "}
-                      {item.image.credit.license}
-                    </span>
-                  </figcaption>
+                  {"credit" in item.image && item.image.credit ? (
+                    <figcaption className="px-3 py-2 text-[11px] leading-relaxed text-muted-foreground">
+                      {"url" in item.image.credit && item.image.credit.url ? (
+                        <a
+                          href={item.image.credit.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline-offset-2 hover:text-foreground hover:underline"
+                        >
+                          {item.image.credit.credit}
+                        </a>
+                      ) : (
+                        <span>{item.image.credit.credit}</span>
+                      )}
+                      <span className="text-muted-foreground/80">
+                        {" · "}
+                        {item.image.credit.license}
+                      </span>
+                    </figcaption>
+                  ) : null}
                 </figure>
 
                 <div>
