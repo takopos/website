@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 
 import { BookingTrigger } from "@/components/booking/booking-trigger";
 import { Button } from "@/components/ui/button";
-import { cases, type CaseModule } from "@/data/cases";
+import { cases, type CaseImageCredit, type CaseModule } from "@/data/cases";
 import { Link } from "@/i18n/navigation";
 
 function ModuleList({
@@ -17,6 +17,29 @@ function ModuleList({
     <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
       {modules.map((m) => labelFor(m)).join(" · ")}
     </p>
+  );
+}
+
+function CaseImageCreditCaption({ credit }: { credit: CaseImageCredit }) {
+  return (
+    <figcaption className="px-3 py-2 text-[11px] leading-relaxed text-muted-foreground">
+      {credit.url ? (
+        <a
+          href={credit.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline-offset-2 hover:text-foreground hover:underline"
+        >
+          {credit.credit}
+        </a>
+      ) : (
+        <span>{credit.credit}</span>
+      )}
+      <span className="text-muted-foreground/80">
+        {" · "}
+        {credit.license}
+      </span>
+    </figcaption>
   );
 }
 
@@ -83,24 +106,9 @@ export async function CasesLanding() {
                     sizes="(max-width: 640px) 100vw, 288px"
                   />
                   {"credit" in item.image && item.image.credit ? (
-                    <figcaption className="px-3 py-2 text-[11px] leading-relaxed text-muted-foreground">
-                      {"url" in item.image.credit && item.image.credit.url ? (
-                        <a
-                          href={item.image.credit.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="underline-offset-2 hover:text-foreground hover:underline"
-                        >
-                          {item.image.credit.credit}
-                        </a>
-                      ) : (
-                        <span>{item.image.credit.credit}</span>
-                      )}
-                      <span className="text-muted-foreground/80">
-                        {" · "}
-                        {item.image.credit.license}
-                      </span>
-                    </figcaption>
+                    <CaseImageCreditCaption
+                      credit={item.image.credit as CaseImageCredit}
+                    />
                   ) : null}
                 </figure>
 
