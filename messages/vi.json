@@ -693,7 +693,7 @@
   },
   "cases": {
     "metaTitle": "Case POS nhà hàng",
-    "metaDescription": "Case TAKOPOS: ABV, Yakiniku Shu, Eijiro, Meisen, Gaobei, Origin Bar—POS, QR và HQ.",
+    "metaDescription": "Case TAKOPOS: Luo Mama, ABV, Yakiniku Shu, Eijiro, Meisen, Gaobei, Origin Bar—POS, QR và HQ.",
     "eyebrow": "Case khách hàng",
     "h1": "Case POS nhà hàng: từ quán đơn đến chuỗi",
     "lead": "Một số thương hiệu đang dùng TAKOPOS. Chúng tôi nêu số quán và module thật—không bịa số liệu.",
@@ -701,7 +701,7 @@
     "seeChoose": "Cách chọn POS",
     "seeAll": "Xem tất cả case",
     "listTitle": "Danh sách thương hiệu",
-    "listLead": "Nhà hàng bia thủ công, thịt nướng, Nhật, matcha, đồ uống và bar.",
+    "listLead": "Từ quán truyền thống đến bia thủ công, thịt nướng, matcha, đồ uống và bar. Ảnh minh họa kèm nguồn—không phải ảnh trong quán.",
     "stores": "{count} cửa hàng",
     "modules": {
       "pos": "POS",
@@ -711,34 +711,46 @@
       "erp": "Tích hợp ERP"
     },
     "items": {
+      "luo-mama": {
+        "name": "Luo Mama Mi Fen Tang",
+        "category": "Đồ ăn truyền thống",
+        "intro": "Quán gần 50 năm ở chợ Dongmen—nước xương heo với đồ cắt, luôn đông khách.",
+        "summary": "Quán truyền thống đông khách, lần đầu dùng TPOS đã quen tay—cao điểm vẫn ổn định."
+      },
       "abv": {
         "name": "ABV Craft Beer Restaurant",
         "category": "Nhà hàng bia thủ công",
+        "intro": "Bia thế giới kèm món đa quốc gia trên nhiều thương hiệu cửa hàng.",
         "summary": "POS lõi, nối OCARD và ERP."
       },
       "yakiniku-shu": {
         "name": "Yakiniku Shu",
         "category": "Chuỗi thịt nướng",
+        "intro": "Chuỗi yakiniku than Đài Loan cho nhóm đông và buffet.",
         "summary": "POS, QR và HQ cho đa quán."
       },
       "eijiro": {
         "name": "Eijiro",
-        "category": "Ẩm thực Nhật",
+        "category": "Yakiniku cá nhân",
+        "intro": "Yakiniku cho một người, nhịp nhanh, cần lật bàn cao.",
         "summary": "POS, QR và HQ cùng một luồng."
       },
       "meisen": {
         "name": "Meisen Uji Matcha",
         "category": "Matcha / đồ uống",
+        "intro": "Chuyên matcha Uji sớm tại Đài Loan, biến trà Kyoto thành đồ uống và bánh.",
         "summary": "POS kèm HQ giữ đồng bộ đa quán."
       },
       "gaobei": {
         "name": "Gaobei Milk King",
         "category": "Chuỗi đồ uống",
+        "intro": "Từ 1992, thương hiệu địa phương nổi tiếng sữa trái cây và nước ép.",
         "summary": "POS chuẩn hóa gọi món và thanh toán."
       },
       "origin-bar": {
         "name": "Origin Bar",
         "category": "Bar",
+        "intro": "Bar gần Taipei Arena, cocktail trà rượu và ẩm thực đêm.",
         "summary": "POS cho bar và khu ngồi."
       }
     },
@@ -754,7 +766,7 @@
       },
       "w3": {
         "title": "Đủ loại hình",
-        "body": "Nhiều vertical chứng minh POS phải linh hoạt."
+        "body": "Quán truyền thống đến bar—POS phải linh hoạt."
       }
     },
     "ctaTitle": "Muốn xem TAKOPOS có hợp model bạn?",

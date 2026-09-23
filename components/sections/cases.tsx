@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 
 import { BookingTrigger } from "@/components/booking/booking-trigger";
@@ -66,12 +67,37 @@ export async function CasesLanding() {
             {t("listLead")}
           </p>
 
-          <ul className="mt-12 divide-y divide-border/70 border-y border-border/70">
+          <ul className="mt-12 space-y-10">
             {cases.map((item) => (
               <li
                 key={item.id}
-                className="grid gap-3 py-8 sm:grid-cols-[1fr_auto] sm:items-start sm:gap-8"
+                className="grid gap-6 border-t border-border/70 pt-10 sm:grid-cols-[minmax(0,16rem)_1fr] sm:items-start sm:gap-8 lg:grid-cols-[minmax(0,18rem)_1fr_auto]"
               >
+                <figure className="overflow-hidden rounded-2xl bg-muted">
+                  <Image
+                    src={item.image.src}
+                    alt={item.image.alt}
+                    width={item.image.width}
+                    height={item.image.height}
+                    className="aspect-[4/3] h-auto w-full object-cover"
+                    sizes="(max-width: 640px) 100vw, 288px"
+                  />
+                  <figcaption className="px-3 py-2 text-[11px] leading-relaxed text-muted-foreground">
+                    <a
+                      href={item.image.credit.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline-offset-2 hover:text-foreground hover:underline"
+                    >
+                      {item.image.credit.credit}
+                    </a>
+                    <span className="text-muted-foreground/80">
+                      {" · "}
+                      {item.image.credit.license}
+                    </span>
+                  </figcaption>
+                </figure>
+
                 <div>
                   <p className="text-xs font-semibold tracking-[0.16em] text-primary uppercase">
                     {t(`items.${item.id}.category`)}
@@ -79,6 +105,9 @@ export async function CasesLanding() {
                   <h3 className="mt-2 font-heading text-xl font-semibold text-foreground sm:text-2xl">
                     {t(`items.${item.id}.name`)}
                   </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-foreground/90 sm:text-base">
+                    {t(`items.${item.id}.intro`)}
+                  </p>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
                     {t(`items.${item.id}.summary`)}
                   </p>
@@ -87,7 +116,8 @@ export async function CasesLanding() {
                     labelFor={(key) => t(`modules.${key}`)}
                   />
                 </div>
-                <p className="font-heading text-sm font-semibold text-foreground sm:pt-8 sm:text-right">
+
+                <p className="font-heading text-sm font-semibold text-foreground lg:pt-8 lg:text-right">
                   {t("stores", { count: item.stores })}
                 </p>
               </li>

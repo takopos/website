@@ -31,6 +31,7 @@ export async function generateMetadata({
       "連鎖餐飲 POS",
       "掃碼點餐",
       "TAKOPOS",
+      "羅媽媽米粉湯",
       "燒肉眾",
       "ABV",
     ],

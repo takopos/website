@@ -693,7 +693,7 @@
   },
   "cases": {
     "metaTitle": "Restaurant POS case studies",
-    "metaDescription": "TAKOPOS restaurant POS customers including ABV, Yakiniku Shu, Eijiro, Meisen Uji, Gaobei, and Origin Bar—covering POS, QR ordering, and HQ control.",
+    "metaDescription": "TAKOPOS restaurant POS customers including Luo Mama, ABV, Yakiniku Shu, Eijiro, Meisen Uji, Gaobei, and Origin Bar—covering POS, QR ordering, and HQ control.",
     "eyebrow": "Customer cases",
     "h1": "Restaurant POS cases: from single stores to chains",
     "lead": "Selected brands currently using TAKOPOS. We list real store counts and modules—no invented metrics—so you can see how POS, QR ordering, and HQ fit different F&B models.",
@@ -701,7 +701,7 @@
     "seeChoose": "How to choose a POS",
     "seeAll": "View all cases",
     "listTitle": "Brand overview",
-    "listLead": "Craft beer dining, yakiniku, Japanese dining, matcha, beverages, and bars.",
+    "listLead": "From traditional stalls to craft beer dining, yakiniku, matcha, beverages, and bars. Photos are illustrative with attribution—not in-store shots.",
     "stores": "{count} locations",
     "modules": {
       "pos": "POS",
@@ -711,34 +711,46 @@
       "erp": "ERP integration"
     },
     "items": {
+      "luo-mama": {
+        "name": "Luo Mama Rice Noodle Soup",
+        "category": "Traditional snack",
+        "intro": "A nearly 50-year Dongmen Market favorite—pork-bone broth with sliced sides, always packed.",
+        "summary": "A busy traditional stall that got productive on TPOS from day one—steady ordering and checkout at peak."
+      },
       "abv": {
         "name": "ABV Craft Beer Restaurant",
         "category": "Craft beer restaurant",
+        "intro": "World beers paired with global kitchens across multiple brand outlets.",
         "summary": "POS at the core, connected with OCARD membership and ERP so front-of-house sales meet back-office operations."
       },
       "yakiniku-shu": {
         "name": "Yakiniku Shu",
         "category": "Yakiniku chain",
+        "intro": "A Taiwan-born charcoal yakiniku chain built for group dining and buffet value.",
         "summary": "POS, QR ordering, and HQ control for multi-store ordering tempo and HQ sync."
       },
       "eijiro": {
         "name": "Eijiro",
-        "category": "Japanese dining",
+        "category": "Solo yakiniku",
+        "intro": "Solo-friendly yakiniku with a fast pace and high table-turn needs.",
         "summary": "POS, QR ordering, and HQ modules in one ordering and store-ops flow."
       },
       "meisen": {
         "name": "Meisen Uji Matcha",
         "category": "Matcha / specialty drinks",
+        "intro": "An early Taiwan Uji matcha specialist turning Kyoto tea into drinks and sweets.",
         "summary": "POS with HQ control to keep products and operations consistent across stores."
       },
       "gaobei": {
         "name": "Gaobei Milk King",
         "category": "Beverage chain",
+        "intro": "Since 1992, a local brand known for fresh-fruit milk and pressed juices.",
         "summary": "POS standardizes day-to-day ordering and checkout across locations."
       },
       "origin-bar": {
         "name": "Origin Bar",
         "category": "Bar",
+        "intro": "A Taipei bar near Taipei Arena focused on tea-spirits cocktails and night dining.",
         "summary": "Bar POS for clearer ordering and checkout across bar and seating areas."
       }
     },
@@ -754,7 +766,7 @@
       },
       "w3": {
         "title": "Diverse verticals",
-        "body": "Yakiniku, beer dining, matcha, drinks, bars—restaurant POS must fit different ordering rhythms."
+        "body": "Traditional stalls, yakiniku, beer dining, matcha, drinks, bars—restaurant POS must fit different ordering rhythms."
       }
     },
     "ctaTitle": "Want to see if TAKOPOS fits your format?",
