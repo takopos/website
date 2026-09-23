@@ -13,11 +13,11 @@ const handleI18n = createMiddleware(routing);
 export default function middleware(request: NextRequest) {
   const host = request.headers.get("host")?.split(":")[0]?.toLowerCase() ?? "";
 
-  // Consolidate www → apex so Google indexes one host only.
-  if (host === "www.takopos.com.tw") {
+  // Consolidate apex → www so the browser and Google use one host.
+  if (host === "takopos.com.tw") {
     const url = request.nextUrl.clone();
     url.protocol = "https:";
-    url.host = "takopos.com.tw";
+    url.host = "www.takopos.com.tw";
     return NextResponse.redirect(url, 301);
   }
 

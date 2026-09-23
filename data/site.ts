@@ -2,7 +2,7 @@ export const siteConfig = {
   brand: "TAKOPOS",
   companyEn: "Nordi Tech",
   /** Canonical site origin (no trailing slash) */
-  url: "https://takopos.com.tw",
+  url: "https://www.takopos.com.tw",
   keywords: [
     "TAKOPOS",
     "TPOS AI",
