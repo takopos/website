@@ -97,6 +97,8 @@
     @apply bg-background text-foreground;
   }
   html {
+    /* One type step up site-wide (16px → 18px base for rem utilities) */
+    font-size: 112.5%;
     @apply font-sans scroll-smooth;
   }
 }

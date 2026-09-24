@@ -971,7 +971,7 @@
     "metaDescription": "TAKOPOS TPOS AI: vision menu setup, stock-in OCR, one-tap translation, product imagery, menu advisor, and ops reports—inside the POS flow.",
     "eyebrow": "TPOS AI",
     "h1": "AI modules that actually run on the floor",
-    "lead": "Not a bolt-on chatbot—menu setup, translation, stocktake, and ops reports live inside TAKOPOS. Below: live modules and what is coming next.",
+    "lead": "Not a bolt-on chatbot—menu setup, translation, stocktake, and ops reports live inside TAKOPOS. AI is usage-based, and new customers get 100 free points. Below: live modules and what is coming next.",
     "seeDiningPos": "Explore restaurant POS",
     "seeCases": "See customer cases",
     "status": {
@@ -1054,7 +1054,7 @@
     "faqs": {
       "q1": {
         "q": "Is TPOS AI a separate plugin?",
-        "a": "No—it sits inside TAKOPOS ordering, inventory, and reporting."
+        "a": "No—it sits inside TAKOPOS ordering, inventory, and reporting. AI is billed by usage."
       },
       "q2": {
         "q": "What can I use today?",
@@ -1065,8 +1065,8 @@
         "a": "It cuts cataloging, translation, stocktake, and triage time so people focus on guests and decisions."
       },
       "q4": {
-        "q": "Can I enable only some modules?",
-        "a": "Yes—turn on what fits your format and plan during onboarding."
+        "q": "How is AI priced? Any new-customer credit?",
+        "a": "Pay as you go by usage points. New customers get 100 free points to try menu setup, translation, and more."
       }
     },
     "ctaTitle": "Want AI on your real menu?",

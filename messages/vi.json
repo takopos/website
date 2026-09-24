@@ -971,7 +971,7 @@
     "metaDescription": "TPOS AI: tạo thực đơn bằng ảnh, OCR nhập kho, dịch một chạm, ảnh món, cố vấn thực đơn và báo cáo vận hành trong POS.",
     "eyebrow": "TPOS AI",
     "h1": "AI dùng được ngay trên sàn nhà hàng",
-    "lead": "Không phải chatbot gắn thêm—nằm trong tạo menu, dịch, kiểm kê và báo cáo của TAKOPOS.",
+    "lead": "Không phải chatbot gắn thêm—nằm trong tạo menu, dịch, kiểm kê và báo cáo của TAKOPOS. AI tính phí theo mức dùng; khách mới có 100 điểm miễn phí.",
     "seeDiningPos": "Tìm hiểu POS nhà hàng",
     "seeCases": "Xem case",
     "status": {
@@ -1054,7 +1054,7 @@
     "faqs": {
       "q1": {
         "q": "TPOS AI có phải plugin?",
-        "a": "Không—nằm trong luồng TAKOPOS."
+        "a": "Không—nằm trong luồng TAKOPOS. AI tính phí theo mức sử dụng."
       },
       "q2": {
         "q": "Dùng được gì hôm nay?",
@@ -1065,8 +1065,8 @@
         "a": "Giảm việc nhập/dịch/kiểm kê để người lo khách."
       },
       "q4": {
-        "q": "Bật từng phần được?",
-        "a": "Được—theo mô hình và gói."
+        "q": "AI tính phí thế nào? Khách mới có ưu đãi?",
+        "a": "Trả theo mức dùng (điểm). Khách mới được 100 điểm miễn phí để thử tạo menu, dịch…"
       }
     },
     "ctaTitle": "Muốn chạy AI trên thực đơn thật?",
