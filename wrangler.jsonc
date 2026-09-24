@@ -4,11 +4,17 @@
   "main": ".open-next/worker.js",
   "compatibility_date": "2025-12-01",
   "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS",
-    // Ensure middleware (apex→www, i18n) runs before static HTML assets.
-    "run_worker_first": true
+    // false: static HTML/_next assets bypass Worker (less CPU/subrequest load).
+    // Apex→www still handled in middleware for non-asset requests; add a
+    // Cloudflare Redirect Rule for apex if static HTML is served without Worker.
+    "run_worker_first": false
   },
   "services": [
     {
