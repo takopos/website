@@ -1,13 +1,13 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS Smart Restaurant POS｜Nordi Tech",
-    "description": "TAKOPOS cloud restaurant POS with native TPOS AI multimodality: Vision OCR for menus and purchase slips, bar liquid-level stocktake, AI product imagery, and Gemini hybrid ops advisory.",
+    "defaultTitle": "TAKOPOS｜Smart Restaurant POS System",
+    "description": "TAKOPOS smart restaurant POS: QR ordering, kitchen display, inventory, and chain HQ control—with native TPOS AI for menu setup, translation, and ops insights.",
     "audience": "Restaurants and multi-unit F&B brands",
-    "featuresTitle": "Features",
-    "featuresDescription": "Smart POS, mobile ordering, kitchen display, inventory cost, loyalty, and ops analytics—TAKOPOS clears the daily bottlenecks in F&B.",
-    "pricingTitle": "Pricing",
-    "pricingDescription": "From single stores to chains, TAKOPOS scales with you. Solve today's pain first, then grow with your store count."
+    "featuresTitle": "Restaurant POS Features",
+    "featuresDescription": "Smart ordering, kitchen display (KDS), inventory cost, loyalty, and ops analytics—TAKOPOS clears daily F&B bottlenecks from single stores to multi-unit chains.",
+    "pricingTitle": "Restaurant POS Pricing",
+    "pricingDescription": "Transparent TAKOPOS plans from single stores to chains. Fix today’s peak-service pain first, then scale with store count—book a demo to pick the right plan."
   },
   "common": {
     "company": "Nordi Tech",

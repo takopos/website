@@ -82,6 +82,8 @@ export async function createPageMetadata({
       images: [
         {
           url: ogImage,
+          width: 1200,
+          height: 630,
           alt: `${siteConfig.brand}｜${tCommon("tagline")}`,
         },
       ],
@@ -112,6 +114,13 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
     caption: brand.logo.mark.alt,
   };
 
+  const areaServed = [
+    { "@type": "Country" as const, name: "Taiwan" },
+    { "@type": "Country" as const, name: "Vietnam" },
+    { "@type": "Country" as const, name: "Thailand" },
+  ];
+  const availableLanguage = ["zh-TW", "en", "vi", "th"];
+
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -122,6 +131,7 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
         legalName: tCommon("company"),
         alternateName: [
           siteConfig.brand,
+          "TAKO POS",
           "TPOS",
           "TPOS AI",
           siteConfig.companyEn,
@@ -139,34 +149,59 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
           addressRegion: siteConfig.contact.addressParts.addressRegion,
           addressCountry: siteConfig.contact.addressParts.addressCountry,
         },
-        contactPoint: {
-          "@type": "ContactPoint",
-          telephone: siteConfig.contact.phoneE164,
-          contactType: "customer service",
-          areaServed: "TW",
-          availableLanguage: ["zh-TW", "en", "vi", "th"],
-        },
+        contactPoint: [
+          {
+            "@type": "ContactPoint",
+            telephone: siteConfig.contact.phoneE164,
+            email: siteConfig.contact.email,
+            contactType: "customer service",
+            areaServed: ["TW", "VN", "TH"],
+            availableLanguage,
+          },
+          {
+            "@type": "ContactPoint",
+            telephone: siteConfig.contact.phoneE164,
+            contactType: "sales",
+            areaServed: ["TW", "VN", "TH"],
+            availableLanguage,
+          },
+        ],
+        areaServed,
         brand: {
           "@type": "Brand",
           name: siteConfig.brand,
-          alternateName: ["TPOS", "TPOS AI", "TAKOPOS（TPOS）"],
+          alternateName: ["TAKO POS", "TPOS", "TPOS AI", "TAKOPOS（TPOS）"],
           logo: logoUrl,
         },
         knowsAbout: [
           "餐飲 POS",
           "Restaurant POS",
+          "Retail POS",
           "TPOS AI",
           "Vision OCR",
+          "掃碼點餐",
           "Kitchen Display System",
           "連鎖餐飲管理",
           "Gemini 營運分析",
         ],
+        makesOffer: {
+          "@type": "Offer",
+          itemOffered: { "@id": softwareId },
+          url: absoluteLocalizedUrl(locale, "/pricing"),
+          areaServed,
+        },
       },
       {
-        "@type": "SoftwareApplication",
+        "@type": ["SoftwareApplication", "Product"],
         "@id": softwareId,
-        name: "TAKOPOS (TPOS AI)",
-        alternateName: [siteConfig.brand, "TPOS", "TPOS AI", "TAKOPOS POS"],
+        name: "TAKOPOS",
+        alternateName: [
+          "TAKO POS",
+          siteConfig.brand,
+          "TPOS",
+          "TPOS AI",
+          "TAKOPOS POS",
+        ],
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Point of Sale (POS)",
         operatingSystem: "Android, Web, Cloud",
@@ -174,22 +209,26 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
         image: logoUrl,
         description: softwareAiDescription,
         featureList: [...softwareAiFeatureList],
+        category: "Point of Sale Software",
         audience: {
           "@type": "BusinessAudience",
           audienceType: t("audience"),
         },
+        areaServed,
+        inLanguage: availableLanguage,
         offers: {
           "@type": "Offer",
           url: absoluteLocalizedUrl(locale, "/pricing"),
           priceCurrency: "TWD",
           availability: "https://schema.org/InStock",
+          areaServed,
         },
         publisher: { "@id": organizationId },
         provider: { "@id": organizationId },
         brand: {
           "@type": "Brand",
           name: siteConfig.brand,
-          alternateName: ["TPOS", "TPOS AI"],
+          alternateName: ["TAKO POS", "TPOS", "TPOS AI"],
           logo: logoUrl,
         },
       },
@@ -197,11 +236,15 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
         "@type": "WebSite",
         "@id": websiteId,
         name: siteConfig.brand,
-        alternateName: `${tCommon("company")}${tCommon("tagline")}`,
+        alternateName: `${tCommon("company")}｜${tCommon("tagline")}`,
         url: siteConfig.url,
-        inLanguage: locale,
+        inLanguage: availableLanguage,
         publisher: { "@id": organizationId },
         about: { "@id": softwareId },
+        potentialAction: {
+          "@type": "ReadAction",
+          target: `${siteConfig.url}/`,
+        },
       },
     ],
   };

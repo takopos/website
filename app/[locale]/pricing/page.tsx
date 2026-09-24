@@ -38,5 +38,5 @@ export default async function PricingPage({
   const { locale: raw } = await params;
   if (!hasLocale(routing.locales, raw)) notFound();
   setRequestLocale(raw);
-  return <PricingSection />;
+  return <PricingSection asPage />;
 }

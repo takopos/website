@@ -6,23 +6,33 @@ import { Badge } from "@/components/ui/badge";
 import { pricingPlans, pricingSection } from "@/data/pricing";
 import { cn } from "@/lib/utils";
 
-export async function PricingSection() {
+export async function PricingSection({
+  asPage = false,
+}: {
+  /** Standalone /pricing page needs a single page-level h1. */
+  asPage?: boolean;
+} = {}) {
   const t = await getTranslations("pricing");
   const tCta = await getTranslations("cta");
+  const Heading = asPage ? "h1" : "h2";
 
   return (
     <section
       id={pricingSection.id}
       className="scroll-mt-20 bg-background py-20 sm:py-24"
+      aria-labelledby="pricing-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
             {t("eyebrow")}
           </p>
-          <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <Heading
+            id="pricing-heading"
+            className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
+          >
             {t("title")}
-          </h2>
+          </Heading>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             {t("description")}
           </p>

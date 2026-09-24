@@ -1,13 +1,13 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS POS nhà hàng thông minh｜Nordi Tech",
-    "description": "TAKOPOS POS đám mây nhà hàng với TPOS AI đa phương thức: Vision OCR thực đơn và phiếu nhập, đếm tồn rượu theo mực chất lỏng, tạo ảnh món AI và tư vấn vận hành Gemini.",
+    "defaultTitle": "TAKOPOS｜Hệ thống POS nhà hàng thông minh",
+    "description": "TAKOPOS là POS đám mây nhà hàng: gọi món QR, KDS, tồn kho và quản lý chuỗi HQ, kèm TPOS AI hỗ trợ tạo menu, dịch và phân tích vận hành—từ quán đơn đến chuỗi.",
     "audience": "Nhà hàng và thương hiệu chuỗi F&B",
-    "featuresTitle": "Tính năng",
-    "featuresDescription": "POS thông minh, gọi món di động, KDS, chi phí tồn kho, thành viên và phân tích vận hành.",
-    "pricingTitle": "Bảng giá",
-    "pricingDescription": "Từ quán nhỏ đến chuỗi, TAKOPOS mở rộng cùng bạn."
+    "featuresTitle": "Tính năng POS nhà hàng",
+    "featuresDescription": "Gọi món thông minh, KDS, chi phí tồn kho, thành viên và phân tích vận hành—TAKOPOS giúp thông suốt điểm nghẽn hàng ngày từ quán đơn đến chuỗi.",
+    "pricingTitle": "Bảng giá POS nhà hàng",
+    "pricingDescription": "Gói TAKOPOS minh bạch từ quán nhỏ đến chuỗi. Giải quyết đau điểm trước, rồi mở rộng theo số cửa hàng—đặt demo để chọn gói phù hợp."
   },
   "common": {
     "company": "Nordi Tech",

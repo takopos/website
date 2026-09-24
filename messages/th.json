@@ -1,13 +1,13 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS POS ร้านอาหารอัจฉริยะ｜Nordi Tech",
-    "description": "TAKOPOS POS คลาวด์ร้านอาหารพร้อม TPOS AI แบบมัลติโมดอล: Vision OCR เมนูและใบซื้อเข้า สต็อกแถวบาร์ด้วยระดับของเหลว สร้างภาพเมนูด้วย AI และที่ปรึกษาดำเนินงาน Gemini",
+    "defaultTitle": "TAKOPOS｜ระบบ POS ร้านอาหารอัจฉริยะ",
+    "description": "TAKOPOS คือ POS คลาวด์ร้านอาหาร: สั่งด้วย QR, จอครัว, สต็อก และควบคุม HQ เชน พร้อม TPOS AI ช่วยสร้างเมนู แปล และวิเคราะห์ดำเนินงาน—จากร้านเดี่ยวถึงเชน",
     "audience": "ร้านอาหารและแบรนด์เชนร้านอาหาร",
-    "featuresTitle": "ฟีเจอร์",
-    "featuresDescription": "POS อัจฉริยะ สั่งผ่านมือถือ KDS ต้นทุนสต็อก สมาชิก และข้อมูลการดำเนินงาน",
-    "pricingTitle": "ราคา",
-    "pricingDescription": "จากร้านเดี่ยวถึงเชน TAKOPOS ขยายไปกับคุณ"
+    "featuresTitle": "ฟีเจอร์ POS ร้านอาหาร",
+    "featuresDescription": "สั่งอาหารอัจฉริยะ จอครัว สต็อก สมาชิก และวิเคราะห์ดำเนินงาน—TAKOPOS คลายคอขวดรายวันจากร้านเดี่ยวถึงเชน",
+    "pricingTitle": "ราคา POS ร้านอาหาร",
+    "pricingDescription": "แพ็กเกจ TAKOPOS โปร่งใสจากร้านเล็กถึงเชน แก้ปัญหาวันนี้ก่อน แล้วขยายตามจำนวนสาขา—จองเดโมเพื่อเลือกแพ็กที่เหมาะ"
   },
   "common": {
     "company": "Nordi Tech",

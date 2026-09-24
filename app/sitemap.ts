@@ -4,28 +4,37 @@ import { cases } from "@/data/cases";
 import { locales, type AppLocale } from "@/i18n/routing";
 import { absoluteLocalizedUrl, languageAlternates } from "@/lib/seo";
 
-const paths = [
-  "/",
-  "/features",
-  "/pricing",
-  "/dining-pos",
-  "/choose-dining-pos",
-  "/cases",
-  "/qr-ordering",
-  "/kitchen-display",
-  "/chain-pos",
-  "/tpos-ai",
-] as const;
+type ChangeFrequency = NonNullable<
+  MetadataRoute.Sitemap[number]["changeFrequency"]
+>;
+
+const corePaths: Array<{
+  path: string;
+  priority: number;
+  changeFrequency: ChangeFrequency;
+}> = [
+  { path: "/", priority: 1, changeFrequency: "weekly" },
+  { path: "/dining-pos", priority: 0.95, changeFrequency: "weekly" },
+  { path: "/tpos-ai", priority: 0.95, changeFrequency: "weekly" },
+  { path: "/qr-ordering", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/kitchen-display", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/chain-pos", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/choose-dining-pos", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/cases", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/features", priority: 0.85, changeFrequency: "weekly" },
+  { path: "/pricing", priority: 0.85, changeFrequency: "weekly" },
+];
 
 function entry(
   locale: AppLocale,
   path: string,
-  priority: number
-) {
+  priority: number,
+  changeFrequency: ChangeFrequency
+): MetadataRoute.Sitemap[number] {
   return {
     url: absoluteLocalizedUrl(locale, path),
     lastModified: new Date(),
-    changeFrequency: "weekly" as const,
+    changeFrequency,
     priority,
     alternates: {
       languages: languageAlternates(path),
@@ -36,28 +45,16 @@ function entry(
 export default function sitemap(): MetadataRoute.Sitemap {
   const items: MetadataRoute.Sitemap = [];
 
-  for (const path of paths) {
-    const priority =
-      path === "/"
-        ? 1
-        : path === "/dining-pos" ||
-            path === "/choose-dining-pos" ||
-            path === "/cases" ||
-            path === "/qr-ordering" ||
-            path === "/kitchen-display" ||
-            path === "/chain-pos" ||
-            path === "/tpos-ai"
-          ? 0.9
-          : 0.8;
+  for (const { path, priority, changeFrequency } of corePaths) {
     for (const locale of locales) {
-      items.push(entry(locale, path, priority));
+      items.push(entry(locale, path, priority, changeFrequency));
     }
   }
 
   for (const item of cases) {
     const path = `/cases/${item.id}`;
     for (const locale of locales) {
-      items.push(entry(locale, path, 0.85));
+      items.push(entry(locale, path, 0.75, "monthly"));
     }
   }
 

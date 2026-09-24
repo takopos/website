@@ -2,7 +2,12 @@ import type { MetadataRoute } from "next";
 
 import { siteConfig } from "@/data/site";
 
-/** Explicit allow-list for major AI / generative-engine crawlers (GEO). */
+/**
+ * Explicit allow-list for classic search crawlers + generative-engine / AI bots (GEO).
+ * Do not block indexing; Sitemap is declared at the end via MetadataRoute.
+ */
+const SEARCH_CRAWLERS = ["Googlebot", "Bingbot"] as const;
+
 const AI_CRAWLERS = [
   "Google-Extended",
   "GPTBot",
@@ -25,11 +30,15 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
       {
+        userAgent: [...SEARCH_CRAWLERS],
+        allow: "/",
+      },
+      {
         userAgent: [...AI_CRAWLERS],
         allow: "/",
       },
     ],
-    sitemap: `${siteConfig.url}/sitemap.xml`,
     host: siteConfig.url,
+    sitemap: `${siteConfig.url}/sitemap.xml`,
   };
 }

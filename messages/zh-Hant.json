@@ -1,13 +1,13 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS 智慧餐飲 POS 系統｜諾迪科技",
-    "description": "TAKOPOS 智慧雲端餐飲 POS，原生整合 TPOS AI 多模態技術：菜單與進貨單 Vision 辨識、酒吧液面視覺盤點、AI 商品圖生成與 Gemini 混合式營運顧問。",
+    "defaultTitle": "TAKOPOS｜專業智慧餐飲 POS 系統",
+    "description": "TAKOPOS（TAKO POS）專業智慧餐飲 POS 系統：整合掃碼點餐、廚房出餐看板、庫存管理與連鎖總部控管，並原生搭載 TPOS AI 協助菜單建檔、多語翻譯與營運分析。由諾迪科技提供，服務台灣與海外餐飲品牌，適合單店到多店連鎖擴張。",
     "audience": "餐飲店家、連鎖餐飲品牌",
     "featuresTitle": "餐飲 POS 產品功能",
-    "featuresDescription": "餐飲 POS 核心功能一次看：智慧點餐、廚房出餐看板、庫存成本、會員行銷與營運數據——TAKOPOS 打通餐廳每天卡住的環節。",
+    "featuresDescription": "一次掌握餐飲 POS 核心能力：智慧點餐、廚房出餐看板（KDS）、庫存成本、會員行銷與營運數據。TAKOPOS 打通餐廳每天卡住的環節，從前場出單、廚房備料到總部控管皆適用，支援單店與連鎖品牌成長。",
     "pricingTitle": "餐飲 POS 方案價格",
-    "pricingDescription": "從單店到連鎖餐飲，TAKOPOS 餐飲 POS 提供可擴充方案。先解決眼前的痛，再跟著你的店數一起長大。"
+    "pricingDescription": "從單店到連鎖餐飲，TAKOPOS 提供可擴充的餐飲 POS 方案與透明定價。先解決眼前尖峰出單、廚房與庫存痛點，再跟著店數一起長大。歡迎預約體驗，由顧問協助你選擇最適合的方案。"
   },
   "common": {
     "company": "諾迪科技",

@@ -40,5 +40,5 @@ export default async function FeaturesPage({
   const { locale: raw } = await params;
   if (!hasLocale(routing.locales, raw)) notFound();
   setRequestLocale(raw);
-  return <FeaturesSection />;
+  return <FeaturesSection asPage />;
 }

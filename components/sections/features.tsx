@@ -20,8 +20,14 @@ const iconMap: Record<string, LucideIcon> = {
   CreditCard,
 };
 
-export async function FeaturesSection() {
+export async function FeaturesSection({
+  asPage = false,
+}: {
+  /** Standalone /features page needs a single page-level h1. */
+  asPage?: boolean;
+} = {}) {
   const t = await getTranslations("features");
+  const Heading = asPage ? "h1" : "h2";
 
   return (
     <section
@@ -34,12 +40,12 @@ export async function FeaturesSection() {
           <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
             {t("eyebrow")}
           </p>
-          <h2
+          <Heading
             id="features-heading"
             className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
           >
             {t("title")}
-          </h2>
+          </Heading>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             {t("description")}
           </p>

@@ -5,6 +5,7 @@ export const siteConfig = {
   url: "https://www.takopos.com.tw",
   keywords: [
     "TAKOPOS",
+    "TAKO POS",
     "TPOS AI",
     "POS",
     "餐飲",
