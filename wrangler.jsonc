@@ -8,6 +8,10 @@
     "enabled": true,
     "head_sampling_rate": 1
   },
+  // Workers Paid: raise CPU budget so Next.js RSC/SSR no longer hits Error 1102.
+  "limits": {
+    "cpu_ms": 60000
+  },
   "assets": {
     "directory": ".open-next/assets",
     "binding": "ASSETS",
