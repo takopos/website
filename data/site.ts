@@ -37,6 +37,10 @@ export const siteConfig = {
   ],
   social: {
     facebook: "https://www.facebook.com/takopos",
+    /** Official LINE OA add-friend link */
+    line: "https://lin.ee/q1mdaMc",
+    lineAddFriendImage:
+      "https://scdn.line-apps.com/n/line_add_friends/btn/zh-Hant.png",
   },
   contact: {
     email: "service@takopos.com.tw",

@@ -139,7 +139,7 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
         url: `${siteConfig.url}/`,
         logo: logoImageObject,
         image: logoUrl,
-        sameAs: [siteConfig.social.facebook],
+        sameAs: [siteConfig.social.facebook, siteConfig.social.line],
         email: siteConfig.contact.email,
         telephone: siteConfig.contact.phoneE164,
         address: {

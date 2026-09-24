@@ -75,6 +75,22 @@ export async function Footer() {
                   Facebook
                 </a>
               </li>
+              <li className="pt-1">
+                <a
+                  href={siteConfig.social.line}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block"
+                >
+                  <img
+                    src={siteConfig.social.lineAddFriendImage}
+                    alt={t("addLineFriend")}
+                    height={36}
+                    width={118}
+                    className="h-9 w-auto"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
         </div>

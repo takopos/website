@@ -330,7 +330,8 @@
     "terms": "ข้อกำหนดการใช้งาน",
     "diningPos": "คู่มือ POS ร้านอาหาร",
     "chooseDiningPos": "เลือก POS",
-    "cases": "เคส POS"
+    "cases": "เคส POS",
+    "addLineFriend": "เพิ่มเพื่อน LINE ทางการ"
   },
   "booking": {
     "title": "จองเดโมฟรี",
