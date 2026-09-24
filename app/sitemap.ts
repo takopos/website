@@ -14,6 +14,7 @@ const paths = [
   "/qr-ordering",
   "/kitchen-display",
   "/chain-pos",
+  "/tpos-ai",
 ] as const;
 
 function entry(
@@ -44,7 +45,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
             path === "/cases" ||
             path === "/qr-ordering" ||
             path === "/kitchen-display" ||
-            path === "/chain-pos"
+            path === "/chain-pos" ||
+            path === "/tpos-ai"
           ? 0.9
           : 0.8;
     for (const locale of locales) {

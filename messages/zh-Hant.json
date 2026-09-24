@@ -50,7 +50,7 @@
     "description": "不是外掛插件，而是與點餐、庫存、報表同一套 TAKOPOS 流程：Vision 辨識、Imagen 生成、Gemini 營運分析，把繁瑣建檔與盤點變成幾次拍照與確認。",
     "items": {
       "visionCatalog": {
-        "title": "AI 視覺建檔",
+        "title": "AI 視覺建立菜單",
         "description": "拍照即可匯入菜單與紙本進貨單，免去手動輸入繁瑣步驟。"
       },
       "barStocktake": {
@@ -58,14 +58,15 @@
         "description": "鏡頭精準辨識瓶身剩餘液面，徹底告別傳統目測與秤重盤點。"
       },
       "imagenTranslate": {
-        "title": "AI 圖文生成與翻譯",
+        "title": "AI 一鍵翻譯菜單",
         "description": "內建 Imagen 快速生成餐點情境圖，搭配英日韓多語翻譯，升級數位點餐體驗。"
       },
       "opsAdvisor": {
         "title": "AI 營運顧問",
         "description": "結合 Gemini 與真實營收數據，每日直接給出 3 條經營改善行動，不做無效數字推疊。"
       }
-    }
+    },
+    "seeAll": "看全部 TPOS AI 功能"
   },
   "features": {
     "eyebrow": "產品功能",
@@ -964,5 +965,111 @@
     },
     "ctaTitle": "準備開下一間，或總部已開始失控？",
     "ctaBody": "告訴我們店數與最頭痛的同步問題，業務會依總部需求安排介紹。"
+  },
+  "tposAiPage": {
+    "metaTitle": "TPOS AI 餐飲 AI 功能一覽",
+    "metaDescription": "TAKOPOS TPOS AI：視覺建立菜單、進貨單辨識、一鍵翻譯、商品圖生成、菜單顧問與營運分析報告，原生整合餐飲 POS 流程。",
+    "eyebrow": "TPOS AI",
+    "h1": "餐飲現場真正用得到的 AI 模組",
+    "lead": "不是外掛聊天窗，而是嵌在菜單建檔、翻譯、盤點與營運報表同一套 TAKOPOS 流程。以下依用途整理已上線與規劃中功能。",
+    "seeDiningPos": "了解餐飲 POS",
+    "seeCases": "看合作案例",
+    "status": {
+      "live": "已上線",
+      "planned": "規劃中"
+    },
+    "groups": {
+      "menuBuild": {
+        "title": "菜單建檔與盤點",
+        "lead": "拍照就能建菜單、認進貨單，酒吧也能用鏡頭估量剩餘。"
+      },
+      "translateMedia": {
+        "title": "翻譯與商品圖",
+        "lead": "多語菜單與情境圖一鍵產出，加速數位點餐上架。"
+      },
+      "opsInsight": {
+        "title": "菜單顧問與營運洞察",
+        "lead": "用銷售與菜單結構給建議，異常也能主動診斷。"
+      },
+      "upcoming": {
+        "title": "規劃中：點餐智能推薦",
+        "lead": "接下來會把推薦能力放到掃碼點餐與 POS 出單畫面。"
+      }
+    },
+    "modules": {
+      "menuRecognize": {
+        "title": "AI 視覺建立菜單",
+        "description": "上傳菜單圖片，自動辨識單品與套餐並分類建檔，單次最多約 80 項。"
+      },
+      "stockInDocument": {
+        "title": "AI 入庫單據辨識",
+        "description": "拍攝進貨單，辨識品名、數量與單價，並對照既有原物料主檔。"
+      },
+      "barStocktake": {
+        "title": "AI 酒吧盤點",
+        "description": "鏡頭估量瓶身剩餘液面，減少目測與秤重盤點。"
+      },
+      "catalogBulkTranslate": {
+        "title": "AI 一鍵翻譯菜單",
+        "description": "商品與分類主檔批量翻譯，一次可處理多語（最多約 100 筆／批）。"
+      },
+      "categoryTranslate": {
+        "title": "分類單筆多語翻譯",
+        "description": "單一分類名稱由繁中翻譯成多國語言。"
+      },
+      "productTranslate": {
+        "title": "商品單筆多語翻譯",
+        "description": "單一商品名稱由繁中翻譯成多國語言。"
+      },
+      "productImageGenerate": {
+        "title": "AI 商品圖生成",
+        "description": "依商品名稱生成展示用情境圖，加速數位菜單上架。"
+      },
+      "menuAdvisor": {
+        "title": "AI 菜單顧問分析",
+        "description": "分析菜單結構與銷售，提出精簡與優化建議（最多約 500 個在售品項）。"
+      },
+      "menuAdvisorLlm": {
+        "title": "AI 菜單顧問深度報告",
+        "description": "以大型語言模型產出結構化診斷報告，協助決策。"
+      },
+      "operationsReport": {
+        "title": "AI 營運分析報告",
+        "description": "在報表頁產出營收、品項與營運決策摘要（最多約 90 個營業日）。"
+      },
+      "lineOpsAnomaly": {
+        "title": "LINE 營運異常 AI 診斷",
+        "description": "日報異常時產出 AI 診斷建議，並可推播提醒。"
+      },
+      "cartUpsell": {
+        "title": "點餐 AI 推薦加購",
+        "description": "掃碼／協同點餐購物車智能加購推薦（規劃中）。"
+      },
+      "posSmartRecommend": {
+        "title": "POS 智能推薦",
+        "description": "POS 點餐介面智能推薦（規劃中）。"
+      }
+    },
+    "faqTitle": "TPOS AI 常見問題",
+    "faqs": {
+      "q1": {
+        "q": "TPOS AI 是另外買的外掛嗎？",
+        "a": "不是。模組嵌在 TAKOPOS 點餐、庫存與報表流程，現場用同一套系統完成。"
+      },
+      "q2": {
+        "q": "哪些功能已經可以用？",
+        "a": "標示「已上線」者可預約介紹實際操作；「規劃中」會依產品時程陸續開放。"
+      },
+      "q3": {
+        "q": "AI 會取代店員嗎？",
+        "a": "定位是減少建檔、翻譯、盤點與找問題的時間，把人力留給服務與決策。"
+      },
+      "q4": {
+        "q": "可以只開部分 AI 模組嗎？",
+        "a": "可以依店型與方案啟用需要的能力，導入時會一併確認用量與流程。"
+      }
+    },
+    "ctaTitle": "想看 AI 怎麼跑在你的菜單上？",
+    "ctaBody": "帶一份真實菜單預約介紹，我們用實際模組走一遍建檔、翻譯與報表。"
   }
 }

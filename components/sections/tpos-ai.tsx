@@ -7,7 +7,9 @@ import {
 } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import { Button } from "@/components/ui/button";
 import { tposAiFeatures, tposAiSection } from "@/data/tpos-ai";
+import { Link } from "@/i18n/navigation";
 
 const iconMap: Record<string, LucideIcon> = {
   ScanLine,
@@ -67,6 +69,17 @@ export async function TposAiSection() {
             );
           })}
         </ul>
+
+        <div className="mt-10">
+          <Button
+            nativeButton={false}
+            render={<Link href="/tpos-ai" />}
+            size="lg"
+            className="h-11 px-5 text-sm"
+          >
+            {t("seeAll")}
+          </Button>
+        </div>
       </div>
     </section>
   );

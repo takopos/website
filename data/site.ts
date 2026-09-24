@@ -28,7 +28,7 @@ export const siteConfig = {
     { key: "diningPos" as const, href: "/dining-pos" },
     { key: "cases" as const, href: "/cases" },
     { key: "features" as const, href: "/#features" },
-    { key: "tposAi" as const, href: "/#tpos-ai" },
+    { key: "tposAi" as const, href: "/tpos-ai" },
     { key: "operations" as const, href: "/#operations" },
     { key: "chainStore" as const, href: "/#chain-store" },
     { key: "pricing" as const, href: "/#pricing" },
@@ -54,6 +54,7 @@ export const siteConfig = {
     links: [
       { key: "cases" as const, href: "/cases" },
       { key: "diningPos" as const, href: "/dining-pos" },
+      { key: "tposAi" as const, href: "/tpos-ai" },
       { key: "qrOrdering" as const, href: "/qr-ordering" },
       { key: "kitchenDisplay" as const, href: "/kitchen-display" },
       { key: "chainPos" as const, href: "/chain-pos" },

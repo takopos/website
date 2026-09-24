@@ -50,7 +50,7 @@
     "description": "Not a bolt-on plugin—Vision, Imagen, and Gemini sit inside the same TAKOPOS ordering, inventory, and reporting flow so cataloging and stocktake become a few photos and confirms.",
     "items": {
       "visionCatalog": {
-        "title": "AI vision cataloging",
+        "title": "AI vision menu setup",
         "description": "Photograph menus and paper purchase slips to import items—skip tedious manual entry."
       },
       "barStocktake": {
@@ -58,14 +58,15 @@
         "description": "Camera estimates remaining liquid level in bottles—no more eyeballing or weighing."
       },
       "imagenTranslate": {
-        "title": "AI imagery & translation",
+        "title": "AI one-tap menu translation",
         "description": "Built-in Imagen creates dish lifestyle shots plus EN/JA/KO menu translation for digital ordering."
       },
       "opsAdvisor": {
         "title": "AI ops advisor",
         "description": "Gemini plus real sales data delivers 3 actionable improvements daily—not vanity dashboards."
       }
-    }
+    },
+    "seeAll": "See all TPOS AI features"
   },
   "features": {
     "eyebrow": "Features",
@@ -964,5 +965,111 @@
     },
     "ctaTitle": "Opening the next store—or HQ already slipping?",
     "ctaBody": "Tell us store count and your worst sync pain; sales will tailor an intro."
+  },
+  "tposAiPage": {
+    "metaTitle": "TPOS AI features for restaurants",
+    "metaDescription": "TAKOPOS TPOS AI: vision menu setup, stock-in OCR, one-tap translation, product imagery, menu advisor, and ops reports—inside the POS flow.",
+    "eyebrow": "TPOS AI",
+    "h1": "AI modules that actually run on the floor",
+    "lead": "Not a bolt-on chatbot—menu setup, translation, stocktake, and ops reports live inside TAKOPOS. Below: live modules and what is coming next.",
+    "seeDiningPos": "Explore restaurant POS",
+    "seeCases": "See customer cases",
+    "status": {
+      "live": "Live",
+      "planned": "Planned"
+    },
+    "groups": {
+      "menuBuild": {
+        "title": "Menu setup & stocktake",
+        "lead": "Photo-based menu and invoice capture, plus bar level estimates."
+      },
+      "translateMedia": {
+        "title": "Translation & product imagery",
+        "lead": "Multilingual menus and lifestyle shots for digital ordering."
+      },
+      "opsInsight": {
+        "title": "Menu advisor & ops insight",
+        "lead": "Recommendations from sales structure, plus anomaly diagnostics."
+      },
+      "upcoming": {
+        "title": "Coming soon: smart recommendations",
+        "lead": "Upsell on QR carts and smart tips on the POS screen."
+      }
+    },
+    "modules": {
+      "menuRecognize": {
+        "title": "AI vision menu setup",
+        "description": "Upload menu photos to detect items and sets—up to about 80 items per upload."
+      },
+      "stockInDocument": {
+        "title": "AI stock-in document OCR",
+        "description": "Scan receiving slips for names, qty, and unit price against raw-material masters."
+      },
+      "barStocktake": {
+        "title": "AI bar stocktake",
+        "description": "Estimate remaining liquid levels in bottles without weighing."
+      },
+      "catalogBulkTranslate": {
+        "title": "AI one-tap menu translation",
+        "description": "Bulk-translate products and categories into multiple languages (about 100 per batch)."
+      },
+      "categoryTranslate": {
+        "title": "Single category translation",
+        "description": "Translate one category name from Traditional Chinese into multiple languages."
+      },
+      "productTranslate": {
+        "title": "Single product translation",
+        "description": "Translate one product name from Traditional Chinese into multiple languages."
+      },
+      "productImageGenerate": {
+        "title": "AI product image generation",
+        "description": "Generate display images from product names for digital menus."
+      },
+      "menuAdvisor": {
+        "title": "AI menu advisor",
+        "description": "Analyze menu structure and sales for streamlining tips (up to ~500 active items)."
+      },
+      "menuAdvisorLlm": {
+        "title": "AI menu advisor deep report",
+        "description": "LLM-written structured diagnostic reports for decisions."
+      },
+      "operationsReport": {
+        "title": "AI operations analysis report",
+        "description": "Revenue, item, and ops decision summaries (up to ~90 business days)."
+      },
+      "lineOpsAnomaly": {
+        "title": "LINE ops anomaly diagnosis",
+        "description": "AI suggestions when daily LINE ops reports look abnormal."
+      },
+      "cartUpsell": {
+        "title": "Ordering AI upsell",
+        "description": "Smart add-on suggestions for QR / collab carts (planned)."
+      },
+      "posSmartRecommend": {
+        "title": "POS smart recommendations",
+        "description": "Recommendations on the POS ordering screen (planned)."
+      }
+    },
+    "faqTitle": "TPOS AI FAQ",
+    "faqs": {
+      "q1": {
+        "q": "Is TPOS AI a separate plugin?",
+        "a": "No—it sits inside TAKOPOS ordering, inventory, and reporting."
+      },
+      "q2": {
+        "q": "What can I use today?",
+        "a": "Anything marked Live can be demoed; Planned ships on the product roadmap."
+      },
+      "q3": {
+        "q": "Will AI replace staff?",
+        "a": "It cuts cataloging, translation, stocktake, and triage time so people focus on guests and decisions."
+      },
+      "q4": {
+        "q": "Can I enable only some modules?",
+        "a": "Yes—turn on what fits your format and plan during onboarding."
+      }
+    },
+    "ctaTitle": "Want AI on your real menu?",
+    "ctaBody": "Book an intro with a live menu—we will walk setup, translation, and reports."
   }
 }

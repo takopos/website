@@ -50,7 +50,7 @@
     "description": "Không phải plugin gắn thêm—Vision, Imagen và Gemini nằm trong cùng luồng gọi món, tồn kho và báo cáo của TAKOPOS.",
     "items": {
       "visionCatalog": {
-        "title": "Lập hồ sơ bằng Vision AI",
+        "title": "AI Vision tạo thực đơn",
         "description": "Chụp thực đơn và phiếu nhập giấy để nhập hàng—bỏ nhập tay dài dòng."
       },
       "barStocktake": {
@@ -58,14 +58,15 @@
         "description": "Camera ước lượng mực chất lỏng còn lại trong chai—không cần cân hay ước lượng mắt."
       },
       "imagenTranslate": {
-        "title": "Tạo ảnh & dịch AI",
+        "title": "AI dịch thực đơn một chạm",
         "description": "Imagen tạo ảnh món theo ngữ cảnh kèm dịch EN/JA/KO cho gọi món số."
       },
       "opsAdvisor": {
         "title": "Cố vấn vận hành AI",
         "description": "Gemini cộng dữ liệu doanh thu thật đưa 3 hành động cải thiện mỗi ngày."
       }
-    }
+    },
+    "seeAll": "Xem tất cả tính năng TPOS AI"
   },
   "features": {
     "eyebrow": "Tính năng",
@@ -964,5 +965,111 @@
     },
     "ctaTitle": "Sắp mở quán tiếp—hoặc HQ đang loạn?",
     "ctaBody": "Cho biết số quán và nỗi đau đồng bộ."
+  },
+  "tposAiPage": {
+    "metaTitle": "TPOS AI cho nhà hàng",
+    "metaDescription": "TPOS AI: tạo thực đơn bằng ảnh, OCR nhập kho, dịch một chạm, ảnh món, cố vấn thực đơn và báo cáo vận hành trong POS.",
+    "eyebrow": "TPOS AI",
+    "h1": "AI dùng được ngay trên sàn nhà hàng",
+    "lead": "Không phải chatbot gắn thêm—nằm trong tạo menu, dịch, kiểm kê và báo cáo của TAKOPOS.",
+    "seeDiningPos": "Tìm hiểu POS nhà hàng",
+    "seeCases": "Xem case",
+    "status": {
+      "live": "Đã lên",
+      "planned": "Đang lên kế hoạch"
+    },
+    "groups": {
+      "menuBuild": {
+        "title": "Tạo menu & kiểm kê",
+        "lead": "Chụp menu/phiếu nhập; ước lượng rượu còn lại."
+      },
+      "translateMedia": {
+        "title": "Dịch & ảnh món",
+        "lead": "Đa ngữ và ảnh trưng bày cho gọi món số."
+      },
+      "opsInsight": {
+        "title": "Cố vấn menu & vận hành",
+        "lead": "Gợi ý từ cấu trúc bán hàng và chẩn đoán bất thường."
+      },
+      "upcoming": {
+        "title": "Sắp có: gợi ý thông minh",
+        "lead": "Upsell giỏ QR và gợi ý trên POS."
+      }
+    },
+    "modules": {
+      "menuRecognize": {
+        "title": "AI Vision tạo thực đơn",
+        "description": "Tải ảnh menu để nhận món/combo—khoảng tối đa 80 mục/lần."
+      },
+      "stockInDocument": {
+        "title": "AI OCR phiếu nhập",
+        "description": "Nhận tên, SL, đơn giá và đối chiếu NVL."
+      },
+      "barStocktake": {
+        "title": "AI kiểm kê bar",
+        "description": "Ước lượng mực chất lỏng còn lại trong chai."
+      },
+      "catalogBulkTranslate": {
+        "title": "AI dịch thực đơn một chạm",
+        "description": "Dịch hàng loạt sản phẩm/danh mục (~100/batch)."
+      },
+      "categoryTranslate": {
+        "title": "Dịch một danh mục",
+        "description": "Dịch một tên danh mục sang nhiều ngôn ngữ."
+      },
+      "productTranslate": {
+        "title": "Dịch một sản phẩm",
+        "description": "Dịch một tên món sang nhiều ngôn ngữ."
+      },
+      "productImageGenerate": {
+        "title": "AI tạo ảnh món",
+        "description": "Tạo ảnh trưng bày từ tên sản phẩm."
+      },
+      "menuAdvisor": {
+        "title": "AI cố vấn thực đơn",
+        "description": "Phân tích cấu trúc & doanh số (~500 món ACTIVE)."
+      },
+      "menuAdvisorLlm": {
+        "title": "Báo cáo sâu LLM",
+        "description": "Báo cáo chẩn đoán có cấu trúc bằng LLM."
+      },
+      "operationsReport": {
+        "title": "Báo cáo vận hành AI",
+        "description": "Tóm tắt doanh thu/món (~90 ngày)."
+      },
+      "lineOpsAnomaly": {
+        "title": "Chẩn đoán bất thường LINE",
+        "description": "Gợi ý AI khi báo cáo ngày bất thường."
+      },
+      "cartUpsell": {
+        "title": "AI gợi ý upsell",
+        "description": "Gợi ý thêm món giỏ QR (kế hoạch)."
+      },
+      "posSmartRecommend": {
+        "title": "Gợi ý thông minh POS",
+        "description": "Gợi ý trên màn POS (kế hoạch)."
+      }
+    },
+    "faqTitle": "FAQ TPOS AI",
+    "faqs": {
+      "q1": {
+        "q": "TPOS AI có phải plugin?",
+        "a": "Không—nằm trong luồng TAKOPOS."
+      },
+      "q2": {
+        "q": "Dùng được gì hôm nay?",
+        "a": "Mục Đã lên có thể demo; Đang lên kế hoạch sẽ mở dần."
+      },
+      "q3": {
+        "q": "AI thay nhân viên?",
+        "a": "Giảm việc nhập/dịch/kiểm kê để người lo khách."
+      },
+      "q4": {
+        "q": "Bật từng phần được?",
+        "a": "Được—theo mô hình và gói."
+      }
+    },
+    "ctaTitle": "Muốn chạy AI trên thực đơn thật?",
+    "ctaBody": "Đặt lịch giới thiệu với menu thật."
   }
 }
