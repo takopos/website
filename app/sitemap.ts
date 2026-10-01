@@ -17,6 +17,7 @@ const corePaths: Array<{
   { path: "/dining-pos", priority: 0.95, changeFrequency: "weekly" },
   { path: "/tpos-ai", priority: 0.95, changeFrequency: "weekly" },
   { path: "/qr-ordering", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/online-ordering", priority: 0.95, changeFrequency: "weekly" },
   { path: "/kitchen-display", priority: 0.9, changeFrequency: "weekly" },
   { path: "/chain-pos", priority: 0.9, changeFrequency: "weekly" },
   { path: "/choose-dining-pos", priority: 0.9, changeFrequency: "weekly" },

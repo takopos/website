@@ -34,6 +34,7 @@
     "chooseDiningPos": "How to choose",
     "cases": "Cases",
     "qrOrdering": "QR ordering",
+    "onlineOrdering": "Online ordering",
     "kitchenDisplay": "Kitchen display",
     "chainPos": "Chain management"
   },
@@ -831,6 +832,7 @@
       }
     },
     "relatedTitle": "Related topics",
+    "relatedOnline": "Online ordering system",
     "relatedKitchen": "Kitchen display (KDS)",
     "relatedChain": "Chain restaurant management",
     "faqTitle": "QR ordering FAQ",
@@ -854,6 +856,78 @@
     },
     "ctaTitle": "Want to trial QR ordering in your store?",
     "ctaBody": "Tell us your format and table layout—sales will walk through a fit check."
+  },
+  "onlineOrdering": {
+    "metaTitle": "TPOS AI Online Ordering System｜Restaurant POS that cuts labor gaps and lifts table turns",
+    "metaDescription": "TPOS AI online ordering for restaurants: tableside QR, takeout pre-orders, and cloud POS sync—auto tickets to the kitchen without extra staff. Book a free walkthrough.",
+    "schemaName": "TPOS AI Online Ordering System",
+    "eyebrow": "Online ordering system / Online ordering POS",
+    "h1": "TPOS AI online ordering: dine-in QR and takeout in one stack—built for restaurant labor gaps",
+    "lead": "For owners and managers: tableside scan, takeout booking, and POS share one flow. Peak tickets hit the kitchen automatically so staff serve and turn tables—not copy orders.",
+    "audienceNote": "This page is for F&B operators evaluating systems—not a consumer takeout app.",
+    "ctaGroupLabel": "Online ordering primary actions",
+    "primaryCta": "Book a free specialist demo",
+    "secondaryCta": "View pricing plans",
+    "whatEyebrow": "Restaurant online ordering",
+    "whatTitle": "Online ordering POS—not a consumer food app",
+    "whatBody1": "For stores, an online ordering system means dine-in QR, takeout pre-orders, and front-of-house POS on one ops path: guests order on phones, kitchen and counter see tickets live, inventory and invoices move with the sale. Goal: fewer missed tickets and less labor waste—not another marketplace channel.",
+    "whatBody2": "TPOS AI / TAKOPOS natively links tableside ordering, QR ordering, and cloud POS so QR tickets connect to KDS and reports. Validate with your real menu and peak path in a specialist demo.",
+    "painsEyebrow": "Pains and outcomes",
+    "pains": {
+      "missedOrders": {
+        "title": "Stop missed tickets: guests order on phones, kitchen gets the ticket automatically",
+        "body": "Peak pain is handwritten tickets and verbal handoffs. Online ordering lets guests finish items and notes on mobile; tickets land on the kitchen display to cut misses, remakes, and complaints."
+      },
+      "posSync": {
+        "title": "Full POS integration: live inventory, payments, and e-invoices in one back office",
+        "body": "Online ordering shouldn’t be a bolt-on island. Same stack for stock, payments, and e-invoices keeps counts and checkout clean so closing doesn’t mean stitching systems."
+      },
+      "turnover": {
+        "title": "Higher turns and check size: smart add-ons; floor labor can drop ~50%",
+        "body": "When repeat ordering is system-driven, staff focus on tableside upsell and turns. Add-on prompts help grow check size even when short-staffed. (Savings vary by format—demo against your floor path.)"
+      }
+    },
+    "featuresEyebrow": "Feature highlights",
+    "features": {
+      "tableQr": {
+        "title": "Tableside QR ordering (contact-light, no app download)",
+        "body": "Guests scan, browse, add items and notes—no app. Strong fit for hotpot, yakiniku, and multi-guest add-on formats."
+      },
+      "takeout": {
+        "title": "Online takeout / pickup booking (less peak queueing)",
+        "body": "Takeout and in-store share one ops flow so peak pickup can be scheduled, cutting counter queues and wrong bags."
+      },
+      "cloudReports": {
+        "title": "Cloud live reports and ops analytics",
+        "body": "Online ordering and POS sales land in one cloud report set—dayparts, items, and table pace for purchasing and staffing."
+      }
+    },
+    "relatedTitle": "Related topics",
+    "relatedQr": "QR ordering system",
+    "relatedDiningPos": "Restaurant POS guide",
+    "relatedTposAi": "TPOS AI features",
+    "relatedCases": "Customer cases",
+    "faqTitle": "Online ordering FAQ (for operators)",
+    "faqs": {
+      "q1": {
+        "q": "How is this different from consumer ordering apps?",
+        "a": "Consumer apps help diners find takeout/delivery. This is an online ordering POS for restaurants—tableside QR, kitchen, and inventory—to improve ops and labor."
+      },
+      "q2": {
+        "q": "Do I need a separate QR ordering product?",
+        "a": "Same stack is safer. Split vendors often fail at peak. TAKOPOS / TPOS AI keeps QR, takeout, and front tickets in one flow."
+      },
+      "q3": {
+        "q": "Which formats benefit most?",
+        "a": "Heavy add-ons, peak labor gaps, or takeout pickup overflow. Book a free specialist demo with your menu and table layout."
+      },
+      "q4": {
+        "q": "How do we measure results?",
+        "a": "Common metrics: missed-ticket rate, table-turn time, floor staffing, and check size. We’ll align baselines in the demo."
+      }
+    },
+    "ctaTitle": "Is online ordering POS a fit for your store?",
+    "ctaBody": "Leave store details and book a free specialist demo. We’ll walk tableside QR, takeout, and kitchen tickets with your menu and peak path."
   },
   "kitchenDisplay": {
     "metaTitle": "Kitchen display system (KDS)",

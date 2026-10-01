@@ -46,6 +46,7 @@ export default async function QrOrderingPage({
       secondaryHref="/dining-pos"
       secondaryLabelKey="seeDiningPos"
       related={[
+        { href: "/online-ordering", labelKey: "relatedOnline" },
         { href: "/kitchen-display", labelKey: "relatedKitchen" },
         { href: "/chain-pos", labelKey: "relatedChain" },
         { href: "/cases", labelKey: "seeCases" },

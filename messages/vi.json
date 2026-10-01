@@ -34,6 +34,7 @@
     "chooseDiningPos": "Cách chọn POS",
     "cases": "Case",
     "qrOrdering": "Gọi món QR",
+    "onlineOrdering": "Gọi món online",
     "kitchenDisplay": "Màn hình bếp",
     "chainPos": "Quản lý chuỗi"
   },
@@ -831,6 +832,7 @@
       }
     },
     "relatedTitle": "Chủ đề liên quan",
+    "relatedOnline": "Gọi món online",
     "relatedKitchen": "KDS bếp",
     "relatedChain": "Quản lý chuỗi",
     "faqTitle": "FAQ gọi món QR",
@@ -854,6 +856,78 @@
     },
     "ctaTitle": "Muốn thử QR tại quán?",
     "ctaBody": "Cho biết mô hình và bàn—sales sẽ sắp xếp giới thiệu."
+  },
+  "onlineOrdering": {
+    "metaTitle": "Hệ thống gọi món online TPOS AI｜POS nhà hàng giảm thiếu nhân sự, tăng vòng bàn",
+    "metaDescription": "TPOS AI gọi món online cho nhà hàng: quét QR tại bàn, đặt mang đi và đồng bộ POS đám mây—tự gửi bếp, không cần thêm người. Đặt demo miễn phí.",
+    "schemaName": "Hệ thống gọi món online TPOS AI",
+    "eyebrow": "Hệ thống gọi món online / POS gọi món online",
+    "h1": "TPOS AI gọi món online: QR tại bàn và mang đi một hệ—giải bài thiếu nhân sự F&B",
+    "lead": "Cho chủ quán và quản lý: quét mã, đặt mang đi và POS cùng một luồng. Giờ cao điểm đơn tự vào bếp để nhân viên phục vụ và xoay bàn—không phải chép đơn.",
+    "audienceNote": "Trang dành cho nhà hàng đánh giá hệ thống—không phải app đặt món cho thực khách.",
+    "ctaGroupLabel": "Hành động chính gọi món online",
+    "primaryCta": "Đặt demo chuyên viên miễn phí",
+    "secondaryCta": "Xem bảng giá",
+    "whatEyebrow": "Gói gọi món online nhà hàng",
+    "whatTitle": "POS gọi món online—không phải sàn đặt món tiêu dùng",
+    "whatBody1": "Với cửa hàng, hệ thống gọi món online nối QR tại bàn, đặt mang đi và POS: khách đặt trên điện thoại, bếp/quầy thấy ngay, tồn kho và hóa đơn theo đơn. Mục tiêu: ít sót đơn và bớt áp lực nhân sự—không thêm kênh marketplace.",
+    "whatBody2": "TPOS AI / TAKOPOS tích hợp sẵn gọi món tại bàn, QR và POS đám mây. Demo bằng thực đơn và giờ cao điểm thật của bạn.",
+    "painsEyebrow": "Đau điểm và lợi ích",
+    "pains": {
+      "missedOrders": {
+        "title": "Hết sót đơn: khách gọi trên điện thoại, bếp nhận phiếu tự động",
+        "body": "Giờ cao điểm đau vì chép đơn và chuyển miệng. Gọi món online để khách hoàn tất món và ghi chú; phiếu lên KDS, giảm sót, làm lại và khiếu nại."
+      },
+      "posSync": {
+        "title": "POS đầy đủ: tồn kho tức thì, thanh toán đa kênh và hóa đơn điện tử",
+        "body": "Gọi món online không nên là module tách. Cùng tồn kho, thanh toán và hóa đơn để đóng ca đỡ phải ghép hệ."
+      },
+      "turnover": {
+        "title": "Tăng vòng bàn và giá trị đơn: gợi ý upsell, nhân sự sàn có thể giảm ~50%",
+        "body": "Khi gọi lặp giao cho hệ, nhân viên lo upsell và xoay bàn. (Mức tiết kiệm tùy mô hình—demo theo mặt bằng của bạn.)"
+      }
+    },
+    "featuresEyebrow": "Điểm nổi bật",
+    "features": {
+      "tableQr": {
+        "title": "Gọi món QR tại bàn (ít tiếp xúc, không cần app)",
+        "body": "Khách quét, xem menu, gọi thêm và ghi chú—không tải app. Hợp lẩu, nướng, nhiều người gọi thêm."
+      },
+      "takeout": {
+        "title": "Đặt mang đi / lấy tại quán online (giảm xếp hàng giờ cao điểm)",
+        "body": "Đơn mang đi và trong quán cùng luồng, có thể hẹn lấy để giảm xếp quầy và sai túi."
+      },
+      "cloudReports": {
+        "title": "Báo cáo đám mây và phân tích vận hành",
+        "body": "Doanh số gọi món online và POS về cùng báo cáo—khung giờ, món, nhịp bàn cho nhập hàng và ca."
+      }
+    },
+    "relatedTitle": "Chủ đề liên quan",
+    "relatedQr": "Hệ thống gọi món QR",
+    "relatedDiningPos": "Hướng dẫn POS nhà hàng",
+    "relatedTposAi": "TPOS AI",
+    "relatedCases": "Case hợp tác",
+    "faqTitle": "FAQ gọi món online (cho nhà hàng)",
+    "faqs": {
+      "q1": {
+        "q": "Khác app đặt món tiêu dùng thế nào?",
+        "a": "App tiêu dùng giúp thực khách tìm mang đi/giao. Đây là POS gọi món online cho nhà hàng—QR, bếp, tồn kho—để vận hành và nhân sự."
+      },
+      "q2": {
+        "q": "Có phải mua module QR riêng?",
+        "a": "Nên cùng hệ; tách vendor dễ lỗi giờ cao điểm. TAKOPOS / TPOS AI một luồng."
+      },
+      "q3": {
+        "q": "Hợp mô hình nào?",
+        "a": "Gọi thêm nhiều, thiếu người giờ cao điểm, hoặc mang đi ùn quầy. Đặt demo với menu và bàn thật."
+      },
+      "q4": {
+        "q": "Đo hiệu quả thế nào?",
+        "a": "Tỷ lệ sót đơn, thời gian xoay bàn, nhân sự sàn, giá trị đơn—căn baseline khi demo."
+      }
+    },
+    "ctaTitle": "POS gọi món online có hợp quán bạn?",
+    "ctaBody": "Để lại thông tin quán, đặt demo chuyên viên miễn phí—đi QR tại bàn, mang đi và phiếu bếp với menu giờ cao điểm của bạn."
   },
   "kitchenDisplay": {
     "metaTitle": "Màn hình bếp KDS",

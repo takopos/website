@@ -40,6 +40,7 @@ export async function Footer() {
                     link.key === "chooseDiningPos" ||
                     link.key === "cases" ||
                     link.key === "qrOrdering" ||
+                    link.key === "onlineOrdering" ||
                     link.key === "kitchenDisplay" ||
                     link.key === "chainPos" ||
                     link.key === "tposAi"

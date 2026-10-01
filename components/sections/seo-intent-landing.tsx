@@ -13,7 +13,13 @@ type SeoIntentLandingProps = {
   secondaryHref: "/dining-pos" | "/choose-dining-pos" | "/cases" | "/chain-pos";
   secondaryLabelKey: "seeDiningPos" | "seeChoose" | "seeCases" | "seeChain";
   related?: {
-    href: "/qr-ordering" | "/kitchen-display" | "/chain-pos" | "/dining-pos" | "/cases";
+    href:
+      | "/qr-ordering"
+      | "/online-ordering"
+      | "/kitchen-display"
+      | "/chain-pos"
+      | "/dining-pos"
+      | "/cases";
     labelKey: string;
   }[];
 };

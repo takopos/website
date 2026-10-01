@@ -46,12 +46,15 @@ export async function createPageMetadata({
   path = "/",
   keywords,
   locale,
+  absoluteTitle = false,
 }: {
   title?: string;
   description?: string;
   path?: string;
   keywords?: string[];
   locale: AppLocale;
+  /** When true, `title` is used as-is (no `| TAKOPOS` template). */
+  absoluteTitle?: boolean;
 }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "meta" });
   const tCommon = await getTranslations({ locale, namespace: "common" });
@@ -59,13 +62,19 @@ export async function createPageMetadata({
   const defaultTitle = t("defaultTitle");
   const pageDescription = description ?? t("description");
   const pageTitle = title
-    ? t("titleTemplate", { title })
+    ? absoluteTitle
+      ? title
+      : t("titleTemplate", { title })
     : defaultTitle;
   const url = absoluteLocalizedUrl(locale, path);
   const ogImage = absoluteUrl(siteConfig.ogImage);
 
   return {
-    title: title ?? { absolute: defaultTitle },
+    title: title
+      ? absoluteTitle
+        ? { absolute: title }
+        : title
+      : { absolute: defaultTitle },
     description: pageDescription,
     keywords: keywords ?? [...siteConfig.keywords],
     alternates: {
@@ -295,5 +304,52 @@ export function getFaqPageJsonLd(
         text: faq.answer,
       },
     })),
+  };
+}
+
+/** Product JSON-LD for the online-ordering SEO landing (B2B intent). */
+export function getOnlineOrderingSoftwareJsonLd({
+  locale,
+  name,
+  description,
+}: {
+  locale: AppLocale;
+  name: string;
+  description: string;
+}) {
+  const organizationId = `${siteConfig.url}/#organization`;
+  return {
+    "@context": "https://schema.org",
+    "@type": ["SoftwareApplication", "Product"],
+    name,
+    alternateName: [
+      "線上點餐系統",
+      "線上點餐 POS",
+      "掃碼點餐系統",
+      "TAKOPOS",
+      "TPOS AI",
+    ],
+    applicationCategory: "BusinessApplication",
+    applicationSubCategory: "Online Ordering / Restaurant POS",
+    operatingSystem: "Cloud, Web, Tablet",
+    url: absoluteLocalizedUrl(locale, "/online-ordering"),
+    description,
+    brand: {
+      "@type": "Brand",
+      name: siteConfig.brand,
+      alternateName: ["TPOS AI", "TAKO POS"],
+    },
+    provider: { "@id": organizationId },
+    offers: {
+      "@type": "Offer",
+      url: absoluteLocalizedUrl(locale, "/pricing"),
+      priceCurrency: "TWD",
+      availability: "https://schema.org/InStock",
+      description: "方案諮詢與免費展示，依店型報價",
+    },
+    audience: {
+      "@type": "BusinessAudience",
+      audienceType: "餐廳老闆、餐飲創業者、店長",
+    },
   };
 }
