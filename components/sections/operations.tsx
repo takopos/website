@@ -21,13 +21,10 @@ export async function OperationsSection() {
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-            {t("eyebrow")}
-          </p>
-          <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+          <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
             {t("title")}
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-white/70">
+          <p className="mt-4 max-w-[65ch] text-base leading-relaxed text-white/70">
             {t("description")}
           </p>
         </div>
@@ -53,10 +50,7 @@ export async function OperationsSection() {
 
         <div className="mt-20">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold tracking-[0.16em] text-primary uppercase">
-              {t("appUiEyebrow")}
-            </p>
-            <h3 className="mt-3 font-heading text-2xl font-semibold sm:text-3xl">
+            <h3 className="font-heading text-2xl font-semibold sm:text-3xl">
               {t("appUiTitle")}
             </h3>
             <p className="mt-2 text-sm text-white/55">{t("appUiNote")}</p>
@@ -112,10 +106,7 @@ export async function OperationsSection() {
 
         <div className="mt-20">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold tracking-[0.16em] text-primary uppercase">
-              {t("scenesEyebrow")}
-            </p>
-            <h3 className="mt-3 font-heading text-2xl font-semibold sm:text-3xl">
+            <h3 className="font-heading text-2xl font-semibold sm:text-3xl">
               {t("scenesTitle")}
             </h3>
           </div>

@@ -72,17 +72,14 @@ export async function ChainStoreSection() {
   return (
     <section
       id={chainStoreSection.id}
-      className="scroll-mt-20 bg-[#f7f7f8] py-20 sm:py-24"
+      className="scroll-mt-20 border-y border-border/70 bg-[#f3f2f1] py-20 sm:py-24"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-            {t("eyebrow")}
-          </p>
-          <h2 className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+          <h2 className="font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             {t("title")}
           </h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-[65ch] text-base leading-relaxed text-muted-foreground">
             {t("description")}
           </p>
         </div>

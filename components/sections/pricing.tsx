@@ -23,17 +23,14 @@ export async function PricingSection({
       aria-labelledby="pricing-heading"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold tracking-[0.18em] text-primary uppercase">
-            {t("eyebrow")}
-          </p>
+        <div className="max-w-2xl">
           <Heading
             id="pricing-heading"
-            className="mt-3 font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
+            className="font-heading text-3xl font-semibold tracking-tight text-foreground sm:text-4xl"
           >
             {t("title")}
           </Heading>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-[65ch] text-base leading-relaxed text-muted-foreground">
             {t("description")}
           </p>
         </div>
@@ -46,9 +43,9 @@ export async function PricingSection({
               <article
                 key={plan.id}
                 className={cn(
-                  "relative flex flex-col rounded-2xl border p-6 transition-transform duration-300 hover:-translate-y-1",
+                  "relative flex flex-col rounded-xl border p-6 transition-transform duration-200 active:translate-y-px",
                   plan.featured
-                    ? "border-primary bg-[linear-gradient(180deg,#fff7f0,white)] shadow-[0_24px_50px_-28px_rgba(208,104,44,0.45)]"
+                    ? "border-primary bg-[#fff7f0] shadow-[0_18px_40px_-28px_rgba(208,104,44,0.4)]"
                     : "border-border/80 bg-background"
                 )}
               >

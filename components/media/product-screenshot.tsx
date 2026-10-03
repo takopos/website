@@ -16,7 +16,7 @@ export function ProductScreenshot({
   media,
   priority = false,
   float = false,
-  glow = true,
+  glow = false,
   className,
   frameClassName,
 }: ProductScreenshotProps) {
@@ -33,7 +33,7 @@ export function ProductScreenshot({
       ) : null}
       <div
         className={cn(
-          "group relative overflow-hidden rounded-xl border border-white/70 bg-white shadow-xl ring-1 ring-primary/10 transition-transform duration-500 ease-out hover:scale-[1.015]",
+          "group relative overflow-hidden rounded-xl border border-black/8 bg-white shadow-[0_20px_40px_-24px_rgba(47,44,42,0.35)] transition-transform duration-300 ease-out hover:scale-[1.01]",
           float && "animate-float",
           frameClassName
         )}

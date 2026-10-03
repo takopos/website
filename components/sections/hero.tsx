@@ -12,26 +12,31 @@ export async function HeroSection() {
   const tCta = await getTranslations("cta");
 
   return (
-    <section className="relative overflow-hidden" aria-labelledby="hero-heading">
-      <div className="absolute inset-0 bg-[linear-gradient(165deg,#ffffff_0%,#fff7f0_48%,#f5f5f5_100%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(208,104,44,0.14),transparent_48%),radial-gradient(ellipse_at_bottom_left,rgba(108,100,96,0.08),transparent_42%)]" />
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
+    <section
+      className="relative overflow-hidden border-b border-border/70"
+      aria-labelledby="hero-heading"
+    >
+      <div
+        className="absolute inset-0 bg-[linear-gradient(180deg,#fafaf9_0%,#f4f2f0_100%)]"
+        aria-hidden
+      />
+      <div
+        className="absolute inset-y-0 right-0 hidden w-[55%] bg-[linear-gradient(105deg,transparent_0%,rgba(208,104,44,0.06)_45%,rgba(47,44,42,0.04)_100%)] lg:block"
+        aria-hidden
+      />
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-10 px-4 pt-14 pb-16 sm:px-6 lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] lg:gap-12 lg:px-8 lg:pt-20 lg:pb-24 xl:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] xl:gap-16">
-        <div className="animate-fade-up">
-          <p className="font-heading text-sm font-semibold tracking-[0.22em] text-primary uppercase">
-            {tCommon("company")}
-          </p>
+      <div className="relative mx-auto grid min-h-[min(100dvh,52rem)] max-w-6xl items-center gap-10 px-4 pt-12 pb-14 sm:px-6 lg:grid-cols-[minmax(0,22rem)_minmax(0,1fr)] lg:gap-10 lg:px-8 lg:pt-16 lg:pb-20 xl:grid-cols-[minmax(0,24rem)_minmax(0,1fr)] xl:gap-14">
+        <div className="animate-fade-up max-w-md lg:max-w-none">
           <h1
             id="hero-heading"
-            className="mt-4 font-heading text-[2.35rem] leading-[1.18] font-semibold tracking-tight text-balance text-foreground sm:text-5xl lg:text-[3rem]"
+            className="font-heading text-[2.5rem] leading-[1.12] font-semibold tracking-tight text-balance text-foreground sm:text-5xl lg:text-[3.15rem]"
           >
-            <span className="block">{tCommon("brand")}</span>
-            <span className="mt-2 block text-[0.72em] font-semibold tracking-tight text-foreground/90 sm:mt-3">
+            <span className="block text-primary">{tCommon("brand")}</span>
+            <span className="mt-3 block text-[0.68em] font-semibold tracking-tight text-foreground sm:mt-4">
               {t("headline")}
             </span>
           </h1>
-          <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground sm:text-lg">
+          <p className="mt-5 max-w-[34ch] text-base leading-relaxed text-muted-foreground sm:text-lg">
             {t("supporting")}
           </p>
           <div
@@ -43,14 +48,14 @@ export async function HeroSection() {
               label={tCta("bookDemo")}
               ariaLabel={t("bookDemoAria")}
               size="lg"
-              className="h-11 px-5 text-sm"
+              className="h-11 px-5 text-sm active:translate-y-px"
             />
             <Button
               nativeButton={false}
               render={<Link href="/#operations" />}
               variant="outline"
               size="lg"
-              className="h-11 px-5 text-sm"
+              className="h-11 px-5 text-sm active:translate-y-px"
               aria-label={t("secondaryAria")}
             >
               {tCta("secondary")}
@@ -58,17 +63,13 @@ export async function HeroSection() {
           </div>
         </div>
 
-        <div className="animate-fade-up-delayed relative w-full justify-self-center lg:justify-self-end">
-          <div
-            className="pointer-events-none absolute -inset-8 rounded-[2rem] bg-[radial-gradient(circle_at_35%_25%,rgba(208,104,44,0.2),transparent_55%),radial-gradient(circle_at_85%_80%,rgba(108,100,96,0.1),transparent_50%)] blur-3xl"
-            aria-hidden
-          />
+        <div className="animate-fade-up-delayed relative w-full lg:justify-self-end">
           <ProductScreenshot
             media={media.tposaiPosOrdering}
             priority
             glow={false}
             className="relative mx-auto w-full max-w-xl lg:ml-auto lg:mr-0 lg:max-w-none"
-            frameClassName="rounded-2xl border border-black/5 bg-[#111] shadow-[0_28px_64px_-28px_rgba(28,22,18,0.55)] ring-1 ring-primary/10 hover:scale-100"
+            frameClassName="rounded-xl border border-black/8 bg-[#111] shadow-[0_24px_48px_-24px_rgba(47,44,42,0.45)] ring-0 hover:scale-100"
           />
         </div>
       </div>
