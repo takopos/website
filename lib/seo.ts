@@ -187,12 +187,21 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
           "Restaurant POS",
           "Retail POS",
           "TPOS AI",
+          "二維火",
+          "2DFire",
+          "Eats365",
+          "速訂",
+          "SpeedOrder",
           "Vision OCR",
           "掃碼點餐",
           "Kitchen Display System",
           "連鎖餐飲管理",
+          "雲端訂供貨",
           "Gemini 營運分析",
         ],
+        hasOfferCatalog: {
+          "@id": `${siteConfig.url}/product-lines#catalog`,
+        },
         makesOffer: {
           "@type": "Offer",
           itemOffered: { "@id": softwareId },
@@ -203,18 +212,17 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
       {
         "@type": ["SoftwareApplication", "Product"],
         "@id": softwareId,
-        name: "TAKOPOS",
+        name: "TPOS AI",
         alternateName: [
-          "TAKO POS",
-          siteConfig.brand,
           "TPOS",
-          "TPOS AI",
-          "TAKOPOS POS",
+          "TPOS Ai",
+          "TAKOPOS TPOS AI",
+          "台灣自研餐飲 POS",
         ],
         applicationCategory: "BusinessApplication",
         applicationSubCategory: "Point of Sale (POS)",
         operatingSystem: "Android, Web, Cloud",
-        url: siteConfig.url,
+        url: absoluteLocalizedUrl(locale, "/tpos-ai"),
         image: logoUrl,
         description: softwareAiDescription,
         featureList: [...softwareAiFeatureList],
@@ -237,8 +245,12 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
         brand: {
           "@type": "Brand",
           name: siteConfig.brand,
-          alternateName: ["TAKO POS", "TPOS", "TPOS AI"],
+          alternateName: ["TAKO POS", "TAKOPOS"],
           logo: logoUrl,
+        },
+        isPartOf: {
+          "@type": "Brand",
+          name: siteConfig.brand,
         },
       },
       {
@@ -249,7 +261,7 @@ export async function getSiteGraphJsonLd(locale: AppLocale) {
         url: siteConfig.url,
         inLanguage: availableLanguage,
         publisher: { "@id": organizationId },
-        about: { "@id": softwareId },
+        about: { "@id": organizationId },
         potentialAction: {
           "@type": "ReadAction",
           target: `${siteConfig.url}/`,
@@ -288,6 +300,95 @@ export async function getWebSiteJsonLd(locale: AppLocale) {
 
 export function serializeJsonLd(data: unknown): string {
   return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
+/** OfferCatalog for TAKOPOS product lines (owned + partner) — GEO/SEO graph. */
+export function getProductLinesOfferCatalogJsonLd({
+  locale,
+  products,
+}: {
+  locale: AppLocale;
+  products: Array<{
+    id: string;
+    href: string;
+    name: string;
+    description: string;
+    kind: "owned" | "partner";
+  }>;
+}) {
+  const organizationId = `${siteConfig.url}/#organization`;
+  const catalogId = `${siteConfig.url}/product-lines#catalog`;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "@id": catalogId,
+    name: "TAKOPOS product lines",
+    url: absoluteLocalizedUrl(locale, "/product-lines"),
+    provider: { "@id": organizationId },
+    itemListElement: products.map((product, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "SoftwareApplication",
+        name: product.name,
+        description: product.description,
+        url: absoluteLocalizedUrl(locale, product.href),
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Cloud, Web, Tablet",
+        brand: {
+          "@type": "Brand",
+          name: siteConfig.brand,
+        },
+        provider: { "@id": organizationId },
+        additionalProperty: {
+          "@type": "PropertyValue",
+          name: "offeringType",
+          value:
+            product.kind === "owned"
+              ? "owned-product"
+              : "authorized-distribution",
+        },
+      },
+    })),
+  };
+}
+
+export function getPartnerProductJsonLd({
+  locale,
+  name,
+  description,
+  path,
+  category = "BusinessApplication",
+}: {
+  locale: AppLocale;
+  name: string;
+  description: string;
+  path: string;
+  category?: string;
+}) {
+  const organizationId = `${siteConfig.url}/#organization`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name,
+    description,
+    url: absoluteLocalizedUrl(locale, path),
+    applicationCategory: category,
+    operatingSystem: "Cloud, Web, Tablet",
+    brand: {
+      "@type": "Brand",
+      name: siteConfig.brand,
+    },
+    provider: { "@id": organizationId },
+    offers: {
+      "@type": "Offer",
+      url: absoluteLocalizedUrl(locale, "/pricing"),
+      priceCurrency: "TWD",
+      availability: "https://schema.org/InStock",
+      description: "Authorized distribution and onboarding consultation",
+    },
+  };
 }
 
 export function getFaqPageJsonLd(

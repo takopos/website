@@ -118,7 +118,7 @@ export type TposAiModule = (typeof tposAiModules)[number];
 
 /** Canonical SoftwareApplication description for Schema.org / GEO. */
 export const softwareAiDescription =
-  "TAKOPOS（TAKO POS）專業智慧餐飲／零售 POS 系統，由諾迪科技提供：掃碼點餐、廚房看板、庫存與連鎖總部控管，並原生整合 TPOS AI 菜單建檔、翻譯與營運分析。服務台灣、越南與泰國餐飲品牌。";
+  "TPOS AI 是 TAKOPOS 旗下台灣自研的 AI 賦能餐飲／零售 POS 產品線：掃碼點餐、廚房看板、庫存與連鎖總部控管，並原生整合菜單建檔、翻譯與營運分析。由諾迪科技提供，服務台灣餐飲品牌為主。";
 
 /** Canonical AI featureList for Schema.org / GEO (zh-Hant primary market). */
 export const softwareAiFeatureList = [

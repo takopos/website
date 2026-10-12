@@ -2,7 +2,7 @@
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
     "defaultTitle": "TAKOPOS｜Hệ thống POS nhà hàng thông minh",
-    "description": "TAKOPOS là POS đám mây nhà hàng: gọi món QR, KDS, tồn kho và quản lý chuỗi HQ, kèm TPOS AI hỗ trợ tạo menu, dịch và phân tích vận hành—từ quán đơn đến chuỗi.",
+    "description": "TAKOPOS là thương hiệu giải pháp F&B: TPOS AI tự phát triển tại Đài Loan, phân phối ủy quyền 2DFire, Eats365 và SpeedOrder. Tư vấn theo mô hình cửa hàng.",
     "audience": "Nhà hàng và thương hiệu chuỗi F&B",
     "featuresTitle": "Tính năng POS nhà hàng",
     "featuresDescription": "Gọi món thông minh, KDS, chi phí tồn kho, thành viên và phân tích vận hành—TAKOPOS giúp thông suốt điểm nghẽn hàng ngày từ quán đơn đến chuỗi.",
@@ -36,7 +36,8 @@
     "qrOrdering": "Gọi món QR",
     "onlineOrdering": "Gọi món online",
     "kitchenDisplay": "Màn hình bếp",
-    "chainPos": "Quản lý chuỗi"
+    "chainPos": "Quản lý chuỗi",
+    "productLines": "Dòng sản phẩm"
   },
   "hero": {
     "headline": "Giờ cao điểm ổn định, sẵn sàng mở chuỗi",
@@ -1146,5 +1147,194 @@
     },
     "ctaTitle": "Muốn chạy AI trên thực đơn thật?",
     "ctaBody": "Đặt lịch giới thiệu với menu thật."
+  },
+  "productLines": {
+    "title": "Dòng sản phẩm phù hợp từng mô hình cửa hàng",
+    "description": "TAKOPOS là thương hiệu giải pháp số cho F&B: TPOS AI tự phát triển tại Đài Loan, đồng thời phân phối ủy quyền và triển khai 2DFire, Eats365, SpeedOrder.",
+    "brandOfTakopos": "TAKOPOS portfolio",
+    "posGroupTitle": "POS nhà hàng",
+    "posGroupLead": "Split by hardware ecosystem and format. No one-size-fits-all push.",
+    "supplyGroupTitle": "Đặt hàng / cung ứng",
+    "supplyGroupLead": "Complements front-of-house POS by digitizing ordering and supply.",
+    "seeAll": "Xem tất cả dòng sản phẩm",
+    "bookFit": "Book a fit assessment",
+    "kind": {
+      "owned": "Tự phát triển",
+      "partner": "Phân phối ủy quyền"
+    },
+    "items": {
+      "tpos-ai": {
+        "name": "TPOS AI",
+        "summary": "Taiwan-built, AI-powered POS for Taiwan restaurant floors.",
+        "fit": "Best when you want local support and AI for menu setup, translation, and ops insights.",
+        "lead": "TPOS AI is TAKOPOS’s in-house line. AI sits inside ordering, inventory, and reports—not a bolted-on chat widget.",
+        "highlights": [
+          "Built for the Taiwan market with local onboarding",
+          "AI menu build, translation, stocktake, and ops insights",
+          "Same ecosystem as QR ordering, KDS, and chain control"
+        ],
+        "cta": "Explore TPOS AI"
+      },
+      "2dfire": {
+        "name": "2DFire",
+        "summary": "Android-first POS for multi-unit restaurant chains.",
+        "fit": "Best for chains that standardize on Android devices and HQ control.",
+        "lead": "2DFire is an authorized distribution line at TAKOPOS for chain F&B teams that deploy mainly on Android.",
+        "highlights": [
+          "Authorized distribution with TAKOPOS onboarding",
+          "Focused on multi-unit chain operations",
+          "Android-first hardware path"
+        ],
+        "cta": "Explore 2DFire"
+      },
+      "eats365": {
+        "name": "Eats365",
+        "summary": "Apple iPad-centered POS strong in AYCE QR ordering.",
+        "fit": "Best for all-you-can-eat and tableside QR add-ons that prefer iPad UX.",
+        "lead": "Eats365 is an authorized distribution line at TAKOPOS, known for iPad front-of-house and AYCE QR ordering scenes.",
+        "highlights": [
+          "Authorized distribution with TAKOPOS assessment",
+          "Apple iPad front-of-house experience",
+          "Strong fit for AYCE / QR ordering"
+        ],
+        "cta": "Explore Eats365"
+      },
+      "speedorder": {
+        "name": "SpeedOrder",
+        "summary": "Cloud procurement platform for restaurant ordering and supply.",
+        "fit": "Best when you need to digitize purchase orders and supplier collaboration.",
+        "lead": "SpeedOrder is an authorized distribution procurement line at TAKOPOS. It complements POS instead of replacing cashiers.",
+        "highlights": [
+          "Authorized distribution with TAKOPOS onboarding",
+          "Cloud ordering / supply collaboration",
+          "Complements POS; not another checkout system"
+        ],
+        "cta": "Explore SpeedOrder"
+      }
+    }
+  },
+  "productLinesPage": {
+    "metaTitle": "Dòng sản phẩm TAKOPOS｜TPOS AI, 2DFire, Eats365, SpeedOrder",
+    "metaDescription": "See the TAKOPOS portfolio: Taiwan-built TPOS AI, authorized 2DFire and Eats365 restaurant POS, and SpeedOrder cloud procurement. Recommendations by store type—not a forced single stack.",
+    "h1": "Dòng sản phẩm TAKOPOS: tự phát triển và phân phối ủy quyền",
+    "lead": "Chúng tôi ưu tiên chọn đúng hệ thống và triển khai êm. Danh mục gồm TPOS AI tự phát triển tại Đài Loan cùng 2DFire, Eats365, SpeedOrder phân phối ủy quyền.",
+    "seeChoose": "How to choose a restaurant POS",
+    "faqTitle": "Product-line FAQ",
+    "faqs": {
+      "q1": {
+        "q": "Are TAKOPOS and TPOS AI the same?",
+        "a": "No. TAKOPOS is the solutions brand; TPOS AI is the in-house Taiwan-built AI POS line. Most live screenshots on this site are from TPOS AI."
+      },
+      "q2": {
+        "q": "Why still offer 2DFire and Eats365?",
+        "a": "Different stores fit different ecosystems. 2DFire leans Android chains; Eats365 leans iPad and AYCE QR. TAKOPOS recommends as an authorized partner."
+      },
+      "q3": {
+        "q": "Is SpeedOrder a POS?",
+        "a": "No. SpeedOrder is cloud procurement for ordering and supply. It complements front-of-house POS."
+      },
+      "q4": {
+        "q": "How should I start?",
+        "a": "Book a fit assessment. Share format, store count, Android/iPad preference, and procurement needs. We’ll recommend a line without assuming one answer."
+      }
+    }
+  },
+  "partnerPages": {
+    "2dfire": {
+      "metaTitle": "2DFire｜Authorized restaurant POS distribution by TAKOPOS",
+      "metaDescription": "2DFire is an authorized Android-first chain restaurant POS line distributed by TAKOPOS. Book a fit assessment for multi-unit rollout needs.",
+      "name": "2DFire",
+      "h1": "2DFire: Android POS for restaurant chains",
+      "lead": "2DFire is an authorized distribution line at TAKOPOS. If your brand deploys Android devices and needs multi-unit control, we can help assess and onboard.",
+      "fitTitle": "When teams often consider 2DFire",
+      "fitBody": "Multi-unit chains that standardize on Android and need HQ-aligned front-of-house operations. Final fit still depends on floor flow and existing systems.",
+      "highlights": [
+        "Authorized distribution via TAKOPOS",
+        "Chain / multi-unit focus",
+        "Android-first hardware path"
+      ],
+      "faqTitle": "2DFire FAQ",
+      "faqs": {
+        "q1": {
+          "q": "Is 2DFire built by TAKOPOS?",
+          "a": "No. 2DFire is the vendor’s product. TAKOPOS provides authorized distribution, fit assessment, and onboarding."
+        },
+        "q2": {
+          "q": "When recommend 2DFire instead of TPOS AI?",
+          "a": "When the store type aligns with Android chain deployment and the 2DFire ecosystem. For Taiwan-built AI-native flows, we evaluate TPOS AI separately."
+        },
+        "q3": {
+          "q": "Can we assess before deciding?",
+          "a": "Yes. Share store count, format, and hardware preference first, then we schedule the right demo."
+        }
+      },
+      "seeAllLines": "View all product lines",
+      "relatedTposAi": "Explore in-house TPOS AI",
+      "relatedChoose": "How to choose a restaurant POS"
+    },
+    "eats365": {
+      "metaTitle": "Eats365｜Authorized iPad AYCE QR POS by TAKOPOS",
+      "metaDescription": "Eats365 is an authorized Apple iPad restaurant POS line distributed by TAKOPOS, strong in all-you-can-eat QR ordering. Book a fit assessment.",
+      "name": "Eats365",
+      "h1": "Eats365: iPad front-of-house for AYCE QR ordering",
+      "lead": "Eats365 is an authorized distribution line at TAKOPOS. If you prefer Apple iPad UX and run AYCE or high-frequency QR add-ons, we can help assess fit.",
+      "fitTitle": "When teams often consider Eats365",
+      "fitBody": "All-you-can-eat restaurants and tableside QR add-on flows that want iPad-led front-of-house. Fit still depends on menu structure and kitchen routing.",
+      "highlights": [
+        "Authorized distribution via TAKOPOS",
+        "Apple iPad-centered experience",
+        "Strong AYCE / QR ordering scenes"
+      ],
+      "faqTitle": "Eats365 FAQ",
+      "faqs": {
+        "q1": {
+          "q": "Is Eats365 built by TAKOPOS?",
+          "a": "No. Eats365 is the vendor’s product. TAKOPOS provides authorized distribution, fit assessment, and onboarding."
+        },
+        "q2": {
+          "q": "Must AYCE use Eats365?",
+          "a": "Not necessarily. AYCE and QR are common strengths, but table count, add-on pace, and kitchen splits may fit other lines too."
+        },
+        "q3": {
+          "q": "Can we compare with other TAKOPOS lines?",
+          "a": "Yes. We compare by hardware preference and format, then suggest demo order."
+        }
+      },
+      "seeAllLines": "View all product lines",
+      "relatedTposAi": "Explore in-house TPOS AI",
+      "relatedChoose": "How to choose a restaurant POS"
+    },
+    "speedorder": {
+      "metaTitle": "SpeedOrder｜Authorized cloud procurement by TAKOPOS",
+      "metaDescription": "SpeedOrder is an authorized cloud procurement platform distributed by TAKOPOS for restaurant ordering and supply—complementary to POS. Book an assessment.",
+      "name": "SpeedOrder",
+      "h1": "SpeedOrder: cloud procurement, not another POS",
+      "lead": "SpeedOrder is an authorized procurement line at TAKOPOS. It digitizes ordering and supply collaboration and complements restaurant POS.",
+      "fitTitle": "When SpeedOrder is usually relevant",
+      "fitBody": "When a restaurant already has or plans a POS, and wants purchase orders and supplier collaboration off phones and spreadsheets.",
+      "highlights": [
+        "Authorized distribution via TAKOPOS",
+        "Cloud ordering / supply platform",
+        "Complements POS; does not replace checkout"
+      ],
+      "faqTitle": "SpeedOrder FAQ",
+      "faqs": {
+        "q1": {
+          "q": "Can SpeedOrder replace restaurant POS?",
+          "a": "No. SpeedOrder handles procurement; ordering, kitchen, and checkout stay on a POS line."
+        },
+        "q2": {
+          "q": "Do we need a TAKOPOS POS first?",
+          "a": "Not always. Integration and rollout depend on your current stack and supply workflow."
+        },
+        "q3": {
+          "q": "Who should talk about SpeedOrder first?",
+          "a": "Brands with frequent purchasing, many suppliers, or HQ-led ordering usually feel the pain first."
+        }
+      },
+      "seeAllLines": "View all product lines",
+      "relatedTposAi": "Explore in-house TPOS AI",
+      "relatedChoose": "How to choose a restaurant POS"
+    }
   }
 }

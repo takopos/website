@@ -14,8 +14,12 @@ const corePaths: Array<{
   changeFrequency: ChangeFrequency;
 }> = [
   { path: "/", priority: 1, changeFrequency: "weekly" },
+  { path: "/product-lines", priority: 0.98, changeFrequency: "weekly" },
   { path: "/dining-pos", priority: 0.95, changeFrequency: "weekly" },
   { path: "/tpos-ai", priority: 0.95, changeFrequency: "weekly" },
+  { path: "/2dfire", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/eats365", priority: 0.9, changeFrequency: "monthly" },
+  { path: "/speedorder", priority: 0.9, changeFrequency: "monthly" },
   { path: "/qr-ordering", priority: 0.9, changeFrequency: "weekly" },
   { path: "/online-ordering", priority: 0.95, changeFrequency: "weekly" },
   { path: "/kitchen-display", priority: 0.9, changeFrequency: "weekly" },

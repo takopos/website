@@ -7,6 +7,7 @@ import { FeaturesSection } from "@/components/sections/features";
 import { HeroSection } from "@/components/sections/hero";
 import { OperationsSection } from "@/components/sections/operations";
 import { PricingSection } from "@/components/sections/pricing";
+import { ProductLinesSection } from "@/components/sections/product-lines";
 import { TestimonialsSection } from "@/components/sections/testimonials";
 import { TposAiSection } from "@/components/sections/tpos-ai";
 import { routing, type AppLocale } from "@/i18n/routing";
@@ -34,6 +35,7 @@ export default async function HomePage({
   return (
     <>
       <HeroSection />
+      <ProductLinesSection />
       <FeaturesSection />
       <TposAiSection />
       <OperationsSection />
