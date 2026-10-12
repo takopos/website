@@ -1,8 +1,8 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS｜餐飲 POS 解決方案（TPOS AI｜二維火｜Eats365｜速訂）",
-    "description": "TAKOPOS 餐飲 POS 解決方案品牌：台灣自研 TPOS AI，授權經銷二維火、Eats365，以及雲端訂供貨平台速訂。依店型推薦適合系統，協助導入與現場上線。",
+    "defaultTitle": "TAKOPOS｜幫餐廳選對餐飲 POS 與訂供貨系統",
+    "description": "TAKOPOS 協助餐飲店家挑選適合的 POS 與訂供貨系統：依店型評估 TPOS AI、二維火、Eats365 與速訂，並支援導入與現場上線。",
     "audience": "餐飲店家、連鎖餐飲品牌",
     "featuresTitle": "餐飲 POS 產品功能",
     "featuresDescription": "一次掌握餐飲 POS 核心能力：智慧點餐、廚房出餐看板（KDS）、庫存成本、會員行銷與營運數據。TAKOPOS 打通餐廳每天卡住的環節，從前場出單、廚房備料到總部控管皆適用，支援單店與連鎖品牌成長。",
@@ -41,7 +41,7 @@
   },
   "hero": {
     "headline": "尖峰出餐穩住，從單店走到連鎖",
-    "supporting": "TAKOPOS 依店型推薦適合的餐飲 POS 與訂供貨方案：台灣自研 TPOS AI，以及授權經銷產品線。",
+    "supporting": "先了解你的店型與現場節奏，再推薦適合的餐飲 POS 或訂供貨方案，並協助順利上線。",
     "ctaGroupLabel": "主要行動呼籲",
     "bookDemoAria": "預約 TAKOPOS 餐飲 POS 免費體驗示範",
     "secondaryAria": "查看 TAKOPOS 系統操作與現場動線說明"
@@ -49,7 +49,7 @@
   "tposAi": {
     "eyebrow": "TPOS AI",
     "title": "輕鬆用 AI，全方位優化您的餐飲事業",
-    "description": "TPOS AI 是 TAKOPOS 旗下自研產品線，與點餐、庫存、報表同一套流程：Vision 辨識、Imagen 生成、Gemini 營運分析，把繁瑣建檔與盤點變成幾次拍照與確認。",
+    "description": "與點餐、庫存、報表同一套流程的 AI 能力：Vision 辨識、Imagen 生成、Gemini 營運分析，把繁瑣建檔與盤點變成幾次拍照與確認。",
     "items": {
       "visionCatalog": {
         "title": "AI 視覺建立菜單",
@@ -326,7 +326,7 @@
     }
   },
   "footer": {
-    "blurb": "懂現場的智慧餐飲解決方案：自研 TPOS AI，授權經銷二維火、Eats365 與速訂，把尖峰、廚房、交班、連鎖與進貨的痛點變成可執行的作業流。",
+    "blurb": "懂現場的餐飲數位化夥伴：依店型協助挑選適合的 POS 與訂供貨系統，把尖峰、廚房、交班、連鎖與進貨的痛點變成可執行的作業流。",
     "quickLinks": "快速連結",
     "privacy": "隱私權政策",
     "terms": "服務條款",
@@ -1045,7 +1045,7 @@
   "tposAiPage": {
     "metaTitle": "TPOS AI 餐飲 AI 功能一覽",
     "metaDescription": "TPOS AI 是 TAKOPOS 旗下台灣自研 AI 賦能 POS：視覺建立菜單、進貨單辨識、一鍵翻譯、商品圖生成與營運分析，原生整合餐飲現場流程。",
-    "eyebrow": "TAKOPOS 旗下自研",
+    "eyebrow": "TPOS AI",
     "h1": "餐飲現場真正用得到的 AI 模組",
     "lead": "不是外掛聊天窗，而是嵌在菜單建檔、翻譯、盤點與營運報表同一套 TAKOPOS 流程；AI 採使用量付費，新客戶享有 100 點免費額度。以下依用途整理已上線與規劃中功能。",
     "seeDiningPos": "了解餐飲 POS",
@@ -1149,8 +1149,8 @@
     "ctaBody": "帶一份真實菜單預約介紹，我們用實際模組走一遍建檔、翻譯與報表。"
   },
   "productLines": {
-    "title": "依店型推薦適合的產品線",
-    "description": "TAKOPOS 是餐飲數位化解決方案品牌：提供台灣自研的 TPOS AI，也作為二維火、Eats365 與速訂的授權經銷與導入夥伴。先看場景，再選產品。",
+    "title": "先選對系統，再談上線",
+    "description": "TAKOPOS 以協助餐廳挑選適合的系統為優先。依業態、店數、硬體偏好與訂供貨需求，推薦 TPOS AI、二維火、Eats365 或速訂，並陪伴導入。",
     "brandOfTakopos": "TAKOPOS 產品組合",
     "posGroupTitle": "餐飲 POS",
     "posGroupLead": "依硬體生態與業態分工，不強迫單一方案。",
@@ -1159,19 +1159,19 @@
     "seeAll": "看全部產品線",
     "bookFit": "預約選型評估",
     "kind": {
-      "owned": "自研",
-      "partner": "授權經銷"
+      "owned": "系統方案",
+      "partner": "合作導入"
     },
     "items": {
       "tpos-ai": {
         "name": "TPOS AI",
-        "summary": "台灣研發、針對台灣餐飲現場的 AI 賦能 POS。",
+        "summary": "針對台灣餐飲現場的 AI 賦能 POS，適合需要在地支援與智慧建檔的店家。",
         "fit": "適合需要在地支援，並想用 AI 加速菜單建檔、翻譯與營運分析的餐廳。",
-        "lead": "TPOS AI 是 TAKOPOS 旗下自研產品線，把 AI 嵌在點餐、庫存與報表同一套流程，而不是外掛聊天窗。",
+        "lead": "TPOS AI 適合需要 AI 協助菜單建檔、翻譯與營運分析，並希望流程整合在同一套 POS 的餐廳。",
         "highlights": [
-          "台灣市場研發與在地導入",
-          "AI 菜單建檔、翻譯、盤點與營運洞察",
-          "與掃碼點餐、KDS、連鎖控管同一產品生態"
+          "適合需要在地支援與現場導入的店家",
+          "AI 協助菜單建檔、翻譯、盤點與營運洞察",
+          "點餐、KDS、連鎖控管可走同一套作業流"
         ],
         "cta": "了解 TPOS AI"
       },
@@ -1179,7 +1179,7 @@
         "name": "二維火 2DFire",
         "summary": "以 Android 為主的連鎖餐飲 POS 方案。",
         "fit": "適合多店連鎖、需要總部控管與 Android 裝置部署的品牌。",
-        "lead": "二維火是 TAKOPOS 授權經銷產品線之一，長年服務連鎖餐飲場景，適合以 Android 生態擴張多店的體系。",
+        "lead": "二維火適合以 Android 生態擴張多店、並需要連鎖控管的餐飲品牌；TAKOPOS 協助選型與導入。",
         "highlights": [
           "Android 裝置部署為主",
           "面向連鎖多店營運",
@@ -1191,7 +1191,7 @@
         "name": "Eats365",
         "summary": "以 Apple iPad 為核心的餐飲 POS，擅長吃到飽掃碼點餐。",
         "fit": "適合吃到飽、桌邊掃碼加點，並偏好 iPad 前場體驗的餐廳。",
-        "lead": "Eats365 是 TAKOPOS 授權經銷產品線之一，強調 iPad 操作體驗，常見於吃到飽與高加點頻率的掃碼點餐場景。",
+        "lead": "Eats365 強調 iPad 操作體驗，常見於吃到飽與高加點頻率的掃碼點餐場景；TAKOPOS 協助評估是否符合店型並導入。",
         "highlights": [
           "Apple iPad 前場體驗",
           "吃到飽／掃碼點餐場景成熟",
@@ -1203,7 +1203,7 @@
         "name": "速訂 SpeedOrder",
         "summary": "雲端訂供貨平台，協助餐廳進貨與供貨協作。",
         "fit": "適合需要把訂貨、供貨與供應商協作數位化的餐飲品牌。",
-        "lead": "速訂是 TAKOPOS 授權經銷的雲端訂供貨產品線，與前場 POS 互補，把後場進貨流程拉進同一套數位作業。",
+        "lead": "速訂是雲端訂供貨平台，與前場 POS 互補，把後場進貨流程數位化；TAKOPOS 協助評估供應鏈需求並導入。",
         "highlights": [
           "雲端訂貨／供貨協作",
           "與現場 POS 場景互補，不是另一套收銀系統",
@@ -1214,20 +1214,20 @@
     }
   },
   "productLinesPage": {
-    "metaTitle": "TAKOPOS 產品線｜TPOS AI、二維火、Eats365、速訂",
-    "metaDescription": "認識 TAKOPOS 產品組合：台灣自研 TPOS AI、授權經銷二維火與 Eats365 餐飲 POS，以及雲端訂供貨平台速訂。依店型與場景推薦，不強迫單一方案。",
-    "h1": "TAKOPOS 產品線：自研與授權經銷，依店型推薦",
-    "lead": "我們以協助餐廳選對系統、順利上線為優先。產品組合包含台灣自研的 TPOS AI，以及授權經銷的二維火、Eats365 與速訂。先診斷場景，再決定產品。",
+    "metaTitle": "TAKOPOS 產品線｜幫餐廳選對 POS 與訂供貨系統",
+    "metaDescription": "不知道該選哪一套餐飲系統？TAKOPOS 依店型與場景，協助評估 TPOS AI、二維火、Eats365 與速訂，並支援導入上線。",
+    "h1": "幫店家挑選適合的餐飲系統",
+    "lead": "我們以選對系統、順利上線為優先。先了解你的業態、店數、硬體偏好與現場節奏，再從 TPOS AI、二維火、Eats365 與速訂中推薦合適方案。",
     "seeChoose": "餐飲 POS 怎麼選",
     "faqTitle": "產品線常見問題",
     "faqs": {
       "q1": {
         "q": "TAKOPOS 跟 TPOS AI 是同一個東西嗎？",
-        "a": "不是。TAKOPOS 是解決方案品牌；TPOS AI 是旗下台灣自研的 AI 賦能 POS 產品線。官網上的多數現場截圖來自 TPOS AI。"
+        "a": "TAKOPOS 是協助餐廳選型與導入的解決方案品牌；TPOS AI、二維火、Eats365、速訂是可依店型評估的產品方案。官網上多數現場截圖來自 TPOS AI。"
       },
       "q2": {
         "q": "為什麼還有二維火、Eats365？",
-        "a": "因為不同店型適合不同生態。二維火偏 Android 連鎖；Eats365 偏 iPad 與吃到飽掃碼。TAKOPOS 作為授權經銷與導入夥伴，依場景推薦。"
+        "a": "因為不同店型適合不同生態。二維火常見於 Android 連鎖；Eats365 常見於 iPad 與吃到飽掃碼。我們依場景推薦，不預設單一答案。"
       },
       "q3": {
         "q": "速訂是 POS 嗎？",
@@ -1261,7 +1261,7 @@
         },
         "q2": {
           "q": "什麼情況會建議二維火而不是 TPOS AI？",
-          "a": "當店型更吻合 Android 連鎖部署與既有二維火生態時。若你需要台灣自研與 AI 原生流程，則會另評估 TPOS AI。"
+          "a": "當店型更吻合 Android 連鎖部署與既有二維火生態時，會優先評估二維火；若更需要 AI 建檔與在地整合流程，則另評估 TPOS AI。"
         },
         "q3": {
           "q": "可以先評估再決定嗎？",
@@ -1269,7 +1269,7 @@
         }
       },
       "seeAllLines": "看全部產品線",
-      "relatedTposAi": "了解自研 TPOS AI",
+      "relatedTposAi": "了解 TPOS AI",
       "relatedChoose": "餐飲 POS 怎麼選"
     },
     "eats365": {
@@ -1301,7 +1301,7 @@
         }
       },
       "seeAllLines": "看全部產品線",
-      "relatedTposAi": "了解自研 TPOS AI",
+      "relatedTposAi": "了解 TPOS AI",
       "relatedChoose": "餐飲 POS 怎麼選"
     },
     "speedorder": {
@@ -1333,7 +1333,7 @@
         }
       },
       "seeAllLines": "看全部產品線",
-      "relatedTposAi": "了解自研 TPOS AI",
+      "relatedTposAi": "了解 TPOS AI",
       "relatedChoose": "餐飲 POS 怎麼選"
     }
   }

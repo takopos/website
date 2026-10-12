@@ -1,8 +1,8 @@
 {
   "meta": {
     "titleTemplate": "{title}｜TAKOPOS",
-    "defaultTitle": "TAKOPOS｜Restaurant POS Solutions (TPOS AI｜2DFire｜Eats365｜SpeedOrder)",
-    "description": "TAKOPOS is an F&B solutions brand: Taiwan-built TPOS AI, plus authorized distribution of 2DFire, Eats365, and SpeedOrder cloud procurement. We recommend by store type.",
+    "defaultTitle": "TAKOPOS｜Find the right restaurant POS and procurement system",
+    "description": "TAKOPOS helps restaurants choose the right POS and procurement stack: evaluate TPOS AI, 2DFire, Eats365, and SpeedOrder by store type, then onboard smoothly.",
     "audience": "Restaurants and multi-unit F&B brands",
     "featuresTitle": "Restaurant POS Features",
     "featuresDescription": "Smart ordering, kitchen display (KDS), inventory cost, loyalty, and ops analytics—TAKOPOS clears daily F&B bottlenecks from single stores to multi-unit chains.",
@@ -41,7 +41,7 @@
   },
   "hero": {
     "headline": "Steady peak service. Ready for chain growth.",
-    "supporting": "TAKOPOS recommends by store type: Taiwan-built TPOS AI, plus authorized POS and procurement lines.",
+    "supporting": "We learn your format and floor rhythm first, then recommend a fitting restaurant POS or procurement option and help you go live.",
     "ctaGroupLabel": "Primary calls to action",
     "bookDemoAria": "Book a free TAKOPOS restaurant POS demo",
     "secondaryAria": "See how TAKOPOS works on the restaurant floor"
@@ -49,7 +49,7 @@
   "tposAi": {
     "eyebrow": "TPOS AI",
     "title": "Use AI easily to optimize your F&B business end to end",
-    "description": "TPOS AI is TAKOPOS’s in-house line inside ordering, inventory, and reports: Vision, Imagen, and Gemini—turning tedious setup and stocktake into a few photos and confirms.",
+    "description": "AI inside the same ordering, inventory, and reporting workflow: Vision, Imagen, and Gemini—turning tedious setup and stocktake into a few photos and confirms.",
     "items": {
       "visionCatalog": {
         "title": "AI vision menu setup",
@@ -326,7 +326,7 @@
     }
   },
   "footer": {
-    "blurb": "F&B solutions with in-house TPOS AI and authorized 2DFire, Eats365, and SpeedOrder—turning peak service, kitchen, shift close, chain sync, and purchasing into runnable workflows.",
+    "blurb": "An F&B digital partner that helps you pick the right POS and procurement system—turning peak service, kitchen, shift close, chain sync, and purchasing into runnable workflows.",
     "quickLinks": "Quick links",
     "privacy": "Privacy policy",
     "terms": "Terms of service",
@@ -1045,7 +1045,7 @@
   "tposAiPage": {
     "metaTitle": "TPOS AI features for restaurants",
     "metaDescription": "TPOS AI is TAKOPOS’s Taiwan-built AI POS line: vision menu build, inbound OCR, one-tap translation, dish imagery, and ops insights—native to restaurant floor workflows.",
-    "eyebrow": "In-house under TAKOPOS",
+    "eyebrow": "TPOS AI",
     "h1": "AI modules that actually run on the floor",
     "lead": "Not a bolt-on chatbot—menu setup, translation, stocktake, and ops reports live inside TAKOPOS. AI is usage-based, and new customers get 100 free points. Below: live modules and what is coming next.",
     "seeDiningPos": "Explore restaurant POS",
@@ -1149,8 +1149,8 @@
     "ctaBody": "Book an intro with a live menu—we will walk setup, translation, and reports."
   },
   "productLines": {
-    "title": "Product lines matched to your store type",
-    "description": "TAKOPOS is an F&B digital solutions brand: Taiwan-built TPOS AI, and authorized distribution plus onboarding for 2DFire, Eats365, and SpeedOrder. Diagnose the scene first, then pick a product.",
+    "title": "Choose the right system first",
+    "description": "TAKOPOS prioritizes fit. Based on format, store count, hardware preference, and procurement needs, we recommend TPOS AI, 2DFire, Eats365, or SpeedOrder—and support onboarding.",
     "brandOfTakopos": "TAKOPOS portfolio",
     "posGroupTitle": "Restaurant POS",
     "posGroupLead": "Split by hardware ecosystem and format. No one-size-fits-all push.",
@@ -1159,15 +1159,15 @@
     "seeAll": "View all product lines",
     "bookFit": "Book a fit assessment",
     "kind": {
-      "owned": "In-house",
-      "partner": "Authorized distribution"
+      "owned": "System option",
+      "partner": "Partnered rollout"
     },
     "items": {
       "tpos-ai": {
         "name": "TPOS AI",
-        "summary": "Taiwan-built, AI-powered POS for Taiwan restaurant floors.",
+        "summary": "AI-powered POS for Taiwan restaurant floors, with local support and smarter setup.",
         "fit": "Best when you want local support and AI for menu setup, translation, and ops insights.",
-        "lead": "TPOS AI is TAKOPOS’s in-house line. AI sits inside ordering, inventory, and reports—not a bolted-on chat widget.",
+        "lead": "TPOS AI fits restaurants that want AI for menu setup, translation, and ops insights inside one POS workflow.",
         "highlights": [
           "Built for the Taiwan market with local onboarding",
           "AI menu build, translation, stocktake, and ops insights",
@@ -1214,20 +1214,20 @@
     }
   },
   "productLinesPage": {
-    "metaTitle": "TAKOPOS product lines｜TPOS AI, 2DFire, Eats365, SpeedOrder",
-    "metaDescription": "See the TAKOPOS portfolio: Taiwan-built TPOS AI, authorized 2DFire and Eats365 restaurant POS, and SpeedOrder cloud procurement. Recommendations by store type—not a forced single stack.",
-    "h1": "TAKOPOS product lines: in-house and authorized distribution",
-    "lead": "We prioritize fit and a clean go-live. The portfolio includes Taiwan-built TPOS AI plus authorized 2DFire, Eats365, and SpeedOrder. Diagnose first, then choose.",
+    "metaTitle": "TAKOPOS product lines｜Choose the right POS and procurement system",
+    "metaDescription": "Not sure which restaurant system fits? TAKOPOS evaluates TPOS AI, 2DFire, Eats365, and SpeedOrder by store type and helps you go live.",
+    "h1": "We help restaurants choose the right system",
+    "lead": "Fit and a clean go-live come first. Tell us your format, store count, hardware preference, and floor rhythm—then we recommend among TPOS AI, 2DFire, Eats365, and SpeedOrder.",
     "seeChoose": "How to choose a restaurant POS",
     "faqTitle": "Product-line FAQ",
     "faqs": {
       "q1": {
         "q": "Are TAKOPOS and TPOS AI the same?",
-        "a": "No. TAKOPOS is the solutions brand; TPOS AI is the in-house Taiwan-built AI POS line. Most live screenshots on this site are from TPOS AI."
+        "a": "TAKOPOS is the solutions brand that helps you choose and onboard. TPOS AI, 2DFire, Eats365, and SpeedOrder are options we evaluate by store type. Most live screenshots on this site are from TPOS AI."
       },
       "q2": {
         "q": "Why still offer 2DFire and Eats365?",
-        "a": "Different stores fit different ecosystems. 2DFire leans Android chains; Eats365 leans iPad and AYCE QR. TAKOPOS recommends as an authorized partner."
+        "a": "Different stores fit different ecosystems. 2DFire is common for Android chains; Eats365 for iPad and AYCE QR. We recommend by scenario, not a single default."
       },
       "q3": {
         "q": "Is SpeedOrder a POS?",
@@ -1261,7 +1261,7 @@
         },
         "q2": {
           "q": "When recommend 2DFire instead of TPOS AI?",
-          "a": "When the store type aligns with Android chain deployment and the 2DFire ecosystem. For Taiwan-built AI-native flows, we evaluate TPOS AI separately."
+          "a": "When the store type aligns with Android chain deployment and the 2DFire ecosystem, we prioritize 2DFire. If AI setup and a tightly integrated local workflow matter more, we evaluate TPOS AI."
         },
         "q3": {
           "q": "Can we assess before deciding?",
@@ -1269,7 +1269,7 @@
         }
       },
       "seeAllLines": "View all product lines",
-      "relatedTposAi": "Explore in-house TPOS AI",
+      "relatedTposAi": "Explore TPOS AI",
       "relatedChoose": "How to choose a restaurant POS"
     },
     "eats365": {
@@ -1301,7 +1301,7 @@
         }
       },
       "seeAllLines": "View all product lines",
-      "relatedTposAi": "Explore in-house TPOS AI",
+      "relatedTposAi": "Explore TPOS AI",
       "relatedChoose": "How to choose a restaurant POS"
     },
     "speedorder": {
@@ -1333,7 +1333,7 @@
         }
       },
       "seeAllLines": "View all product lines",
-      "relatedTposAi": "Explore in-house TPOS AI",
+      "relatedTposAi": "Explore TPOS AI",
       "relatedChoose": "How to choose a restaurant POS"
     }
   }
