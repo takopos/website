@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
+import { trackMetaEvent } from "@/components/analytics/meta-pixel";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -91,6 +92,7 @@ export function BookingTrigger({
       setLeadNo(data.leadNo || "");
       setDone(true);
       setForm(initialForm);
+      trackMetaEvent("Lead");
     } catch {
       setError("Network error");
     } finally {

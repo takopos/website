@@ -4,6 +4,7 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { Noto_Sans_TC, Outfit } from "next/font/google";
 
+import { MetaPixel } from "@/components/analytics/meta-pixel";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { SiteJsonLd } from "@/components/seo/site-json-ld";
@@ -103,6 +104,7 @@ export default async function LocaleLayout({
     >
       <body className="flex min-h-full flex-col font-sans">
         <NextIntlClientProvider messages={messages}>
+          <MetaPixel />
           <SiteJsonLd />
           <Header />
           <main className="flex-1">{children}</main>
